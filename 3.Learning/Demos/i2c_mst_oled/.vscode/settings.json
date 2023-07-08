@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "board.h": "c",
+        "main.h": "c",
+        "cw32f030.h": "c",
+        "system_cw32f030.h": "c",
+        "core_cm0plus.h": "c",
+        "font.h": "c",
+        "oled_i2c.h": "c",
+        "board_conf.h": "c",
+        "cstddef": "c"
+    }
+}

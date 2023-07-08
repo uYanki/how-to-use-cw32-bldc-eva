@@ -1,8 +1,8 @@
-#include "main.h"
-#include "pinmap.h"
+#include "board.h"
 
 int main()
 {
+    board_init();
     for (;;) {
     }
 }

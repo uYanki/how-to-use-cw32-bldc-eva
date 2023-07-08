@@ -393,9 +393,14 @@
           <GroupName>user</GroupName>
           <Files>
             <File>
-              <FileName>pinmap.h</FileName>
+              <FileName>board.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\Board\board.c</FilePath>
+            </File>
+            <File>
+              <FileName>board_conf.h</FileName>
               <FileType>5</FileType>
-              <FilePath>..\..\Board\pinmap.h</FilePath>
+              <FilePath>.\User\inc\board_conf.h</FilePath>
             </File>
             <File>
               <FileName>interrupts_cw32f030.c</FileName>

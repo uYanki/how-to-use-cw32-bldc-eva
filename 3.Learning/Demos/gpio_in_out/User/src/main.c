@@ -1,10 +1,11 @@
-#include "main.h"
-#include "pinmap.h"
+#include "board.h"
 
 void bsp_gpio_init(void);
 
 int main()
 {
+	
+    board_init();
     bsp_gpio_init();
 
     for (;;) {
@@ -13,7 +14,7 @@ int main()
         GPIO_WritePin(PIN_LED2, GPIO_ReadPin(PIN_KEY2));
         GPIO_WritePin(PIN_LED3, GPIO_ReadPin(PIN_KEY3));
         // key - buzzer
-        GPIO_WritePin(PIN_BUZ, (GPIO_PinState)(GPIO_ReadPin(PIN_KEY2) == GPIO_Pin_RESET));
+        GPIO_WritePin(PIN_BUZ, !GPIO_ReadPin(PIN_KEY2));
     }
 }
 
@@ -25,11 +26,12 @@ void bsp_gpio_init(void)
     __RCC_GPIOB_CLK_ENABLE();
     __RCC_GPIOC_CLK_ENABLE();
 
-    // gpio
-
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
     GPIO_InitStruct.IT   = GPIO_IT_NONE;
     GPIO_InitStruct.Pins = GPIO_SPEED_HIGH;
+
+    // led
+
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
 
     GPIO_InitStruct.Pins = GPIO_PIN_11;
     GPIO_Init(CW_GPIOA, &GPIO_InitStruct);

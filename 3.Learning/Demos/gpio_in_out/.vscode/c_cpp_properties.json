@@ -3,10 +3,13 @@
         {
             "name": "demo",
             "includePath": [
-                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\template\\",
-                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\template\\User\\inc",
+                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\gpio_in_out\\",
+                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\gpio_in_out\\User\\inc",
+                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Board",
                 "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Libraries\\inc",
-                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\template\\User\\src",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include",
+                "C:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
+                "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Demos\\gpio_in_out\\User\\src",
                 "d:\\how-to-use-cw32-bldc-eva\\3.Learning\\Libraries\\src"
             ],
             "defines": [
