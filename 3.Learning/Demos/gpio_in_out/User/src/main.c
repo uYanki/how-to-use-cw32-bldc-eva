@@ -26,8 +26,8 @@ void bsp_gpio_init(void)
     __RCC_GPIOB_CLK_ENABLE();
     __RCC_GPIOC_CLK_ENABLE();
 
-    GPIO_InitStruct.IT   = GPIO_IT_NONE;
-    GPIO_InitStruct.Pins = GPIO_SPEED_HIGH;
+    GPIO_InitStruct.IT    = GPIO_IT_NONE;
+    GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
 
     // led
 

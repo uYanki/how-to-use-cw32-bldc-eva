@@ -1,15 +1,12 @@
 #ifndef __BOARD_H__
 #define __BOARD_H__
 
+#include "udefs.h"
 #include "board_conf.h"
 
 #if CONFIG_REDIRECT_PRINTF
 #include <stdio.h>
 #endif
-
-#include <stdbool.h>
-
-#define println(fmt, args...) printf(fmt "\n", ##args)
 
 /* fwlib */
 
@@ -85,6 +82,13 @@
 #define FOC_BKIN CW_GPIOB, GPIO_PIN_12
 
 /* func */
+
+#if CONFIG_USING_DEBUG_TICKER
+
+extern volatile u32 g_ticks;
+// extern void BTIM1_IRQCallBack();
+
+#endif
 
 void board_init(void);
 
