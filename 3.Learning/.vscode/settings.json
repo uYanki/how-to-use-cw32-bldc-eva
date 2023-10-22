@@ -1,0 +1,20 @@
+{
+    "files.associations": {
+        "sysclk.h": "c",
+        "autoinit.h": "c",
+        "board.h": "c",
+        "uart.h": "c",
+        "key.h": "c",
+        "pinmap.h": "c",
+        "cw32_fwlib.h": "c",
+        "led.h": "c",
+        "sleep.h": "c",
+        "stdbool.h": "c",
+        "board_conf.h": "c",
+        "ntc.h": "c",
+        "hallenc.h": "c",
+        "base_types.h": "c",
+        "usdk.h": "c",
+        "beep.h": "c"
+    }
+}
