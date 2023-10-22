@@ -56,80 +56,6 @@ static void RCC_Init(void)
 #endif
 }
 
-#if CONFIG_USING_DEBUG_UART
-
-static void UART_Init(void)
-{
-    {
-        __RCC_UART1_CLK_ENABLE();
-        __RCC_GPIOB_CLK_ENABLE();
-
-        PB08_AFx_UART1TXD();
-        PB09_AFx_UART1RXD();
-    }
-    {
-        GPIO_InitTypeDef GPIO_InitStruct;
-
-        GPIO_InitStruct.IT    = GPIO_IT_NONE;
-        GPIO_InitStruct.Speed = GPIO_SPEED_HIGH;
-
-        GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-        GPIO_InitStruct.Pins = GPIO_PIN_8;  // tx
-        GPIO_Init(CW_GPIOB, &GPIO_InitStruct);
-
-        GPIO_InitStruct.Mode = GPIO_MODE_INPUT_PULLUP;
-        GPIO_InitStruct.Pins = GPIO_PIN_9;  // rx
-        GPIO_Init(CW_GPIOB, &GPIO_InitStruct);
-    }
-    {
-        USART_InitTypeDef USART_InitStruct;
-
-        USART_InitStruct.USART_BaudRate            = CONFIG_DEBUG_UART_BAUD;
-        USART_InitStruct.USART_Over                = USART_Over_16;
-        USART_InitStruct.USART_Source              = USART_Source_PCLK;
-        USART_InitStruct.USART_UclkFreq            = CONFIG_SYSCLK_FREQ;
-        USART_InitStruct.USART_StartBit            = USART_StartBit_FE;
-        USART_InitStruct.USART_StopBits            = USART_StopBits_1;
-        USART_InitStruct.USART_Parity              = USART_Parity_No;
-        USART_InitStruct.USART_Mode                = USART_Mode_Tx | USART_Mode_Rx;
-        USART_InitStruct.USART_HardwareFlowControl = USART_HardwareFlowControl_None;
-
-        USART_Init(CONFIG_DEBUG_UART_BASE, &USART_InitStruct);
-    }
-}
-
-#if CONFIG_REDIRECT_PRINTF
-
-#ifdef __GNUC__
-/* With GCC/RAISONANCE, small printf (option LD Linker->Libraries->Small printf set to 'Yes') calls __io_putchar() */
-#define PUTCHAR_PROTOTYPE int __io_putchar(int ch)
-#else
-#define PUTCHAR_PROTOTYPE int fputc(int ch, FILE* f)
-#endif
-
-PUTCHAR_PROTOTYPE
-{
-    if (ch == '\n') {
-        USART_SendData_8bit(CONFIG_DEBUG_UART_BASE, '\r');
-        while (USART_GetFlagStatus(CONFIG_DEBUG_UART_BASE, USART_FLAG_TXE) == RESET) {}
-    }
-
-    USART_SendData_8bit(CONFIG_DEBUG_UART_BASE, (uint8_t)ch);
-    while (USART_GetFlagStatus(CONFIG_DEBUG_UART_BASE, USART_FLAG_TXE) == RESET) {}
-
-    return ch;
-}
-
-#endif  // CONFIG_REDIRECT_PRINTF
-
-#else
-
-static void UART_Init(void)
-{
-}
-
-#endif  // CONFIG_USING_DEBUG_UART
-
 #if CONFIG_USING_DEBUG_TICKER
 
 static void BTIM_Init(void)
@@ -186,7 +112,8 @@ void WEAK BTIM1_IRQCallBack() {}
 
 void BTIM1_IRQHandler(void)
 {
-    if (BTIM_GetITStatus(CW_BTIM1, BTIM_IT_OV)) {
+    if (BTIM_GetITStatus(CW_BTIM1, BTIM_IT_OV))
+    {
         BTIM_ClearITPendingBit(CW_BTIM1, BTIM_IT_OV);
 
         ++g_ticks;

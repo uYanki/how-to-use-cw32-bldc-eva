@@ -1,4 +1,3 @@
-
 #include "sysclk.h"
 #include "board_conf.h"
 
@@ -46,4 +45,3 @@ void SysclkInit(void)
 
 #endif
 }
-

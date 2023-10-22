@@ -3,7 +3,7 @@
 
 void KeyInit(void)
 {
-      GPIO_InitTypeDef GPIO_InitStruct = {
+    GPIO_InitTypeDef GPIO_InitStruct = {
         .Mode  = GPIO_MODE_INPUT_PULLUP,
         .IT    = GPIO_IT_NONE,
         .Speed = GPIO_SPEED_HIGH,

@@ -413,11 +413,6 @@
           <GroupName>board/bsp</GroupName>
           <Files>
             <File>
-              <FileName>ntc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\..\..\board\bsp\adc\ntc.c</FilePath>
-            </File>
-            <File>
               <FileName>sysclk.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\board\bsp\clk\sysclk.c</FilePath>
@@ -433,6 +428,21 @@
               <FilePath>..\..\..\board\bsp\gpio\beep.c</FilePath>
             </File>
             <File>
+              <FileName>ntc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\adc\ntc.c</FilePath>
+            </File>
+            <File>
+              <FileName>pot.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\adc\pot.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\adc\adc.c</FilePath>
+            </File>
+            <File>
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\board\bsp\gpio\led.c</FilePath>
@@ -446,6 +456,11 @@
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\board\bsp\uart\uart.c</FilePath>
+            </File>
+            <File>
+              <FileName>pwm.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\tim\pwm.c</FilePath>
             </File>
           </Files>
         </Group>

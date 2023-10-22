@@ -15,7 +15,8 @@ int main()
 
     fprintf(f, "a,b,c\n");
 
-    for (mechAngle = 0; mechAngle < 360; mechAngle += 1) {
+    for (mechAngle = 0; mechAngle < 360; mechAngle += 1)
+    {
         f32 elecAngle = fmod(DEG2RAD * mechAngle * MOTOR_POLE_PAIRS, 6.18);
 
         f32 Ud = 0, Uq = 5;

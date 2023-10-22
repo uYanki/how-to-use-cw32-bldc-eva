@@ -1,7 +1,7 @@
 .\objects\main.o: ..\code\src\main.c
 .\objects\main.o: ..\..\..\board\board.h
 .\objects\main.o: ..\code\inc\board_conf.h
-.\objects\main.o: ..\..\..\board\sys/sleep.h
+.\objects\main.o: ..\..\..\board\pinmap.h
 .\objects\main.o: ..\..\..\fwlib\cw32_fwlib.h
 .\objects\main.o: ..\..\..\board\usdk.h
 .\objects\main.o: ..\..\..\fwlib\inc\base_types.h
@@ -39,9 +39,14 @@
 .\objects\main.o: ..\..\..\fwlib\inc\cw32f030_systick.h
 .\objects\main.o: ..\..\..\fwlib\inc\cw32f030_uart.h
 .\objects\main.o: ..\..\..\fwlib\inc\cw32f030_wwdt.h
+.\objects\main.o: ..\..\..\board\sys/sleep.h
+.\objects\main.o: ..\..\..\board\bsp/clk/sysclk.h
 .\objects\main.o: ..\..\..\board\bsp/uart/uart.h
 .\objects\main.o: ..\..\..\board\bsp/gpio/led.h
 .\objects\main.o: ..\..\..\board\bsp/gpio/key.h
 .\objects\main.o: ..\..\..\board\bsp/gpio/beep.h
 .\objects\main.o: ..\..\..\board\bsp/adc/ntc.h
-.\objects\main.o: ..\..\..\board\bsp/clk/sysclk.h
+.\objects\main.o: ..\..\..\board\bsp/adc/pot.h
+.\objects\main.o: ..\..\..\board\bsp/adc/adc.h
+.\objects\main.o: ..\..\..\board\bsp/tim/hallEnc.h
+.\objects\main.o: ..\..\..\board\bsp/tim/pwm.h

@@ -1,12 +1,17 @@
 #include "hallEnc.h"
 #include "pinmap.h"
 
+// https://blog.csdn.net/csol1607408930/article/details/129410150
+
+vu16 u16HallAngle = 0;
+vu32 u32HallCount = 0;
+
 void HallEncInit(void)
 {
     // GPIO
     {
         GPIO_InitTypeDef GPIO_InitStruct = {
-            .Mode  = GPIO_MODE_OUTPUT_PP,
+            .Mode  = GPIO_MODE_INPUT_PULLUP,
             .IT    = GPIO_IT_NONE,
             .Speed = GPIO_SPEED_HIGH,
         };
@@ -14,6 +19,10 @@ void HallEncInit(void)
         ENC_HA_GPIO_CLKEN(ENC_HA_GPIO_CLK, ENABLE);
         ENC_HB_GPIO_CLKEN(ENC_HB_GPIO_CLK, ENABLE);
         ENC_HC_GPIO_CLKEN(ENC_HC_GPIO_CLK, ENABLE);
+
+        ENC_HA_GPIO_AF();
+        ENC_HB_GPIO_AF();
+        ENC_HC_GPIO_AF();
 
         GPIO_InitStruct.Pins = ENC_HA_GPIO_PIN;  // HA
         GPIO_Init(ENC_HA_GPIO_PORT, &GPIO_InitStruct);
@@ -40,7 +49,7 @@ void HallEncInit(void)
             .ICPolarity = GTIM_ICPolarity_BothEdge,
         };
 
-        ENC_HC_GPIO_CLKEN(ENC_HC_GPIO_CLK, ENABLE);
+        ENC_TIM_CLKEN(ENC_TIM_CLK, ENABLE);
 
         GTIM_TimeBaseInit(ENC_TIM_PORT, &GTIM_InitStruct);
 
@@ -60,42 +69,54 @@ void HallEncInit(void)
         __enable_irq();
     }
 
+    u16HallAngle = HallEncGetAngle();
+
     GTIM_Cmd(ENC_TIM_PORT, ENABLE);
 }
 
 void ENC_TIM_IRQHandler(void)
 {
-    static RO u16 steps[6] = {1, 3, 2, 5, 0, 4};
-
     GTIM_ClearITPendingBit(ENC_TIM_PORT, GTIM_IT_CC1);
     GTIM_ClearITPendingBit(ENC_TIM_PORT, GTIM_IT_CC2);
     GTIM_ClearITPendingBit(ENC_TIM_PORT, GTIM_IT_CC3);
 
-    //    ++nHallTotalCnt;
+    u32HallCount++;  // 用于测速
+    u16HallAngle = HallEncGetAngle();
 
-    printf("%d,%d,%d,%d,", ENC_TIM_PORT->CNT, ENC_TIM_PORT->CCR1, ENC_TIM_PORT->CCR2, ENC_TIM_PORT->CCR3)
+    // printf("%d\n", HallEncGetAngle());
+}
 
-        u8 x = 0;
+u16 HallEncGetAngle(void)
+{
+    static RO u16 steps[6] = {1, 3, 2, 5, 0, 4};
 
-    if (PA15_GETVALUE())
-    {
-        x |= 0x1;
-    }
-    if (PB03_GETVALUE())
-    {
-        x |= 0x2;
-    }
-    if (PA02_GETVALUE())
-    {
-        x |= 0x4;
-    }
+    u8 code = 0;
 
-    // steps[x - 1]
-    if (x > 0 && x < 7)
+    code = (((u8)GPIO_ReadPin(ENC_HA_GPIO_PORT, ENC_HA_GPIO_PIN) << 0u) |
+            ((u8)GPIO_ReadPin(ENC_HB_GPIO_PORT, ENC_HB_GPIO_PIN) << 1u) |
+            ((u8)GPIO_ReadPin(ENC_HC_GPIO_PORT, ENC_HC_GPIO_PIN) << 2u));
+
+    if (code == 0 || code == 7)
     {
-        // nCurDeg = steps[x - 1] * 60;
-        printf("%d", steps[x - 1] * 60);
+        return U16_MAX;  // TBD
     }
 
-    printf("\n");
+#if 1  // 0~360
+    return 60 * steps[code - 1];
+#else  // 0~65535
+    return 65535 * steps[code - 1] / 6;
+    // 角度标幺化
+    // 0 -> 0
+    // 30 -> 5461
+    // 60 -> 10922
+    // 90 -> 16384
+    // 120 -> 21845
+    // 150 -> 27306
+    // 180 -> 32767
+    // 210 -> 38229
+    // 240 -> 43690
+    // 260 -> 49152
+    // 300 -> 54612
+    // 330 -> 60075
+#endif
 }

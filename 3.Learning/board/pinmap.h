@@ -62,24 +62,19 @@
 
 ///< potentiometer (analog)
 
-#define BEEP_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define BEEP_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
-#define BEEP_GPIO_PORT     CW_GPIOA
-#define BEEP_GPIO_PIN      GPIO_PIN_12
-
-///< ntc thermistor (analog)
-
 #define POT_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
 #define POT_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
 #define POT_GPIO_PORT      CW_GPIOB
 #define POT_GPIO_PIN       GPIO_PIN_0
-#define POT_GPIO_AF        PB00_ANALOG_ENABLE
+#define POT_ADC_CH         ADC_ExInputCH8
+
+///< ntc thermistor (analog)
 
 #define NTC_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
 #define NTC_GPIO_CLK       RCC_AHB_PERIPH_GPIOA
 #define NTC_GPIO_PORT      CW_GPIOA
 #define NTC_GPIO_PIN       GPIO_PIN_4
-#define NTC_GPIO_AF        PA04_ANALOG_ENABLE
+#define NTC_ADC_CH         ADC_ExInputCH4
 
 ///< uart (dbg,ble)
 
@@ -158,12 +153,35 @@
 #define MOTOR_UE_GPIO_PORT   CW_GPIOA
 #define MOTOR_UE_GPIO_PIN    GPIO_PIN_0
 #define MOTOR_UE_GPIO_AF     PA00_ANALOG_ENABLE
+#define MOTOR_UE_CH          ADC_ExInputCH0
 
 #define MOTOR_VE_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
 #define MOTOR_VE_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
 #define MOTOR_VE_GPIO_PORT   CW_GPIOA
 #define MOTOR_VE_GPIO_PIN    GPIO_PIN_1
 #define MOTOR_VE_GPIO_AF     PA01_ANALOG_ENABLE
+#define MOTOR_VE_CH          ADC_ExInputCH1
+
+///< i&v (analog)
+
+// 母线电压
+#define HVBUS_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
+#define HVBUS_GPIO_CLK       RCC_AHB_PERIPH_GPIOA
+#define HVBUS_GPIO_PORT      CW_GPIOA
+#define HVBUS_GPIO_PIN       GPIO_PIN_3
+#define HVBUS_ADC_CH         ADC_ExInputCH3
+
+#define IBIS_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
+#define IBIS_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
+#define IBIS_GPIO_PORT       CW_GPIOA
+#define IBIS_GPIO_PIN        GPIO_PIN_6
+#define IBIS_ADC_CH          ADC_ExInputCH6
+
+#define ICIV_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
+#define ICIV_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
+#define ICIV_GPIO_PORT       CW_GPIOA
+#define ICIV_GPIO_PIN        GPIO_PIN_7
+#define ICIV_ADC_CH          ADC_ExInputCH7
 
 // encoder (tim)
 
@@ -191,5 +209,8 @@
 
 #define ENC_TIM_IRQn         GTIM2_IRQn
 #define ENC_TIM_IRQHandler   GTIM2_IRQHandler
+
+#define HVBUS_COEFF          (40.2156f)             // V, 分压系数 (5.1k + 200k) / 5.1k = 40.2156f
+#define CURRENT_COEFF        (1 / 4.3 / 0.1 * 1e3)  // mA, 放大倍数 A = 33K/10K+1 = 4.3, 采样电阻 0.1R = 100mR
 
 #endif

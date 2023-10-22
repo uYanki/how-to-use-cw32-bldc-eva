@@ -6,15 +6,22 @@ int main()
 
     while (1)
     {
-        static tick_t t = 0;
+        static tick_t tBlink = 0;
 
-        if (DelayNonBlockUS(t, 2e6))
+        if (DelayNonBlockMS(tBlink, 500))
         {
             LedTgl(LED1);
-            printf("hello\n");
-            t = HAL_GetTick();
+            tBlink = HAL_GetTick();
         }
 
+        static tick_t tAdcLog = 0;
+
+        if (DelayNonBlockMS(tAdcLog, 10))
+        {
+            printf("%f\n", AdConv(AdcRead()) * HVBUS_COEFF);
+            // printf("%f\n", NtcConv(AdcRead()));
+            tAdcLog = HAL_GetTick();
+        }
     }
 }
 
@@ -42,6 +49,11 @@ void BoardInit(void)
     BeepInit();
 
     NtcInit();
+    PotInit();
+    AdcInit();
+
+    HallEncInit();
+    PwmInit();
 }
 
 /******************************************************************************
