@@ -122,7 +122,7 @@ bool HallEncUpdate(void)
 #include "foc/foc.h"
 #include "math.h"
 #include "board.h"
-static u8 iiiii = 0;
+
 #define voltage_power_supply 11.2
 float Ta, Tb, Tc;
 void  setPhaseVoltage(float Uq, float Ud, float angle_el)

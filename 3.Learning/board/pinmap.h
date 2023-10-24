@@ -94,6 +94,12 @@
 #define UART_RX_GPIO_PIN   GPIO_PIN_9
 #define UART_RX_GPIO_AF    PB09_AFx_UART1RXD
 
+#define UART_TX_DMA_CH     CW_DMACHANNEL2
+#define UART_TX_DMA_TRIG   DMA_HardTrig_UART1_TXBufferE
+
+#define UART_RX_DMA_CH     CW_DMACHANNEL1
+#define UART_RX_DMA_TRIG   DMA_HardTrig_UART1_RXBufferNE
+
 ///< i2c (oled)
 
 #define I2C_SCL_GPIO_CLKEN RCC_AHBPeriphClk_Enable

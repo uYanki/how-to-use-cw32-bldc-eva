@@ -63,12 +63,10 @@ void PwmInit(void)
         ATIM_Init(&ATIM_InitStruct);
 
         // 输出极性是否翻转看具体芯片哦！！
-
         ATIM_OCInitStruct.OCPolarity = ATIM_OCPOLARITY_NONINVERT;
         ATIM_OC1AInit(&ATIM_OCInitStruct);
         ATIM_OC2AInit(&ATIM_OCInitStruct);
         ATIM_OC3AInit(&ATIM_OCInitStruct);
-
         ATIM_OCInitStruct.OCPolarity = ATIM_OCPOLARITY_INVERT;
         ATIM_OC1BInit(&ATIM_OCInitStruct);
         ATIM_OC2BInit(&ATIM_OCInitStruct);

@@ -10,8 +10,9 @@ int main()
 
         if (DelayNonBlockMS(tBlink, 500))
         {
-            // LedTgl(LED1);
+            LedTgl(LED1);
             tBlink = HAL_GetTick();
+            UartDmaTx("hello\r\n", 7);
         }
 
         static tick_t tAdcLog = 0;
@@ -27,8 +28,6 @@ int main()
                 MotorRun();
             }
         }
-
-        sss();
     }
 }
 
