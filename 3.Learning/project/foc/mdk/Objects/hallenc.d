@@ -38,3 +38,17 @@
 .\objects\hallenc.o: ..\..\..\fwlib\inc\cw32f030_uart.h
 .\objects\hallenc.o: ..\..\..\fwlib\inc\cw32f030_wwdt.h
 .\objects\hallenc.o: ..\..\..\board\pinmap.h
+.\objects\hallenc.o: ..\..\..\board\foc/foc.h
+.\objects\hallenc.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+.\objects\hallenc.o: ..\..\..\board\board.h
+.\objects\hallenc.o: ..\code\inc\board_conf.h
+.\objects\hallenc.o: ..\..\..\board\sys/sleep.h
+.\objects\hallenc.o: ..\..\..\board\bsp/clk/sysclk.h
+.\objects\hallenc.o: ..\..\..\board\bsp/uart/uart.h
+.\objects\hallenc.o: ..\..\..\board\bsp/gpio/led.h
+.\objects\hallenc.o: ..\..\..\board\bsp/gpio/key.h
+.\objects\hallenc.o: ..\..\..\board\bsp/gpio/beep.h
+.\objects\hallenc.o: ..\..\..\board\bsp/adc/ntc.h
+.\objects\hallenc.o: ..\..\..\board\bsp/adc/pot.h
+.\objects\hallenc.o: ..\..\..\board\bsp/adc/adc.h
+.\objects\hallenc.o: ..\..\..\board\bsp/tim/pwm.h

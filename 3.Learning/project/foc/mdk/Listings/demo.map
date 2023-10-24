@@ -9,60 +9,78 @@ Image Symbol Table
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
     RESET                                    0x00000000   Section      192  startup_cw32f030.o(RESET)
-    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  ldiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uldiv.o ABSOLUTE
+    ../clib/microlib/division.c              0x00000000   Number         0  idiv.o ABSOLUTE
     ../clib/microlib/division.c              0x00000000   Number         0  uidiv.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/errno.c                 0x00000000   Number         0  errno.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12b.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry12a.o ABSOLUTE
     ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
-    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llsshr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llushr.o ABSOLUTE
     ../clib/microlib/longlong.c              0x00000000   Number         0  llshl.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloca.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocra.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  malloc.o ABSOLUTE
+    ../clib/microlib/malloc/malloc.c         0x00000000   Number         0  mallocr.o ABSOLUTE
+    ../clib/microlib/malloc/mvars.c          0x00000000   Number         0  mvars.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf4.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf5.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf6.o ABSOLUTE
-    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf7.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfa.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf8.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf0.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf1.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf2.o ABSOLUTE
+    ../clib/microlib/printf/printf.c         0x00000000   Number         0  printf3.o ABSOLUTE
     ../clib/microlib/printf/printf.c         0x00000000   Number         0  printfb.o ABSOLUTE
     ../clib/microlib/printf/stubs.s          0x00000000   Number         0  stubs.o ABSOLUTE
     ../clib/microlib/stdio/streams.c         0x00000000   Number         0  stdout.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpya.o ABSOLUTE
     ../clib/microlib/string/memcpy.c         0x00000000   Number         0  memcpyb.o ABSOLUTE
+    ../clib/microlib/string/memset.c         0x00000000   Number         0  memseta.o ABSOLUTE
     ../clib/microlib/stubs.s                 0x00000000   Number         0  iusefp.o ABSOLUTE
+    ../fplib/microlib/d2f.c                  0x00000000   Number         0  d2f.o ABSOLUTE
     ../fplib/microlib/f2d.c                  0x00000000   Number         0  f2d.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  fadd.o ABSOLUTE
     ../fplib/microlib/fpadd.c                0x00000000   Number         0  dadd.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  fdiv.o ABSOLUTE
     ../fplib/microlib/fpdiv.c                0x00000000   Number         0  ddiv.o ABSOLUTE
-    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
-    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
-    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  fepilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  ffixui.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixi.o ABSOLUTE
+    ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixui.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  dfltui.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  ffltui.o ABSOLUTE
     ../fplib/microlib/fpflt.c                0x00000000   Number         0  fflti.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  fmul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
+    ../fplib/microlib/fpscalb.c              0x00000000   Number         0  dscalb.o ABSOLUTE
     ../fplib/microlib/fpscalb.c              0x00000000   Number         0  fscalb.o ABSOLUTE
+    ../mathlib/atan.c                        0x00000000   Number         0  atan_x.o ABSOLUTE
+    ../mathlib/atan.c                        0x00000000   Number         0  atan.o ABSOLUTE
+    ../mathlib/atan2.c                       0x00000000   Number         0  atan2.o ABSOLUTE
+    ../mathlib/atan2.c                       0x00000000   Number         0  atan2_x.o ABSOLUTE
+    ../mathlib/dunder.c                      0x00000000   Number         0  dunder.o ABSOLUTE
+    ../mathlib/fpclassify.c                  0x00000000   Number         0  fpclassify.o ABSOLUTE
+    ../mathlib/poly.c                        0x00000000   Number         0  poly.o ABSOLUTE
+    ../mathlib/qnan.c                        0x00000000   Number         0  qnan.o ABSOLUTE
     ..\..\..\board\bsp\adc\adc.c             0x00000000   Number         0  adc.o ABSOLUTE
     ..\..\..\board\bsp\adc\ntc.c             0x00000000   Number         0  ntc.o ABSOLUTE
     ..\..\..\board\bsp\adc\pot.c             0x00000000   Number         0  pot.o ABSOLUTE
@@ -73,6 +91,8 @@ Image Symbol Table
     ..\..\..\board\bsp\tim\hallEnc.c         0x00000000   Number         0  hallenc.o ABSOLUTE
     ..\..\..\board\bsp\tim\pwm.c             0x00000000   Number         0  pwm.o ABSOLUTE
     ..\..\..\board\bsp\uart\uart.c           0x00000000   Number         0  uart.o ABSOLUTE
+    ..\..\..\board\foc\foc.c                 0x00000000   Number         0  foc.o ABSOLUTE
+    ..\..\..\board\foc\pid.c                 0x00000000   Number         0  pid.o ABSOLUTE
     ..\..\..\board\sys\sleep.c               0x00000000   Number         0  sleep.o ABSOLUTE
     ..\..\..\board\sys\syscall.c             0x00000000   Number         0  syscall.o ABSOLUTE
     ..\..\..\fwlib\src\cw32f030_adc.c        0x00000000   Number         0  cw32f030_adc.o ABSOLUTE
@@ -138,6 +158,7 @@ Image Symbol Table
     ..\code\src\interrupts_cw32f030.c        0x00000000   Number         0  interrupts_cw32f030.o ABSOLUTE
     ..\code\src\main.c                       0x00000000   Number         0  main.o ABSOLUTE
     ..\code\src\startup_cw32f030.s           0x00000000   Number         0  startup_cw32f030.o ABSOLUTE
+    cdcmple.s                                0x00000000   Number         0  cdcmple.o ABSOLUTE
     cdrcmple.s                               0x00000000   Number         0  cdrcmple.o ABSOLUTE
     dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
     handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
@@ -156,162 +177,188 @@ Image Symbol Table
     .text                                    0x000000d8   Section       60  startup_cw32f030.o(.text)
     .text                                    0x00000114   Section        0  uidiv.o(.text)
     .text                                    0x00000140   Section        0  memcpya.o(.text)
-    .text                                    0x00000164   Section        0  fadd.o(.text)
-    .text                                    0x00000216   Section        0  fmul.o(.text)
-    .text                                    0x00000290   Section        0  fdiv.o(.text)
-    .text                                    0x0000030c   Section        0  fscalb.o(.text)
-    .text                                    0x00000324   Section        0  dadd.o(.text)
-    .text                                    0x0000048c   Section        0  dmul.o(.text)
-    .text                                    0x0000055c   Section        0  ddiv.o(.text)
-    .text                                    0x0000064c   Section        0  ffltui.o(.text)
-    .text                                    0x0000065a   Section        0  ffixui.o(.text)
-    .text                                    0x00000684   Section        0  dfixui.o(.text)
-    .text                                    0x000006c0   Section        0  f2d.o(.text)
-    .text                                    0x000006e8   Section        0  uldiv.o(.text)
-    .text                                    0x00000748   Section        0  llshl.o(.text)
-    .text                                    0x00000768   Section        0  llushr.o(.text)
-    .text                                    0x0000078a   Section        0  llsshr.o(.text)
-    .text                                    0x000007b0   Section        0  fepilogue.o(.text)
-    .text                                    0x000007b0   Section        0  iusefp.o(.text)
-    .text                                    0x00000832   Section        0  depilogue.o(.text)
-    .text                                    0x000008f0   Section        0  dfixul.o(.text)
-    .text                                    0x00000930   Section       40  cdrcmple.o(.text)
-    .text                                    0x00000958   Section       36  init.o(.text)
-    i.ADC_BufEnSingleCh                      0x0000097c   Section        0  cw32f030_adc.o(i.ADC_BufEnSingleCh)
-    i.ADC_ClearITPendingBit                  0x000009b0   Section        0  cw32f030_adc.o(i.ADC_ClearITPendingBit)
-    i.ADC_Enable                             0x00000a10   Section        0  cw32f030_adc.o(i.ADC_Enable)
-    i.ADC_GetConversionValue                 0x00000a2c   Section        0  cw32f030_adc.o(i.ADC_GetConversionValue)
-    i.ADC_GetITStatus                        0x00000a38   Section        0  cw32f030_adc.o(i.ADC_GetITStatus)
-    i.ADC_IRQHandler                         0x00000a98   Section        0  interrupts_cw32f030.o(i.ADC_IRQHandler)
-    i.ADC_Init                               0x00000a9c   Section        0  cw32f030_adc.o(i.ADC_Init)
-    i.ADC_SingleChCommon                     0x00000c34   Section        0  cw32f030_adc.o(i.ADC_SingleChCommon)
-    i.ADC_SingleChOneModeCfg                 0x00000cf4   Section        0  cw32f030_adc.o(i.ADC_SingleChOneModeCfg)
-    i.ADC_SoftwareStartConvCmd               0x00000d0c   Section        0  cw32f030_adc.o(i.ADC_SoftwareStartConvCmd)
-    i.ADC_WdtConfig                          0x00000d5c   Section        0  cw32f030_adc.o(i.ADC_WdtConfig)
-    i.AWT_IRQHandler                         0x00000e98   Section        0  interrupts_cw32f030.o(i.AWT_IRQHandler)
-    i.AdConv                                 0x00000e9c   Section        0  adc.o(i.AdConv)
-    i.AdcInit                                0x00000eb8   Section        0  adc.o(i.AdcInit)
-    i.AdcRead                                0x00000f00   Section        0  adc.o(i.AdcRead)
-    i.BTIM2_IRQHandler                       0x00000f1e   Section        0  interrupts_cw32f030.o(i.BTIM2_IRQHandler)
-    i.BTIM3_IRQHandler                       0x00000f20   Section        0  interrupts_cw32f030.o(i.BTIM3_IRQHandler)
-    i.BeepInit                               0x00000f24   Section        0  beep.o(i.BeepInit)
-    i.BeepOff                                0x00000f4c   Section        0  beep.o(i.BeepOff)
-    i.BoardInit                              0x00000f60   Section        0  main.o(i.BoardInit)
-    i.DMACH23_IRQHandler                     0x00000fa8   Section        0  interrupts_cw32f030.o(i.DMACH23_IRQHandler)
-    i.DMACH45_IRQHandler                     0x00000faa   Section        0  interrupts_cw32f030.o(i.DMACH45_IRQHandler)
-    i.DelayInit                              0x00000fac   Section        0  sleep.o(i.DelayInit)
-    i.DelayNonBlock                          0x00000fc4   Section        0  sleep.o(i.DelayNonBlock)
-    i.FAULT_IRQHandler                       0x00000fdc   Section        0  interrupts_cw32f030.o(i.FAULT_IRQHandler)
-    i.FLASHRAM_IRQHandler                    0x00000fde   Section        0  interrupts_cw32f030.o(i.FLASHRAM_IRQHandler)
-    i.FLASH_SetLatency                       0x00000fe0   Section        0  cw32f030_flash.o(i.FLASH_SetLatency)
-    i.GPIOA_IRQHandler                       0x00001044   Section        0  interrupts_cw32f030.o(i.GPIOA_IRQHandler)
-    i.GPIOB_IRQHandler                       0x00001046   Section        0  interrupts_cw32f030.o(i.GPIOB_IRQHandler)
-    i.GPIOC_IRQHandler                       0x00001048   Section        0  interrupts_cw32f030.o(i.GPIOC_IRQHandler)
-    i.GPIOF_IRQHandler                       0x0000104a   Section        0  interrupts_cw32f030.o(i.GPIOF_IRQHandler)
-    i.GPIO_Init                              0x0000104c   Section        0  cw32f030_gpio.o(i.GPIO_Init)
-    i.GPIO_ReadPin                           0x00001130   Section        0  cw32f030_gpio.o(i.GPIO_ReadPin)
-    i.GPIO_TogglePin                         0x0000113a   Section        0  cw32f030_gpio.o(i.GPIO_TogglePin)
-    i.GPIO_WritePin                          0x0000113e   Section        0  cw32f030_gpio.o(i.GPIO_WritePin)
-    i.GTIM1_IRQHandler                       0x0000114a   Section        0  interrupts_cw32f030.o(i.GTIM1_IRQHandler)
-    i.GTIM2_IRQHandler                       0x0000114c   Section        0  hallenc.o(i.GTIM2_IRQHandler)
-    i.GTIM3_IRQHandler                       0x00001180   Section        0  interrupts_cw32f030.o(i.GTIM3_IRQHandler)
-    i.GTIM4_IRQHandler                       0x00001182   Section        0  interrupts_cw32f030.o(i.GTIM4_IRQHandler)
-    i.GTIM_ClearITPendingBit                 0x00001184   Section        0  cw32f030_gtim.o(i.GTIM_ClearITPendingBit)
-    i.GTIM_Cmd                               0x00001204   Section        0  cw32f030_gtim.o(i.GTIM_Cmd)
-    i.GTIM_ICInit                            0x00001284   Section        0  cw32f030_gtim.o(i.GTIM_ICInit)
-    i.GTIM_ITConfig                          0x0000137c   Section        0  cw32f030_gtim.o(i.GTIM_ITConfig)
-    i.GTIM_TimeBaseInit                      0x00001418   Section        0  cw32f030_gtim.o(i.GTIM_TimeBaseInit)
-    i.GetTick                                0x00001548   Section        0  cw32f030_systick.o(i.GetTick)
-    i.HAL_GetTick                            0x00001554   Section        0  sleep.o(i.HAL_GetTick)
-    i.HallEncGetAngle                        0x0000155c   Section        0  hallenc.o(i.HallEncGetAngle)
-    i.HallEncInit                            0x000015b4   Section        0  hallenc.o(i.HallEncInit)
-    i.HardFault_Handler                      0x000016b4   Section        0  interrupts_cw32f030.o(i.HardFault_Handler)
-    i.I2C1_IRQHandler                        0x000016b6   Section        0  interrupts_cw32f030.o(i.I2C1_IRQHandler)
-    i.I2C2_IRQHandler                        0x000016b8   Section        0  interrupts_cw32f030.o(i.I2C2_IRQHandler)
-    i.InitTick                               0x000016bc   Section        0  cw32f030_systick.o(i.InitTick)
-    i.KeyInit                                0x00001714   Section        0  key.o(i.KeyInit)
-    i.LVD_IRQHandler                         0x00001768   Section        0  interrupts_cw32f030.o(i.LVD_IRQHandler)
-    i.LedInit                                0x0000176c   Section        0  led.o(i.LedInit)
-    i.LedOff                                 0x000017d8   Section        0  led.o(i.LedOff)
-    i.LedTgl                                 0x0000180c   Section        0  led.o(i.LedTgl)
-    i.NMI_Handler                            0x0000183c   Section        0  interrupts_cw32f030.o(i.NMI_Handler)
-    i.NtcInit                                0x00001840   Section        0  ntc.o(i.NtcInit)
-    i.PendSV_Handler                         0x00001864   Section        0  interrupts_cw32f030.o(i.PendSV_Handler)
-    i.PotInit                                0x00001868   Section        0  pot.o(i.PotInit)
-    i.PwmInit                                0x0000188c   Section        0  pwm.o(i.PwmInit)
-    i.RCC_AHBPeriphClk_Enable                0x00001890   Section        0  cw32f030_rcc.o(i.RCC_AHBPeriphClk_Enable)
-    i.RCC_APBPeriphClk_Enable1               0x000018ec   Section        0  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable1)
-    i.RCC_APBPeriphClk_Enable2               0x00001948   Section        0  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable2)
-    i.RCC_HCLKPRS_Config                     0x000019a4   Section        0  cw32f030_rcc.o(i.RCC_HCLKPRS_Config)
-    i.RCC_HSI_Enable                         0x00001a10   Section        0  cw32f030_rcc.o(i.RCC_HSI_Enable)
-    i.RCC_IRQHandler                         0x00001a90   Section        0  interrupts_cw32f030.o(i.RCC_IRQHandler)
-    i.RCC_PCLKPRS_Config                     0x00001a94   Section        0  cw32f030_rcc.o(i.RCC_PCLKPRS_Config)
-    i.RCC_PLL_Enable                         0x00001af0   Section        0  cw32f030_rcc.o(i.RCC_PLL_Enable)
-    i.RCC_SysClk_Switch                      0x00001c08   Section        0  cw32f030_rcc.o(i.RCC_SysClk_Switch)
-    i.RCC_Sysctrl_GetHClkFreq                0x00001c88   Section        0  cw32f030_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
-    i.RCC_SystemCoreClockUpdate              0x00001d04   Section        0  cw32f030_rcc.o(i.RCC_SystemCoreClockUpdate)
-    i.RTC_IRQHandler                         0x00001d10   Section        0  interrupts_cw32f030.o(i.RTC_IRQHandler)
-    i.SPI1_IRQHandler                        0x00001d12   Section        0  interrupts_cw32f030.o(i.SPI1_IRQHandler)
-    i.SPI2_IRQHandler                        0x00001d14   Section        0  interrupts_cw32f030.o(i.SPI2_IRQHandler)
-    i.SVC_Handler                            0x00001d16   Section        0  interrupts_cw32f030.o(i.SVC_Handler)
-    i.SysTick_Handler                        0x00001d18   Section        0  cw32f030_systick.o(i.SysTick_Handler)
-    i.SysclkInit                             0x00001d28   Section        0  sysclk.o(i.SysclkInit)
-    i.SystemInit                             0x00001d70   Section        0  system_cw32f030.o(i.SystemInit)
-    i.UART1_IRQHandler                       0x00001dac   Section        0  interrupts_cw32f030.o(i.UART1_IRQHandler)
-    i.UART2_IRQHandler                       0x00001dae   Section        0  interrupts_cw32f030.o(i.UART2_IRQHandler)
-    i.UART3_IRQHandler                       0x00001db0   Section        0  interrupts_cw32f030.o(i.UART3_IRQHandler)
-    i.USART_GetFlagStatus                    0x00001db4   Section        0  cw32f030_uart.o(i.USART_GetFlagStatus)
-    i.USART_Init                             0x00001e24   Section        0  cw32f030_uart.o(i.USART_Init)
-    i.USART_SendData_8bit                    0x00002020   Section        0  cw32f030_uart.o(i.USART_SendData_8bit)
-    i.UartConfig                             0x00002074   Section        0  uart.o(i.UartConfig)
-    i.UartInit                               0x00002084   Section        0  uart.o(i.UartInit)
-    i.VC1_IRQHandler                         0x000020e8   Section        0  interrupts_cw32f030.o(i.VC1_IRQHandler)
-    i.VC2_IRQHandler                         0x000020ea   Section        0  interrupts_cw32f030.o(i.VC2_IRQHandler)
-    i.WDT_IRQHandler                         0x000020ec   Section        0  interrupts_cw32f030.o(i.WDT_IRQHandler)
-    i.__0printf                              0x000020f0   Section        0  printfa.o(i.__0printf)
-    i.__ARM_clz                              0x00002110   Section        0  depilogue.o(i.__ARM_clz)
-    i.__ARM_common_switch8                   0x0000213e   Section        0  cw32f030_i2c.o(i.__ARM_common_switch8)
-    i.__NVIC_SetPriority                     0x00002158   Section        0  cw32f030_systick.o(i.__NVIC_SetPriority)
-    __NVIC_SetPriority                       0x00002159   Thumb Code    60  cw32f030_systick.o(i.__NVIC_SetPriority)
-    i.__scatterload_copy                     0x0000219c   Section       14  handlers.o(i.__scatterload_copy)
-    i.__scatterload_null                     0x000021aa   Section        2  handlers.o(i.__scatterload_null)
-    i.__scatterload_zeroinit                 0x000021ac   Section       14  handlers.o(i.__scatterload_zeroinit)
-    i._fp_digits                             0x000021bc   Section        0  printfa.o(i._fp_digits)
-    _fp_digits                               0x000021bd   Thumb Code   344  printfa.o(i._fp_digits)
-    i._printf_core                           0x00002330   Section        0  printfa.o(i._printf_core)
-    _printf_core                             0x00002331   Thumb Code  1760  printfa.o(i._printf_core)
-    i._printf_post_padding                   0x00002a20   Section        0  printfa.o(i._printf_post_padding)
-    _printf_post_padding                     0x00002a21   Thumb Code    32  printfa.o(i._printf_post_padding)
-    i._printf_pre_padding                    0x00002a40   Section        0  printfa.o(i._printf_pre_padding)
-    _printf_pre_padding                      0x00002a41   Thumb Code    44  printfa.o(i._printf_pre_padding)
-    i.assert_failed                          0x00002a6c   Section        0  main.o(i.assert_failed)
-    i.fputc                                  0x00002a70   Section        0  uart.o(i.fputc)
-    i.main                                   0x00002aac   Section        0  main.o(i.main)
-    .constdata                               0x00002b0c   Section       24  main.o(.constdata)
-    .constdata                               0x00002b24   Section       16  key.o(.constdata)
-    .constdata                               0x00002b34   Section       16  beep.o(.constdata)
-    .constdata                               0x00002b44   Section      212  ntc.o(.constdata)
-    tbl                                      0x00002b54   Data         196  ntc.o(.constdata)
-    .constdata                               0x00002c18   Section       16  pot.o(.constdata)
-    .constdata                               0x00002c28   Section       16  led.o(.constdata)
-    .constdata                               0x00002c38   Section       64  hallenc.o(.constdata)
-    steps                                    0x00002c6c   Data          12  hallenc.o(.constdata)
-    .constdata                               0x00002c78   Section       16  uart.o(.constdata)
-    .constdata                               0x00002c88   Section      100  cw32f030_rcc.o(.constdata)
+    .text                                    0x00000164   Section        0  memseta.o(.text)
+    .text                                    0x00000188   Section        0  fadd.o(.text)
+    .text                                    0x0000023a   Section        0  fmul.o(.text)
+    .text                                    0x000002b4   Section        0  fdiv.o(.text)
+    .text                                    0x00000330   Section        0  fscalb.o(.text)
+    .text                                    0x00000348   Section        0  dadd.o(.text)
+    .text                                    0x000004b0   Section        0  dmul.o(.text)
+    .text                                    0x00000580   Section        0  ddiv.o(.text)
+    .text                                    0x00000670   Section        0  fflti.o(.text)
+    .text                                    0x00000686   Section        0  ffltui.o(.text)
+    .text                                    0x00000694   Section        0  ffixui.o(.text)
+    .text                                    0x000006bc   Section        0  dfixi.o(.text)
+    .text                                    0x00000704   Section        0  dfixui.o(.text)
+    .text                                    0x00000740   Section        0  f2d.o(.text)
+    .text                                    0x00000768   Section        0  d2f.o(.text)
+    .text                                    0x000007a0   Section        0  llshl.o(.text)
+    .text                                    0x000007c0   Section        0  llushr.o(.text)
+    .text                                    0x000007e2   Section        0  llsshr.o(.text)
+    .text                                    0x00000808   Section        0  fepilogue.o(.text)
+    .text                                    0x00000808   Section        0  iusefp.o(.text)
+    .text                                    0x0000088a   Section        0  depilogue.o(.text)
+    .text                                    0x00000948   Section       40  cdcmple.o(.text)
+    .text                                    0x00000970   Section       36  init.o(.text)
+    .text                                    0x00000994   Section        0  dscalb.o(.text)
+    i.ADC_BufEnSingleCh                      0x000009c0   Section        0  cw32f030_adc.o(i.ADC_BufEnSingleCh)
+    i.ADC_Enable                             0x000009f4   Section        0  cw32f030_adc.o(i.ADC_Enable)
+    i.ADC_GetITStatus                        0x00000a10   Section        0  cw32f030_adc.o(i.ADC_GetITStatus)
+    i.ADC_IRQHandler                         0x00000a70   Section        0  interrupts_cw32f030.o(i.ADC_IRQHandler)
+    i.ADC_Init                               0x00000a74   Section        0  cw32f030_adc.o(i.ADC_Init)
+    i.ADC_SingleChCommon                     0x00000c0c   Section        0  cw32f030_adc.o(i.ADC_SingleChCommon)
+    i.ADC_SingleChOneModeCfg                 0x00000ccc   Section        0  cw32f030_adc.o(i.ADC_SingleChOneModeCfg)
+    i.ADC_WdtConfig                          0x00000ce4   Section        0  cw32f030_adc.o(i.ADC_WdtConfig)
+    i.ATIM_Cmd                               0x00000e20   Section        0  cw32f030_atim.o(i.ATIM_Cmd)
+    i.ATIM_CtrlPWMOutputs                    0x00000e38   Section        0  cw32f030_atim.o(i.ATIM_CtrlPWMOutputs)
+    i.ATIM_Init                              0x00000e88   Section        0  cw32f030_atim.o(i.ATIM_Init)
+    i.ATIM_OC1AInit                          0x00000f84   Section        0  cw32f030_atim.o(i.ATIM_OC1AInit)
+    i.ATIM_OC1BInit                          0x00001074   Section        0  cw32f030_atim.o(i.ATIM_OC1BInit)
+    i.ATIM_OC2AInit                          0x0000115c   Section        0  cw32f030_atim.o(i.ATIM_OC2AInit)
+    i.ATIM_OC2BInit                          0x00001204   Section        0  cw32f030_atim.o(i.ATIM_OC2BInit)
+    i.ATIM_OC3AInit                          0x000012ec   Section        0  cw32f030_atim.o(i.ATIM_OC3AInit)
+    i.ATIM_OC3BInit                          0x000013e0   Section        0  cw32f030_atim.o(i.ATIM_OC3BInit)
+    i.ATIM_PWMOutputConfig                   0x000014c8   Section        0  cw32f030_atim.o(i.ATIM_PWMOutputConfig)
+    i.ATIM_SetCompare1A                      0x00001554   Section        0  cw32f030_atim.o(i.ATIM_SetCompare1A)
+    i.ATIM_SetCompare2A                      0x00001560   Section        0  cw32f030_atim.o(i.ATIM_SetCompare2A)
+    i.ATIM_SetCompare3A                      0x0000156c   Section        0  cw32f030_atim.o(i.ATIM_SetCompare3A)
+    i.AWT_IRQHandler                         0x00001578   Section        0  interrupts_cw32f030.o(i.AWT_IRQHandler)
+    i.AdcInit                                0x0000157c   Section        0  adc.o(i.AdcInit)
+    i.BTIM2_IRQHandler                       0x000015c4   Section        0  interrupts_cw32f030.o(i.BTIM2_IRQHandler)
+    i.BTIM3_IRQHandler                       0x000015c6   Section        0  interrupts_cw32f030.o(i.BTIM3_IRQHandler)
+    i.BeepInit                               0x000015c8   Section        0  beep.o(i.BeepInit)
+    i.BeepOff                                0x000015f0   Section        0  beep.o(i.BeepOff)
+    i.BoardInit                              0x00001604   Section        0  main.o(i.BoardInit)
+    i.DMACH23_IRQHandler                     0x0000164c   Section        0  interrupts_cw32f030.o(i.DMACH23_IRQHandler)
+    i.DMACH45_IRQHandler                     0x0000164e   Section        0  interrupts_cw32f030.o(i.DMACH45_IRQHandler)
+    i.DelayInit                              0x00001650   Section        0  sleep.o(i.DelayInit)
+    i.DelayNonBlock                          0x00001668   Section        0  sleep.o(i.DelayNonBlock)
+    i.FAULT_IRQHandler                       0x00001680   Section        0  interrupts_cw32f030.o(i.FAULT_IRQHandler)
+    i.FLASHRAM_IRQHandler                    0x00001682   Section        0  interrupts_cw32f030.o(i.FLASHRAM_IRQHandler)
+    i.FLASH_SetLatency                       0x00001684   Section        0  cw32f030_flash.o(i.FLASH_SetLatency)
+    i.GPIOA_IRQHandler                       0x000016e8   Section        0  interrupts_cw32f030.o(i.GPIOA_IRQHandler)
+    i.GPIOB_IRQHandler                       0x000016ea   Section        0  interrupts_cw32f030.o(i.GPIOB_IRQHandler)
+    i.GPIOC_IRQHandler                       0x000016ec   Section        0  interrupts_cw32f030.o(i.GPIOC_IRQHandler)
+    i.GPIOF_IRQHandler                       0x000016ee   Section        0  interrupts_cw32f030.o(i.GPIOF_IRQHandler)
+    i.GPIO_Init                              0x000016f0   Section        0  cw32f030_gpio.o(i.GPIO_Init)
+    i.GPIO_ReadPin                           0x000017d4   Section        0  cw32f030_gpio.o(i.GPIO_ReadPin)
+    i.GPIO_WritePin                          0x000017de   Section        0  cw32f030_gpio.o(i.GPIO_WritePin)
+    i.GTIM1_IRQHandler                       0x000017ea   Section        0  interrupts_cw32f030.o(i.GTIM1_IRQHandler)
+    i.GTIM2_IRQHandler                       0x000017ec   Section        0  hallenc.o(i.GTIM2_IRQHandler)
+    i.GTIM3_IRQHandler                       0x00001820   Section        0  interrupts_cw32f030.o(i.GTIM3_IRQHandler)
+    i.GTIM4_IRQHandler                       0x00001822   Section        0  interrupts_cw32f030.o(i.GTIM4_IRQHandler)
+    i.GTIM_ClearITPendingBit                 0x00001824   Section        0  cw32f030_gtim.o(i.GTIM_ClearITPendingBit)
+    i.GTIM_Cmd                               0x000018a4   Section        0  cw32f030_gtim.o(i.GTIM_Cmd)
+    i.GTIM_ICInit                            0x00001924   Section        0  cw32f030_gtim.o(i.GTIM_ICInit)
+    i.GTIM_ITConfig                          0x00001a1c   Section        0  cw32f030_gtim.o(i.GTIM_ITConfig)
+    i.GTIM_TimeBaseInit                      0x00001ab8   Section        0  cw32f030_gtim.o(i.GTIM_TimeBaseInit)
+    i.GetTick                                0x00001be8   Section        0  cw32f030_systick.o(i.GetTick)
+    i.HAL_GetTick                            0x00001bf4   Section        0  sleep.o(i.HAL_GetTick)
+    i.HallEncInit                            0x00001bfc   Section        0  hallenc.o(i.HallEncInit)
+    i.HallEncUpdate                          0x00001cf8   Section        0  hallenc.o(i.HallEncUpdate)
+    i.HardFault_Handler                      0x00001d50   Section        0  interrupts_cw32f030.o(i.HardFault_Handler)
+    i.I2C1_IRQHandler                        0x00001d52   Section        0  interrupts_cw32f030.o(i.I2C1_IRQHandler)
+    i.I2C2_IRQHandler                        0x00001d54   Section        0  interrupts_cw32f030.o(i.I2C2_IRQHandler)
+    i.InitTick                               0x00001d58   Section        0  cw32f030_systick.o(i.InitTick)
+    i.KeyInit                                0x00001db0   Section        0  key.o(i.KeyInit)
+    i.KeyIsPress                             0x00001e04   Section        0  key.o(i.KeyIsPress)
+    i.LVD_IRQHandler                         0x00001e38   Section        0  interrupts_cw32f030.o(i.LVD_IRQHandler)
+    i.LedInit                                0x00001e3c   Section        0  led.o(i.LedInit)
+    i.LedOff                                 0x00001ea8   Section        0  led.o(i.LedOff)
+    i.LedOn                                  0x00001edc   Section        0  led.o(i.LedOn)
+    i.MotorRun                               0x00001f14   Section        0  hallenc.o(i.MotorRun)
+    i.NMI_Handler                            0x00001f84   Section        0  interrupts_cw32f030.o(i.NMI_Handler)
+    i.NtcInit                                0x00001f88   Section        0  ntc.o(i.NtcInit)
+    i.PendSV_Handler                         0x00001fac   Section        0  interrupts_cw32f030.o(i.PendSV_Handler)
+    i.PotInit                                0x00001fb0   Section        0  pot.o(i.PotInit)
+    i.PwmInit                                0x00001fd4   Section        0  pwm.o(i.PwmInit)
+    i.RCC_AHBPeriphClk_Enable                0x000020e8   Section        0  cw32f030_rcc.o(i.RCC_AHBPeriphClk_Enable)
+    i.RCC_APBPeriphClk_Enable1               0x00002144   Section        0  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable1)
+    i.RCC_APBPeriphClk_Enable2               0x000021a0   Section        0  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable2)
+    i.RCC_HCLKPRS_Config                     0x000021fc   Section        0  cw32f030_rcc.o(i.RCC_HCLKPRS_Config)
+    i.RCC_HSI_Enable                         0x00002268   Section        0  cw32f030_rcc.o(i.RCC_HSI_Enable)
+    i.RCC_IRQHandler                         0x000022e8   Section        0  interrupts_cw32f030.o(i.RCC_IRQHandler)
+    i.RCC_PCLKPRS_Config                     0x000022ec   Section        0  cw32f030_rcc.o(i.RCC_PCLKPRS_Config)
+    i.RCC_PLL_Enable                         0x00002348   Section        0  cw32f030_rcc.o(i.RCC_PLL_Enable)
+    i.RCC_SysClk_Switch                      0x00002460   Section        0  cw32f030_rcc.o(i.RCC_SysClk_Switch)
+    i.RCC_Sysctrl_GetHClkFreq                0x000024e0   Section        0  cw32f030_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
+    i.RCC_SystemCoreClockUpdate              0x0000255c   Section        0  cw32f030_rcc.o(i.RCC_SystemCoreClockUpdate)
+    i.RTC_IRQHandler                         0x00002568   Section        0  interrupts_cw32f030.o(i.RTC_IRQHandler)
+    i.SPI1_IRQHandler                        0x0000256a   Section        0  interrupts_cw32f030.o(i.SPI1_IRQHandler)
+    i.SPI2_IRQHandler                        0x0000256c   Section        0  interrupts_cw32f030.o(i.SPI2_IRQHandler)
+    i.SVC_Handler                            0x0000256e   Section        0  interrupts_cw32f030.o(i.SVC_Handler)
+    i.SysTick_Handler                        0x00002570   Section        0  cw32f030_systick.o(i.SysTick_Handler)
+    i.SysclkInit                             0x00002580   Section        0  sysclk.o(i.SysclkInit)
+    i.SystemInit                             0x000025c8   Section        0  system_cw32f030.o(i.SystemInit)
+    i.UART1_IRQHandler                       0x00002604   Section        0  interrupts_cw32f030.o(i.UART1_IRQHandler)
+    i.UART2_IRQHandler                       0x00002606   Section        0  interrupts_cw32f030.o(i.UART2_IRQHandler)
+    i.UART3_IRQHandler                       0x00002608   Section        0  interrupts_cw32f030.o(i.UART3_IRQHandler)
+    i.USART_Init                             0x0000260c   Section        0  cw32f030_uart.o(i.USART_Init)
+    i.UartConfig                             0x00002808   Section        0  uart.o(i.UartConfig)
+    i.UartInit                               0x00002818   Section        0  uart.o(i.UartInit)
+    i.VC1_IRQHandler                         0x0000287c   Section        0  interrupts_cw32f030.o(i.VC1_IRQHandler)
+    i.VC2_IRQHandler                         0x0000287e   Section        0  interrupts_cw32f030.o(i.VC2_IRQHandler)
+    i.WDT_IRQHandler                         0x00002880   Section        0  interrupts_cw32f030.o(i.WDT_IRQHandler)
+    i.__ARM_clz                              0x00002882   Section        0  depilogue.o(i.__ARM_clz)
+    i.__ARM_common_switch8                   0x000028b0   Section        0  hallenc.o(i.__ARM_common_switch8)
+    i.__ARM_fpclassify                       0x000028cc   Section        0  fpclassify.o(i.__ARM_fpclassify)
+    i.__NVIC_SetPriority                     0x000028f8   Section        0  cw32f030_systick.o(i.__NVIC_SetPriority)
+    __NVIC_SetPriority                       0x000028f9   Thumb Code    60  cw32f030_systick.o(i.__NVIC_SetPriority)
+    i.__kernel_poly                          0x0000293c   Section        0  poly.o(i.__kernel_poly)
+    i.__mathlib_dbl_infnan                   0x000029e8   Section        0  dunder.o(i.__mathlib_dbl_infnan)
+    i.__mathlib_dbl_infnan2                  0x000029f2   Section        0  dunder.o(i.__mathlib_dbl_infnan2)
+    i.__mathlib_dbl_underflow                0x000029fc   Section        0  dunder.o(i.__mathlib_dbl_underflow)
+    i.__scatterload_copy                     0x00002a10   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00002a1e   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00002a20   Section       14  handlers.o(i.__scatterload_zeroinit)
+    i.__set_errno                            0x00002a30   Section        0  errno.o(i.__set_errno)
+    i._normalizeAngle                        0x00002a3c   Section        0  foc.o(i._normalizeAngle)
+    i._sin                                   0x00002a74   Section        0  foc.o(i._sin)
+    i._sqrt_fast                             0x00002b64   Section        0  foc.o(i._sqrt_fast)
+    i.angle_gen                              0x00002b78   Section        0  foc.o(i.angle_gen)
+    i.assert_failed                          0x00002b94   Section        0  main.o(i.assert_failed)
+    i.atan                                   0x00002b98   Section        0  atan.o(i.atan)
+    i.atan2                                  0x00002db4   Section        0  atan2.o(i.atan2)
+    i.main                                   0x00002f50   Section        0  main.o(i.main)
+    i.setPhaseVoltage                        0x00002f98   Section        0  hallenc.o(i.setPhaseVoltage)
+    i.sss                                    0x00003204   Section        0  hallenc.o(i.sss)
+    .constdata                               0x00003278   Section       24  main.o(.constdata)
+    .constdata                               0x00003290   Section       16  key.o(.constdata)
+    .constdata                               0x000032a0   Section       16  beep.o(.constdata)
+    .constdata                               0x000032b0   Section      212  ntc.o(.constdata)
+    tbl                                      0x000032c0   Data         196  ntc.o(.constdata)
+    .constdata                               0x00003384   Section       16  pot.o(.constdata)
+    .constdata                               0x00003394   Section       16  led.o(.constdata)
+    .constdata                               0x000033a4   Section       88  hallenc.o(.constdata)
+    steps                                    0x000033a4   Data           6  hallenc.o(.constdata)
+    .constdata                               0x000033fc   Section       16  uart.o(.constdata)
+    .constdata                               0x0000340c   Section       68  pwm.o(.constdata)
+    .constdata                               0x00003450   Section      800  foc.o(.constdata)
+    .constdata                               0x00003770   Section      100  cw32f030_rcc.o(.constdata)
+    .constdata                               0x000037d8   Section      152  atan.o(.constdata)
+    atanhi                                   0x000037d8   Data          32  atan.o(.constdata)
+    atanlo                                   0x000037f8   Data          32  atan.o(.constdata)
+    aTodd                                    0x00003818   Data          40  atan.o(.constdata)
+    aTeven                                   0x00003840   Data          48  atan.o(.constdata)
+    .constdata                               0x00003870   Section        8  qnan.o(.constdata)
     .data                                    0x20000000   Section        8  main.o(.data)
     tBlink                                   0x20000000   Data           4  main.o(.data)
     tAdcLog                                  0x20000004   Data           4  main.o(.data)
-    .data                                    0x20000008   Section        8  hallenc.o(.data)
-    .data                                    0x20000010   Section       12  cw32f030_systick.o(.data)
-    .data                                    0x2000001c   Section        4  system_cw32f030.o(.data)
-    .data                                    0x20000020   Section        4  stdout.o(.data)
-    STACK                                    0x20000028   Section      512  startup_cw32f030.o(STACK)
+    .data                                    0x20000008   Section       28  hallenc.o(.data)
+    iiiii                                    0x20000009   Data           1  hallenc.o(.data)
+    tAdcLog                                  0x20000010   Data           4  hallenc.o(.data)
+    f32MechAngle                             0x20000014   Data           4  hallenc.o(.data)
+    .data                                    0x20000024   Section       12  cw32f030_systick.o(.data)
+    .data                                    0x20000030   Section        4  system_cw32f030.o(.data)
+    .data                                    0x20000034   Section        4  errno.o(.data)
+    _errno                                   0x20000034   Data           4  errno.o(.data)
+    STACK                                    0x20000038   Section      512  startup_cw32f030.o(STACK)
 
     Global Symbols
 
     Symbol Name                              Value     Ov Type        Size  Object(Section)
 
-    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    BuildAttributes$$THM_ISAv3M$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$ROPI$IEEEX$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
     __ARM_use_no_argv                        0x00000000   Number         0  main.o ABSOLUTE
     __Vectors                                0x00000000   Data           0  startup_cw32f030.o(RESET)
     _printf_a                                0x00000000   Number         0  stubs.o ABSOLUTE
@@ -382,153 +429,184 @@ Image Symbol Table
     __aeabi_memcpy                           0x00000141   Thumb Code    36  memcpya.o(.text)
     __aeabi_memcpy4                          0x00000141   Thumb Code     0  memcpya.o(.text)
     __aeabi_memcpy8                          0x00000141   Thumb Code     0  memcpya.o(.text)
-    __aeabi_fadd                             0x00000165   Thumb Code   162  fadd.o(.text)
-    __aeabi_fsub                             0x00000207   Thumb Code     8  fadd.o(.text)
-    __aeabi_frsub                            0x0000020f   Thumb Code     8  fadd.o(.text)
-    __aeabi_fmul                             0x00000217   Thumb Code   122  fmul.o(.text)
-    __aeabi_fdiv                             0x00000291   Thumb Code   124  fdiv.o(.text)
-    __ARM_scalbnf                            0x0000030d   Thumb Code    24  fscalb.o(.text)
-    scalbnf                                  0x0000030d   Thumb Code     0  fscalb.o(.text)
-    __aeabi_dadd                             0x00000325   Thumb Code   330  dadd.o(.text)
-    __aeabi_dsub                             0x0000046f   Thumb Code    12  dadd.o(.text)
-    __aeabi_drsub                            0x0000047b   Thumb Code    12  dadd.o(.text)
-    __aeabi_dmul                             0x0000048d   Thumb Code   202  dmul.o(.text)
-    __aeabi_ddiv                             0x0000055d   Thumb Code   234  ddiv.o(.text)
-    __aeabi_ui2f                             0x0000064d   Thumb Code    14  ffltui.o(.text)
-    __aeabi_f2uiz                            0x0000065b   Thumb Code    40  ffixui.o(.text)
-    __aeabi_d2uiz                            0x00000685   Thumb Code    50  dfixui.o(.text)
-    __aeabi_f2d                              0x000006c1   Thumb Code    40  f2d.o(.text)
-    __aeabi_uldivmod                         0x000006e9   Thumb Code    96  uldiv.o(.text)
-    __aeabi_llsl                             0x00000749   Thumb Code    32  llshl.o(.text)
-    _ll_shift_l                              0x00000749   Thumb Code     0  llshl.o(.text)
-    __aeabi_llsr                             0x00000769   Thumb Code    34  llushr.o(.text)
-    _ll_ushift_r                             0x00000769   Thumb Code     0  llushr.o(.text)
-    __aeabi_lasr                             0x0000078b   Thumb Code    38  llsshr.o(.text)
-    _ll_sshift_r                             0x0000078b   Thumb Code     0  llsshr.o(.text)
-    __I$use$fp                               0x000007b1   Thumb Code     0  iusefp.o(.text)
-    _float_round                             0x000007b1   Thumb Code    16  fepilogue.o(.text)
-    _float_epilogue                          0x000007c1   Thumb Code   114  fepilogue.o(.text)
-    _double_round                            0x00000833   Thumb Code    26  depilogue.o(.text)
-    _double_epilogue                         0x0000084d   Thumb Code   164  depilogue.o(.text)
-    __aeabi_d2ulz                            0x000008f1   Thumb Code    54  dfixul.o(.text)
-    __aeabi_cdrcmple                         0x00000931   Thumb Code    38  cdrcmple.o(.text)
-    __scatterload                            0x00000959   Thumb Code    28  init.o(.text)
-    __scatterload_rt2                        0x00000959   Thumb Code     0  init.o(.text)
-    ADC_BufEnSingleCh                        0x0000097d   Thumb Code    46  cw32f030_adc.o(i.ADC_BufEnSingleCh)
-    ADC_ClearITPendingBit                    0x000009b1   Thumb Code    54  cw32f030_adc.o(i.ADC_ClearITPendingBit)
-    ADC_Enable                               0x00000a11   Thumb Code    24  cw32f030_adc.o(i.ADC_Enable)
-    ADC_GetConversionValue                   0x00000a2d   Thumb Code     8  cw32f030_adc.o(i.ADC_GetConversionValue)
-    ADC_GetITStatus                          0x00000a39   Thumb Code    56  cw32f030_adc.o(i.ADC_GetITStatus)
-    ADC_IRQHandler                           0x00000a99   Thumb Code     2  interrupts_cw32f030.o(i.ADC_IRQHandler)
-    ADC_Init                                 0x00000a9d   Thumb Code   356  cw32f030_adc.o(i.ADC_Init)
-    ADC_SingleChCommon                       0x00000c35   Thumb Code   152  cw32f030_adc.o(i.ADC_SingleChCommon)
-    ADC_SingleChOneModeCfg                   0x00000cf5   Thumb Code    18  cw32f030_adc.o(i.ADC_SingleChOneModeCfg)
-    ADC_SoftwareStartConvCmd                 0x00000d0d   Thumb Code    40  cw32f030_adc.o(i.ADC_SoftwareStartConvCmd)
-    ADC_WdtConfig                            0x00000d5d   Thumb Code   276  cw32f030_adc.o(i.ADC_WdtConfig)
-    AWT_IRQHandler                           0x00000e99   Thumb Code     2  interrupts_cw32f030.o(i.AWT_IRQHandler)
-    AdConv                                   0x00000e9d   Thumb Code    22  adc.o(i.AdConv)
-    AdcInit                                  0x00000eb9   Thumb Code    66  adc.o(i.AdcInit)
-    AdcRead                                  0x00000f01   Thumb Code    30  adc.o(i.AdcRead)
-    BTIM2_IRQHandler                         0x00000f1f   Thumb Code     2  interrupts_cw32f030.o(i.BTIM2_IRQHandler)
-    BTIM3_IRQHandler                         0x00000f21   Thumb Code     2  interrupts_cw32f030.o(i.BTIM3_IRQHandler)
-    BeepInit                                 0x00000f25   Thumb Code    34  beep.o(i.BeepInit)
-    BeepOff                                  0x00000f4d   Thumb Code    18  beep.o(i.BeepOff)
-    BoardInit                                0x00000f61   Thumb Code    68  main.o(i.BoardInit)
-    DMACH23_IRQHandler                       0x00000fa9   Thumb Code     2  interrupts_cw32f030.o(i.DMACH23_IRQHandler)
-    DMACH45_IRQHandler                       0x00000fab   Thumb Code     2  interrupts_cw32f030.o(i.DMACH45_IRQHandler)
-    DelayInit                                0x00000fad   Thumb Code    16  sleep.o(i.DelayInit)
-    DelayNonBlock                            0x00000fc5   Thumb Code    24  sleep.o(i.DelayNonBlock)
-    FAULT_IRQHandler                         0x00000fdd   Thumb Code     2  interrupts_cw32f030.o(i.FAULT_IRQHandler)
-    FLASHRAM_IRQHandler                      0x00000fdf   Thumb Code     2  interrupts_cw32f030.o(i.FLASHRAM_IRQHandler)
-    FLASH_SetLatency                         0x00000fe1   Thumb Code    50  cw32f030_flash.o(i.FLASH_SetLatency)
-    GPIOA_IRQHandler                         0x00001045   Thumb Code     2  interrupts_cw32f030.o(i.GPIOA_IRQHandler)
-    GPIOB_IRQHandler                         0x00001047   Thumb Code     2  interrupts_cw32f030.o(i.GPIOB_IRQHandler)
-    GPIOC_IRQHandler                         0x00001049   Thumb Code     2  interrupts_cw32f030.o(i.GPIOC_IRQHandler)
-    GPIOF_IRQHandler                         0x0000104b   Thumb Code     2  interrupts_cw32f030.o(i.GPIOF_IRQHandler)
-    GPIO_Init                                0x0000104d   Thumb Code   224  cw32f030_gpio.o(i.GPIO_Init)
-    GPIO_ReadPin                             0x00001131   Thumb Code    10  cw32f030_gpio.o(i.GPIO_ReadPin)
-    GPIO_TogglePin                           0x0000113b   Thumb Code     4  cw32f030_gpio.o(i.GPIO_TogglePin)
-    GPIO_WritePin                            0x0000113f   Thumb Code    12  cw32f030_gpio.o(i.GPIO_WritePin)
-    GTIM1_IRQHandler                         0x0000114b   Thumb Code     2  interrupts_cw32f030.o(i.GTIM1_IRQHandler)
-    GTIM2_IRQHandler                         0x0000114d   Thumb Code    44  hallenc.o(i.GTIM2_IRQHandler)
-    GTIM3_IRQHandler                         0x00001181   Thumb Code     2  interrupts_cw32f030.o(i.GTIM3_IRQHandler)
-    GTIM4_IRQHandler                         0x00001183   Thumb Code     2  interrupts_cw32f030.o(i.GTIM4_IRQHandler)
-    GTIM_ClearITPendingBit                   0x00001185   Thumb Code    72  cw32f030_gtim.o(i.GTIM_ClearITPendingBit)
-    GTIM_Cmd                                 0x00001205   Thumb Code    76  cw32f030_gtim.o(i.GTIM_Cmd)
-    GTIM_ICInit                              0x00001285   Thumb Code   196  cw32f030_gtim.o(i.GTIM_ICInit)
-    GTIM_ITConfig                            0x0000137d   Thumb Code   100  cw32f030_gtim.o(i.GTIM_ITConfig)
-    GTIM_TimeBaseInit                        0x00001419   Thumb Code   246  cw32f030_gtim.o(i.GTIM_TimeBaseInit)
-    GetTick                                  0x00001549   Thumb Code     6  cw32f030_systick.o(i.GetTick)
-    HAL_GetTick                              0x00001555   Thumb Code     8  sleep.o(i.HAL_GetTick)
-    HallEncGetAngle                          0x0000155d   Thumb Code    74  hallenc.o(i.HallEncGetAngle)
-    HallEncInit                              0x000015b5   Thumb Code   236  hallenc.o(i.HallEncInit)
-    HardFault_Handler                        0x000016b5   Thumb Code     2  interrupts_cw32f030.o(i.HardFault_Handler)
-    I2C1_IRQHandler                          0x000016b7   Thumb Code     2  interrupts_cw32f030.o(i.I2C1_IRQHandler)
-    I2C2_IRQHandler                          0x000016b9   Thumb Code     2  interrupts_cw32f030.o(i.I2C2_IRQHandler)
-    InitTick                                 0x000016bd   Thumb Code    74  cw32f030_systick.o(i.InitTick)
-    KeyInit                                  0x00001715   Thumb Code    76  key.o(i.KeyInit)
-    LVD_IRQHandler                           0x00001769   Thumb Code     2  interrupts_cw32f030.o(i.LVD_IRQHandler)
-    LedInit                                  0x0000176d   Thumb Code    94  led.o(i.LedInit)
-    LedOff                                   0x000017d9   Thumb Code    44  led.o(i.LedOff)
-    LedTgl                                   0x0000180d   Thumb Code    40  led.o(i.LedTgl)
-    NMI_Handler                              0x0000183d   Thumb Code     2  interrupts_cw32f030.o(i.NMI_Handler)
-    NtcInit                                  0x00001841   Thumb Code    30  ntc.o(i.NtcInit)
-    PendSV_Handler                           0x00001865   Thumb Code     2  interrupts_cw32f030.o(i.PendSV_Handler)
-    PotInit                                  0x00001869   Thumb Code    28  pot.o(i.PotInit)
-    PwmInit                                  0x0000188d   Thumb Code     2  pwm.o(i.PwmInit)
-    RCC_AHBPeriphClk_Enable                  0x00001891   Thumb Code    42  cw32f030_rcc.o(i.RCC_AHBPeriphClk_Enable)
-    RCC_APBPeriphClk_Enable1                 0x000018ed   Thumb Code    42  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable1)
-    RCC_APBPeriphClk_Enable2                 0x00001949   Thumb Code    42  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable2)
-    RCC_HCLKPRS_Config                       0x000019a5   Thumb Code    60  cw32f030_rcc.o(i.RCC_HCLKPRS_Config)
-    RCC_HSI_Enable                           0x00001a11   Thumb Code    84  cw32f030_rcc.o(i.RCC_HSI_Enable)
-    RCC_IRQHandler                           0x00001a91   Thumb Code     2  interrupts_cw32f030.o(i.RCC_IRQHandler)
-    RCC_PCLKPRS_Config                       0x00001a95   Thumb Code    44  cw32f030_rcc.o(i.RCC_PCLKPRS_Config)
-    RCC_PLL_Enable                           0x00001af1   Thumb Code   222  cw32f030_rcc.o(i.RCC_PLL_Enable)
-    RCC_SysClk_Switch                        0x00001c09   Thumb Code    74  cw32f030_rcc.o(i.RCC_SysClk_Switch)
-    RCC_Sysctrl_GetHClkFreq                  0x00001c89   Thumb Code   104  cw32f030_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
-    RCC_SystemCoreClockUpdate                0x00001d05   Thumb Code     6  cw32f030_rcc.o(i.RCC_SystemCoreClockUpdate)
-    RTC_IRQHandler                           0x00001d11   Thumb Code     2  interrupts_cw32f030.o(i.RTC_IRQHandler)
-    SPI1_IRQHandler                          0x00001d13   Thumb Code     2  interrupts_cw32f030.o(i.SPI1_IRQHandler)
-    SPI2_IRQHandler                          0x00001d15   Thumb Code     2  interrupts_cw32f030.o(i.SPI2_IRQHandler)
-    SVC_Handler                              0x00001d17   Thumb Code     2  interrupts_cw32f030.o(i.SVC_Handler)
-    SysTick_Handler                          0x00001d19   Thumb Code    12  cw32f030_systick.o(i.SysTick_Handler)
-    SysclkInit                               0x00001d29   Thumb Code    60  sysclk.o(i.SysclkInit)
-    SystemInit                               0x00001d71   Thumb Code    46  system_cw32f030.o(i.SystemInit)
-    UART1_IRQHandler                         0x00001dad   Thumb Code     2  interrupts_cw32f030.o(i.UART1_IRQHandler)
-    UART2_IRQHandler                         0x00001daf   Thumb Code     2  interrupts_cw32f030.o(i.UART2_IRQHandler)
-    UART3_IRQHandler                         0x00001db1   Thumb Code     2  interrupts_cw32f030.o(i.UART3_IRQHandler)
-    USART_GetFlagStatus                      0x00001db5   Thumb Code    62  cw32f030_uart.o(i.USART_GetFlagStatus)
-    USART_Init                               0x00001e25   Thumb Code   444  cw32f030_uart.o(i.USART_Init)
-    USART_SendData_8bit                      0x00002021   Thumb Code    36  cw32f030_uart.o(i.USART_SendData_8bit)
-    UartConfig                               0x00002075   Thumb Code    12  uart.o(i.UartConfig)
-    UartInit                                 0x00002085   Thumb Code    90  uart.o(i.UartInit)
-    VC1_IRQHandler                           0x000020e9   Thumb Code     2  interrupts_cw32f030.o(i.VC1_IRQHandler)
-    VC2_IRQHandler                           0x000020eb   Thumb Code     2  interrupts_cw32f030.o(i.VC2_IRQHandler)
-    WDT_IRQHandler                           0x000020ed   Thumb Code     2  interrupts_cw32f030.o(i.WDT_IRQHandler)
-    __0printf                                0x000020f1   Thumb Code    24  printfa.o(i.__0printf)
-    __1printf                                0x000020f1   Thumb Code     0  printfa.o(i.__0printf)
-    __2printf                                0x000020f1   Thumb Code     0  printfa.o(i.__0printf)
-    __c89printf                              0x000020f1   Thumb Code     0  printfa.o(i.__0printf)
-    printf                                   0x000020f1   Thumb Code     0  printfa.o(i.__0printf)
-    __ARM_clz                                0x00002111   Thumb Code    46  depilogue.o(i.__ARM_clz)
-    __ARM_common_switch8                     0x0000213f   Thumb Code    26  cw32f030_i2c.o(i.__ARM_common_switch8)
-    __scatterload_copy                       0x0000219d   Thumb Code    14  handlers.o(i.__scatterload_copy)
-    __scatterload_null                       0x000021ab   Thumb Code     2  handlers.o(i.__scatterload_null)
-    __scatterload_zeroinit                   0x000021ad   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
-    assert_failed                            0x00002a6d   Thumb Code     2  main.o(i.assert_failed)
-    fputc                                    0x00002a71   Thumb Code    54  uart.o(i.fputc)
-    main                                     0x00002aad   Thumb Code    82  main.o(i.main)
-    hsiprs_tbl                               0x00002c88   Data          64  cw32f030_rcc.o(.constdata)
-    Region$$Table$$Base                      0x00002cec   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x00002d0c   Number         0  anon$$obj.o(Region$$Table)
-    u16HallAngle                             0x20000008   Data           2  hallenc.o(.data)
+    __aeabi_memset                           0x00000165   Thumb Code    14  memseta.o(.text)
+    __aeabi_memset4                          0x00000165   Thumb Code     0  memseta.o(.text)
+    __aeabi_memset8                          0x00000165   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr                           0x00000173   Thumb Code     4  memseta.o(.text)
+    __aeabi_memclr4                          0x00000173   Thumb Code     0  memseta.o(.text)
+    __aeabi_memclr8                          0x00000173   Thumb Code     0  memseta.o(.text)
+    _memset$wrapper                          0x00000177   Thumb Code    18  memseta.o(.text)
+    __aeabi_fadd                             0x00000189   Thumb Code   162  fadd.o(.text)
+    __aeabi_fsub                             0x0000022b   Thumb Code     8  fadd.o(.text)
+    __aeabi_frsub                            0x00000233   Thumb Code     8  fadd.o(.text)
+    __aeabi_fmul                             0x0000023b   Thumb Code   122  fmul.o(.text)
+    __aeabi_fdiv                             0x000002b5   Thumb Code   124  fdiv.o(.text)
+    __ARM_scalbnf                            0x00000331   Thumb Code    24  fscalb.o(.text)
+    scalbnf                                  0x00000331   Thumb Code     0  fscalb.o(.text)
+    __aeabi_dadd                             0x00000349   Thumb Code   330  dadd.o(.text)
+    __aeabi_dsub                             0x00000493   Thumb Code    12  dadd.o(.text)
+    __aeabi_drsub                            0x0000049f   Thumb Code    12  dadd.o(.text)
+    __aeabi_dmul                             0x000004b1   Thumb Code   202  dmul.o(.text)
+    __aeabi_ddiv                             0x00000581   Thumb Code   234  ddiv.o(.text)
+    __aeabi_i2f                              0x00000671   Thumb Code    22  fflti.o(.text)
+    __aeabi_ui2f                             0x00000687   Thumb Code    14  ffltui.o(.text)
+    __aeabi_f2uiz                            0x00000695   Thumb Code    40  ffixui.o(.text)
+    __aeabi_d2iz                             0x000006bd   Thumb Code    62  dfixi.o(.text)
+    __aeabi_d2uiz                            0x00000705   Thumb Code    50  dfixui.o(.text)
+    __aeabi_f2d                              0x00000741   Thumb Code    40  f2d.o(.text)
+    __aeabi_d2f                              0x00000769   Thumb Code    56  d2f.o(.text)
+    __aeabi_llsl                             0x000007a1   Thumb Code    32  llshl.o(.text)
+    _ll_shift_l                              0x000007a1   Thumb Code     0  llshl.o(.text)
+    __aeabi_llsr                             0x000007c1   Thumb Code    34  llushr.o(.text)
+    _ll_ushift_r                             0x000007c1   Thumb Code     0  llushr.o(.text)
+    __aeabi_lasr                             0x000007e3   Thumb Code    38  llsshr.o(.text)
+    _ll_sshift_r                             0x000007e3   Thumb Code     0  llsshr.o(.text)
+    __I$use$fp                               0x00000809   Thumb Code     0  iusefp.o(.text)
+    _float_round                             0x00000809   Thumb Code    16  fepilogue.o(.text)
+    _float_epilogue                          0x00000819   Thumb Code   114  fepilogue.o(.text)
+    _double_round                            0x0000088b   Thumb Code    26  depilogue.o(.text)
+    _double_epilogue                         0x000008a5   Thumb Code   164  depilogue.o(.text)
+    __aeabi_cdcmpeq                          0x00000949   Thumb Code     0  cdcmple.o(.text)
+    __aeabi_cdcmple                          0x00000949   Thumb Code    38  cdcmple.o(.text)
+    __scatterload                            0x00000971   Thumb Code    28  init.o(.text)
+    __scatterload_rt2                        0x00000971   Thumb Code     0  init.o(.text)
+    __ARM_scalbn                             0x00000995   Thumb Code    44  dscalb.o(.text)
+    scalbn                                   0x00000995   Thumb Code     0  dscalb.o(.text)
+    ADC_BufEnSingleCh                        0x000009c1   Thumb Code    46  cw32f030_adc.o(i.ADC_BufEnSingleCh)
+    ADC_Enable                               0x000009f5   Thumb Code    24  cw32f030_adc.o(i.ADC_Enable)
+    ADC_GetITStatus                          0x00000a11   Thumb Code    56  cw32f030_adc.o(i.ADC_GetITStatus)
+    ADC_IRQHandler                           0x00000a71   Thumb Code     2  interrupts_cw32f030.o(i.ADC_IRQHandler)
+    ADC_Init                                 0x00000a75   Thumb Code   356  cw32f030_adc.o(i.ADC_Init)
+    ADC_SingleChCommon                       0x00000c0d   Thumb Code   152  cw32f030_adc.o(i.ADC_SingleChCommon)
+    ADC_SingleChOneModeCfg                   0x00000ccd   Thumb Code    18  cw32f030_adc.o(i.ADC_SingleChOneModeCfg)
+    ADC_WdtConfig                            0x00000ce5   Thumb Code   276  cw32f030_adc.o(i.ADC_WdtConfig)
+    ATIM_Cmd                                 0x00000e21   Thumb Code    18  cw32f030_atim.o(i.ATIM_Cmd)
+    ATIM_CtrlPWMOutputs                      0x00000e39   Thumb Code    38  cw32f030_atim.o(i.ATIM_CtrlPWMOutputs)
+    ATIM_Init                                0x00000e89   Thumb Code   206  cw32f030_atim.o(i.ATIM_Init)
+    ATIM_OC1AInit                            0x00000f85   Thumb Code   200  cw32f030_atim.o(i.ATIM_OC1AInit)
+    ATIM_OC1BInit                            0x00001075   Thumb Code   190  cw32f030_atim.o(i.ATIM_OC1BInit)
+    ATIM_OC2AInit                            0x0000115d   Thumb Code   128  cw32f030_atim.o(i.ATIM_OC2AInit)
+    ATIM_OC2BInit                            0x00001205   Thumb Code   192  cw32f030_atim.o(i.ATIM_OC2BInit)
+    ATIM_OC3AInit                            0x000012ed   Thumb Code   204  cw32f030_atim.o(i.ATIM_OC3AInit)
+    ATIM_OC3BInit                            0x000013e1   Thumb Code   192  cw32f030_atim.o(i.ATIM_OC3BInit)
+    ATIM_PWMOutputConfig                     0x000014c9   Thumb Code   100  cw32f030_atim.o(i.ATIM_PWMOutputConfig)
+    ATIM_SetCompare1A                        0x00001555   Thumb Code     6  cw32f030_atim.o(i.ATIM_SetCompare1A)
+    ATIM_SetCompare2A                        0x00001561   Thumb Code     6  cw32f030_atim.o(i.ATIM_SetCompare2A)
+    ATIM_SetCompare3A                        0x0000156d   Thumb Code     6  cw32f030_atim.o(i.ATIM_SetCompare3A)
+    AWT_IRQHandler                           0x00001579   Thumb Code     2  interrupts_cw32f030.o(i.AWT_IRQHandler)
+    AdcInit                                  0x0000157d   Thumb Code    66  adc.o(i.AdcInit)
+    BTIM2_IRQHandler                         0x000015c5   Thumb Code     2  interrupts_cw32f030.o(i.BTIM2_IRQHandler)
+    BTIM3_IRQHandler                         0x000015c7   Thumb Code     2  interrupts_cw32f030.o(i.BTIM3_IRQHandler)
+    BeepInit                                 0x000015c9   Thumb Code    34  beep.o(i.BeepInit)
+    BeepOff                                  0x000015f1   Thumb Code    18  beep.o(i.BeepOff)
+    BoardInit                                0x00001605   Thumb Code    68  main.o(i.BoardInit)
+    DMACH23_IRQHandler                       0x0000164d   Thumb Code     2  interrupts_cw32f030.o(i.DMACH23_IRQHandler)
+    DMACH45_IRQHandler                       0x0000164f   Thumb Code     2  interrupts_cw32f030.o(i.DMACH45_IRQHandler)
+    DelayInit                                0x00001651   Thumb Code    16  sleep.o(i.DelayInit)
+    DelayNonBlock                            0x00001669   Thumb Code    24  sleep.o(i.DelayNonBlock)
+    FAULT_IRQHandler                         0x00001681   Thumb Code     2  interrupts_cw32f030.o(i.FAULT_IRQHandler)
+    FLASHRAM_IRQHandler                      0x00001683   Thumb Code     2  interrupts_cw32f030.o(i.FLASHRAM_IRQHandler)
+    FLASH_SetLatency                         0x00001685   Thumb Code    50  cw32f030_flash.o(i.FLASH_SetLatency)
+    GPIOA_IRQHandler                         0x000016e9   Thumb Code     2  interrupts_cw32f030.o(i.GPIOA_IRQHandler)
+    GPIOB_IRQHandler                         0x000016eb   Thumb Code     2  interrupts_cw32f030.o(i.GPIOB_IRQHandler)
+    GPIOC_IRQHandler                         0x000016ed   Thumb Code     2  interrupts_cw32f030.o(i.GPIOC_IRQHandler)
+    GPIOF_IRQHandler                         0x000016ef   Thumb Code     2  interrupts_cw32f030.o(i.GPIOF_IRQHandler)
+    GPIO_Init                                0x000016f1   Thumb Code   224  cw32f030_gpio.o(i.GPIO_Init)
+    GPIO_ReadPin                             0x000017d5   Thumb Code    10  cw32f030_gpio.o(i.GPIO_ReadPin)
+    GPIO_WritePin                            0x000017df   Thumb Code    12  cw32f030_gpio.o(i.GPIO_WritePin)
+    GTIM1_IRQHandler                         0x000017eb   Thumb Code     2  interrupts_cw32f030.o(i.GTIM1_IRQHandler)
+    GTIM2_IRQHandler                         0x000017ed   Thumb Code    42  hallenc.o(i.GTIM2_IRQHandler)
+    GTIM3_IRQHandler                         0x00001821   Thumb Code     2  interrupts_cw32f030.o(i.GTIM3_IRQHandler)
+    GTIM4_IRQHandler                         0x00001823   Thumb Code     2  interrupts_cw32f030.o(i.GTIM4_IRQHandler)
+    GTIM_ClearITPendingBit                   0x00001825   Thumb Code    72  cw32f030_gtim.o(i.GTIM_ClearITPendingBit)
+    GTIM_Cmd                                 0x000018a5   Thumb Code    76  cw32f030_gtim.o(i.GTIM_Cmd)
+    GTIM_ICInit                              0x00001925   Thumb Code   196  cw32f030_gtim.o(i.GTIM_ICInit)
+    GTIM_ITConfig                            0x00001a1d   Thumb Code   100  cw32f030_gtim.o(i.GTIM_ITConfig)
+    GTIM_TimeBaseInit                        0x00001ab9   Thumb Code   246  cw32f030_gtim.o(i.GTIM_TimeBaseInit)
+    GetTick                                  0x00001be9   Thumb Code     6  cw32f030_systick.o(i.GetTick)
+    HAL_GetTick                              0x00001bf5   Thumb Code     8  sleep.o(i.HAL_GetTick)
+    HallEncInit                              0x00001bfd   Thumb Code   234  hallenc.o(i.HallEncInit)
+    HallEncUpdate                            0x00001cf9   Thumb Code    76  hallenc.o(i.HallEncUpdate)
+    HardFault_Handler                        0x00001d51   Thumb Code     2  interrupts_cw32f030.o(i.HardFault_Handler)
+    I2C1_IRQHandler                          0x00001d53   Thumb Code     2  interrupts_cw32f030.o(i.I2C1_IRQHandler)
+    I2C2_IRQHandler                          0x00001d55   Thumb Code     2  interrupts_cw32f030.o(i.I2C2_IRQHandler)
+    InitTick                                 0x00001d59   Thumb Code    74  cw32f030_systick.o(i.InitTick)
+    KeyInit                                  0x00001db1   Thumb Code    76  key.o(i.KeyInit)
+    KeyIsPress                               0x00001e05   Thumb Code    48  key.o(i.KeyIsPress)
+    LVD_IRQHandler                           0x00001e39   Thumb Code     2  interrupts_cw32f030.o(i.LVD_IRQHandler)
+    LedInit                                  0x00001e3d   Thumb Code    94  led.o(i.LedInit)
+    LedOff                                   0x00001ea9   Thumb Code    44  led.o(i.LedOff)
+    LedOn                                    0x00001edd   Thumb Code    46  led.o(i.LedOn)
+    MotorRun                                 0x00001f15   Thumb Code    78  hallenc.o(i.MotorRun)
+    NMI_Handler                              0x00001f85   Thumb Code     2  interrupts_cw32f030.o(i.NMI_Handler)
+    NtcInit                                  0x00001f89   Thumb Code    30  ntc.o(i.NtcInit)
+    PendSV_Handler                           0x00001fad   Thumb Code     2  interrupts_cw32f030.o(i.PendSV_Handler)
+    PotInit                                  0x00001fb1   Thumb Code    28  pot.o(i.PotInit)
+    PwmInit                                  0x00001fd5   Thumb Code   262  pwm.o(i.PwmInit)
+    RCC_AHBPeriphClk_Enable                  0x000020e9   Thumb Code    42  cw32f030_rcc.o(i.RCC_AHBPeriphClk_Enable)
+    RCC_APBPeriphClk_Enable1                 0x00002145   Thumb Code    42  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable1)
+    RCC_APBPeriphClk_Enable2                 0x000021a1   Thumb Code    42  cw32f030_rcc.o(i.RCC_APBPeriphClk_Enable2)
+    RCC_HCLKPRS_Config                       0x000021fd   Thumb Code    60  cw32f030_rcc.o(i.RCC_HCLKPRS_Config)
+    RCC_HSI_Enable                           0x00002269   Thumb Code    84  cw32f030_rcc.o(i.RCC_HSI_Enable)
+    RCC_IRQHandler                           0x000022e9   Thumb Code     2  interrupts_cw32f030.o(i.RCC_IRQHandler)
+    RCC_PCLKPRS_Config                       0x000022ed   Thumb Code    44  cw32f030_rcc.o(i.RCC_PCLKPRS_Config)
+    RCC_PLL_Enable                           0x00002349   Thumb Code   222  cw32f030_rcc.o(i.RCC_PLL_Enable)
+    RCC_SysClk_Switch                        0x00002461   Thumb Code    74  cw32f030_rcc.o(i.RCC_SysClk_Switch)
+    RCC_Sysctrl_GetHClkFreq                  0x000024e1   Thumb Code   104  cw32f030_rcc.o(i.RCC_Sysctrl_GetHClkFreq)
+    RCC_SystemCoreClockUpdate                0x0000255d   Thumb Code     6  cw32f030_rcc.o(i.RCC_SystemCoreClockUpdate)
+    RTC_IRQHandler                           0x00002569   Thumb Code     2  interrupts_cw32f030.o(i.RTC_IRQHandler)
+    SPI1_IRQHandler                          0x0000256b   Thumb Code     2  interrupts_cw32f030.o(i.SPI1_IRQHandler)
+    SPI2_IRQHandler                          0x0000256d   Thumb Code     2  interrupts_cw32f030.o(i.SPI2_IRQHandler)
+    SVC_Handler                              0x0000256f   Thumb Code     2  interrupts_cw32f030.o(i.SVC_Handler)
+    SysTick_Handler                          0x00002571   Thumb Code    12  cw32f030_systick.o(i.SysTick_Handler)
+    SysclkInit                               0x00002581   Thumb Code    60  sysclk.o(i.SysclkInit)
+    SystemInit                               0x000025c9   Thumb Code    46  system_cw32f030.o(i.SystemInit)
+    UART1_IRQHandler                         0x00002605   Thumb Code     2  interrupts_cw32f030.o(i.UART1_IRQHandler)
+    UART2_IRQHandler                         0x00002607   Thumb Code     2  interrupts_cw32f030.o(i.UART2_IRQHandler)
+    UART3_IRQHandler                         0x00002609   Thumb Code     2  interrupts_cw32f030.o(i.UART3_IRQHandler)
+    USART_Init                               0x0000260d   Thumb Code   444  cw32f030_uart.o(i.USART_Init)
+    UartConfig                               0x00002809   Thumb Code    12  uart.o(i.UartConfig)
+    UartInit                                 0x00002819   Thumb Code    90  uart.o(i.UartInit)
+    VC1_IRQHandler                           0x0000287d   Thumb Code     2  interrupts_cw32f030.o(i.VC1_IRQHandler)
+    VC2_IRQHandler                           0x0000287f   Thumb Code     2  interrupts_cw32f030.o(i.VC2_IRQHandler)
+    WDT_IRQHandler                           0x00002881   Thumb Code     2  interrupts_cw32f030.o(i.WDT_IRQHandler)
+    __ARM_clz                                0x00002883   Thumb Code    46  depilogue.o(i.__ARM_clz)
+    __ARM_common_switch8                     0x000028b1   Thumb Code    26  hallenc.o(i.__ARM_common_switch8)
+    __ARM_fpclassify                         0x000028cd   Thumb Code    40  fpclassify.o(i.__ARM_fpclassify)
+    __kernel_poly                            0x0000293d   Thumb Code   172  poly.o(i.__kernel_poly)
+    __mathlib_dbl_infnan                     0x000029e9   Thumb Code    10  dunder.o(i.__mathlib_dbl_infnan)
+    __mathlib_dbl_infnan2                    0x000029f3   Thumb Code     8  dunder.o(i.__mathlib_dbl_infnan2)
+    __mathlib_dbl_underflow                  0x000029fd   Thumb Code    14  dunder.o(i.__mathlib_dbl_underflow)
+    __scatterload_copy                       0x00002a11   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00002a1f   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00002a21   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    __set_errno                              0x00002a31   Thumb Code     6  errno.o(i.__set_errno)
+    _normalizeAngle                          0x00002a3d   Thumb Code    46  foc.o(i._normalizeAngle)
+    _sin                                     0x00002a75   Thumb Code   200  foc.o(i._sin)
+    _sqrt_fast                               0x00002b65   Thumb Code    14  foc.o(i._sqrt_fast)
+    angle_gen                                0x00002b79   Thumb Code    22  foc.o(i.angle_gen)
+    assert_failed                            0x00002b95   Thumb Code     2  main.o(i.assert_failed)
+    atan                                     0x00002b99   Thumb Code   472  atan.o(i.atan)
+    atan2                                    0x00002db5   Thumb Code   372  atan2.o(i.atan2)
+    main                                     0x00002f51   Thumb Code    66  main.o(i.main)
+    setPhaseVoltage                          0x00002f99   Thumb Code   582  hallenc.o(i.setPhaseVoltage)
+    sss                                      0x00003205   Thumb Code   110  hallenc.o(i.sss)
+    sine_array                               0x00003450   Data         800  foc.o(.constdata)
+    hsiprs_tbl                               0x00003770   Data          64  cw32f030_rcc.o(.constdata)
+    __mathlib_zero                           0x00003870   Data           8  qnan.o(.constdata)
+    Region$$Table$$Base                      0x00003878   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00003898   Number         0  anon$$obj.o(Region$$Table)
+    u8HallState                              0x20000008   Data           1  hallenc.o(.data)
+    u16ElecAngle                             0x2000000a   Data           2  hallenc.o(.data)
     u32HallCount                             0x2000000c   Data           4  hallenc.o(.data)
-    uwTickFreq                               0x20000010   Data           1  cw32f030_systick.o(.data)
-    uwTickPrio                               0x20000014   Data           4  cw32f030_systick.o(.data)
-    uwTick                                   0x20000018   Data           4  cw32f030_systick.o(.data)
-    SystemCoreClock                          0x2000001c   Data           4  system_cw32f030.o(.data)
-    __stdout                                 0x20000020   Data           4  stdout.o(.data)
-    __initial_sp                             0x20000228   Data           0  startup_cw32f030.o(STACK)
+    Ta                                       0x20000018   Data           4  hallenc.o(.data)
+    Tb                                       0x2000001c   Data           4  hallenc.o(.data)
+    Tc                                       0x20000020   Data           4  hallenc.o(.data)
+    uwTickFreq                               0x20000024   Data           1  cw32f030_systick.o(.data)
+    uwTickPrio                               0x20000028   Data           4  cw32f030_systick.o(.data)
+    uwTick                                   0x2000002c   Data           4  cw32f030_systick.o(.data)
+    SystemCoreClock                          0x20000030   Data           4  system_cw32f030.o(.data)
+    __initial_sp                             0x20000238   Data           0  startup_cw32f030.o(STACK)
 
 
 
@@ -538,190 +616,210 @@ Memory Map of the image
 
   Image Entry point : 0x000000c1
 
-  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00002d30, Max: 0x00010000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x000038d0, Max: 0x00010000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00002d0c, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00003898, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
     0x00000000   0x00000000   0x000000c0   Data   RO            3    RESET               startup_cw32f030.o
-    0x000000c0   0x000000c0   0x00000000   Code   RO         4208  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
-    0x000000c0   0x000000c0   0x00000004   Code   RO         4508    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
-    0x000000c4   0x000000c4   0x00000004   Code   RO         4511    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
-    0x000000c8   0x000000c8   0x00000000   Code   RO         4513    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
-    0x000000c8   0x000000c8   0x00000000   Code   RO         4515    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
-    0x000000c8   0x000000c8   0x00000008   Code   RO         4516    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
-    0x000000d0   0x000000d0   0x00000004   Code   RO         4523    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
-    0x000000d4   0x000000d4   0x00000000   Code   RO         4518    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
-    0x000000d4   0x000000d4   0x00000000   Code   RO         4520    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
-    0x000000d4   0x000000d4   0x00000004   Code   RO         4509    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
+    0x000000c0   0x000000c0   0x00000000   Code   RO         4335  * .ARM.Collect$$$$00000000  mc_p.l(entry.o)
+    0x000000c0   0x000000c0   0x00000004   Code   RO         4694    .ARM.Collect$$$$00000001  mc_p.l(entry2.o)
+    0x000000c4   0x000000c4   0x00000004   Code   RO         4697    .ARM.Collect$$$$00000004  mc_p.l(entry5.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         4699    .ARM.Collect$$$$00000008  mc_p.l(entry7b.o)
+    0x000000c8   0x000000c8   0x00000000   Code   RO         4701    .ARM.Collect$$$$0000000A  mc_p.l(entry8b.o)
+    0x000000c8   0x000000c8   0x00000008   Code   RO         4702    .ARM.Collect$$$$0000000B  mc_p.l(entry9a.o)
+    0x000000d0   0x000000d0   0x00000004   Code   RO         4709    .ARM.Collect$$$$0000000E  mc_p.l(entry12b.o)
+    0x000000d4   0x000000d4   0x00000000   Code   RO         4704    .ARM.Collect$$$$0000000F  mc_p.l(entry10a.o)
+    0x000000d4   0x000000d4   0x00000000   Code   RO         4706    .ARM.Collect$$$$00000011  mc_p.l(entry11a.o)
+    0x000000d4   0x000000d4   0x00000004   Code   RO         4695    .ARM.Collect$$$$00002712  mc_p.l(entry2.o)
     0x000000d8   0x000000d8   0x0000003c   Code   RO            4    .text               startup_cw32f030.o
-    0x00000114   0x00000114   0x0000002c   Code   RO         4211    .text               mc_p.l(uidiv.o)
-    0x00000140   0x00000140   0x00000024   Code   RO         4217    .text               mc_p.l(memcpya.o)
-    0x00000164   0x00000164   0x000000b2   Code   RO         4482    .text               mf_p.l(fadd.o)
-    0x00000216   0x00000216   0x0000007a   Code   RO         4484    .text               mf_p.l(fmul.o)
-    0x00000290   0x00000290   0x0000007c   Code   RO         4486    .text               mf_p.l(fdiv.o)
-    0x0000030c   0x0000030c   0x00000018   Code   RO         4488    .text               mf_p.l(fscalb.o)
-    0x00000324   0x00000324   0x00000168   Code   RO         4490    .text               mf_p.l(dadd.o)
-    0x0000048c   0x0000048c   0x000000d0   Code   RO         4492    .text               mf_p.l(dmul.o)
-    0x0000055c   0x0000055c   0x000000f0   Code   RO         4494    .text               mf_p.l(ddiv.o)
-    0x0000064c   0x0000064c   0x0000000e   Code   RO         4498    .text               mf_p.l(ffltui.o)
-    0x0000065a   0x0000065a   0x00000028   Code   RO         4502    .text               mf_p.l(ffixui.o)
-    0x00000682   0x00000682   0x00000002   PAD
-    0x00000684   0x00000684   0x0000003c   Code   RO         4504    .text               mf_p.l(dfixui.o)
-    0x000006c0   0x000006c0   0x00000028   Code   RO         4506    .text               mf_p.l(f2d.o)
-    0x000006e8   0x000006e8   0x00000060   Code   RO         4525    .text               mc_p.l(uldiv.o)
-    0x00000748   0x00000748   0x00000020   Code   RO         4527    .text               mc_p.l(llshl.o)
-    0x00000768   0x00000768   0x00000022   Code   RO         4529    .text               mc_p.l(llushr.o)
-    0x0000078a   0x0000078a   0x00000026   Code   RO         4531    .text               mc_p.l(llsshr.o)
-    0x000007b0   0x000007b0   0x00000000   Code   RO         4533    .text               mc_p.l(iusefp.o)
-    0x000007b0   0x000007b0   0x00000082   Code   RO         4534    .text               mf_p.l(fepilogue.o)
-    0x00000832   0x00000832   0x000000be   Code   RO         4536    .text               mf_p.l(depilogue.o)
-    0x000008f0   0x000008f0   0x00000040   Code   RO         4540    .text               mf_p.l(dfixul.o)
-    0x00000930   0x00000930   0x00000028   Code   RO         4542    .text               mf_p.l(cdrcmple.o)
-    0x00000958   0x00000958   0x00000024   Code   RO         4544    .text               mc_p.l(init.o)
-    0x0000097c   0x0000097c   0x00000034   Code   RO          973    i.ADC_BufEnSingleCh  cw32f030_adc.o
-    0x000009b0   0x000009b0   0x00000060   Code   RO          975    i.ADC_ClearITPendingBit  cw32f030_adc.o
-    0x00000a10   0x00000a10   0x0000001c   Code   RO          984    i.ADC_Enable        cw32f030_adc.o
-    0x00000a2c   0x00000a2c   0x0000000c   Code   RO          989    i.ADC_GetConversionValue  cw32f030_adc.o
-    0x00000a38   0x00000a38   0x00000060   Code   RO          990    i.ADC_GetITStatus   cw32f030_adc.o
-    0x00000a98   0x00000a98   0x00000002   Code   RO           10    i.ADC_IRQHandler    interrupts_cw32f030.o
-    0x00000a9a   0x00000a9a   0x00000002   PAD
-    0x00000a9c   0x00000a9c   0x00000198   Code   RO          999    i.ADC_Init          cw32f030_adc.o
-    0x00000c34   0x00000c34   0x000000c0   Code   RO         1009    i.ADC_SingleChCommon  cw32f030_adc.o
-    0x00000cf4   0x00000cf4   0x00000018   Code   RO         1012    i.ADC_SingleChOneModeCfg  cw32f030_adc.o
-    0x00000d0c   0x00000d0c   0x00000050   Code   RO         1013    i.ADC_SoftwareStartConvCmd  cw32f030_adc.o
-    0x00000d5c   0x00000d5c   0x0000013c   Code   RO         1019    i.ADC_WdtConfig     cw32f030_adc.o
-    0x00000e98   0x00000e98   0x00000002   Code   RO           11    i.AWT_IRQHandler    interrupts_cw32f030.o
-    0x00000e9a   0x00000e9a   0x00000002   PAD
-    0x00000e9c   0x00000e9c   0x0000001c   Code   RO          583    i.AdConv            adc.o
-    0x00000eb8   0x00000eb8   0x00000048   Code   RO          584    i.AdcInit           adc.o
-    0x00000f00   0x00000f00   0x0000001e   Code   RO          585    i.AdcRead           adc.o
-    0x00000f1e   0x00000f1e   0x00000002   Code   RO           12    i.BTIM2_IRQHandler  interrupts_cw32f030.o
-    0x00000f20   0x00000f20   0x00000002   Code   RO           13    i.BTIM3_IRQHandler  interrupts_cw32f030.o
-    0x00000f22   0x00000f22   0x00000002   PAD
-    0x00000f24   0x00000f24   0x00000028   Code   RO          469    i.BeepInit          beep.o
-    0x00000f4c   0x00000f4c   0x00000012   Code   RO          470    i.BeepOff           beep.o
-    0x00000f5e   0x00000f5e   0x00000002   PAD
-    0x00000f60   0x00000f60   0x00000048   Code   RO          214    i.BoardInit         main.o
-    0x00000fa8   0x00000fa8   0x00000002   Code   RO           14    i.DMACH23_IRQHandler  interrupts_cw32f030.o
-    0x00000faa   0x00000faa   0x00000002   Code   RO           15    i.DMACH45_IRQHandler  interrupts_cw32f030.o
-    0x00000fac   0x00000fac   0x00000018   Code   RO          804    i.DelayInit         sleep.o
-    0x00000fc4   0x00000fc4   0x00000018   Code   RO          821    i.DelayNonBlock     sleep.o
-    0x00000fdc   0x00000fdc   0x00000002   Code   RO           16    i.FAULT_IRQHandler  interrupts_cw32f030.o
-    0x00000fde   0x00000fde   0x00000002   Code   RO           17    i.FLASHRAM_IRQHandler  interrupts_cw32f030.o
-    0x00000fe0   0x00000fe0   0x00000064   Code   RO         2050    i.FLASH_SetLatency  cw32f030_flash.o
-    0x00001044   0x00001044   0x00000002   Code   RO           18    i.GPIOA_IRQHandler  interrupts_cw32f030.o
-    0x00001046   0x00001046   0x00000002   Code   RO           19    i.GPIOB_IRQHandler  interrupts_cw32f030.o
-    0x00001048   0x00001048   0x00000002   Code   RO           20    i.GPIOC_IRQHandler  interrupts_cw32f030.o
-    0x0000104a   0x0000104a   0x00000002   Code   RO           21    i.GPIOF_IRQHandler  interrupts_cw32f030.o
-    0x0000104c   0x0000104c   0x000000e4   Code   RO         2190    i.GPIO_Init         cw32f030_gpio.o
-    0x00001130   0x00001130   0x0000000a   Code   RO         2193    i.GPIO_ReadPin      cw32f030_gpio.o
-    0x0000113a   0x0000113a   0x00000004   Code   RO         2195    i.GPIO_TogglePin    cw32f030_gpio.o
-    0x0000113e   0x0000113e   0x0000000c   Code   RO         2196    i.GPIO_WritePin     cw32f030_gpio.o
-    0x0000114a   0x0000114a   0x00000002   Code   RO           22    i.GTIM1_IRQHandler  interrupts_cw32f030.o
-    0x0000114c   0x0000114c   0x00000034   Code   RO          668    i.GTIM2_IRQHandler  hallenc.o
-    0x00001180   0x00001180   0x00000002   Code   RO           23    i.GTIM3_IRQHandler  interrupts_cw32f030.o
-    0x00001182   0x00001182   0x00000002   Code   RO           24    i.GTIM4_IRQHandler  interrupts_cw32f030.o
-    0x00001184   0x00001184   0x00000080   Code   RO         2278    i.GTIM_ClearITPendingBit  cw32f030_gtim.o
-    0x00001204   0x00001204   0x00000080   Code   RO         2279    i.GTIM_Cmd          cw32f030_gtim.o
-    0x00001284   0x00001284   0x000000f8   Code   RO         2289    i.GTIM_ICInit       cw32f030_gtim.o
-    0x0000137c   0x0000137c   0x0000009c   Code   RO         2290    i.GTIM_ITConfig     cw32f030_gtim.o
-    0x00001418   0x00001418   0x00000130   Code   RO         2299    i.GTIM_TimeBaseInit  cw32f030_gtim.o
-    0x00001548   0x00001548   0x0000000c   Code   RO         3581    i.GetTick           cw32f030_systick.o
-    0x00001554   0x00001554   0x00000008   Code   RO          816    i.HAL_GetTick       sleep.o
-    0x0000155c   0x0000155c   0x00000058   Code   RO          669    i.HallEncGetAngle   hallenc.o
-    0x000015b4   0x000015b4   0x00000100   Code   RO          670    i.HallEncInit       hallenc.o
-    0x000016b4   0x000016b4   0x00000002   Code   RO           25    i.HardFault_Handler  interrupts_cw32f030.o
-    0x000016b6   0x000016b6   0x00000002   Code   RO           26    i.I2C1_IRQHandler   interrupts_cw32f030.o
-    0x000016b8   0x000016b8   0x00000002   Code   RO           27    i.I2C2_IRQHandler   interrupts_cw32f030.o
-    0x000016ba   0x000016ba   0x00000002   PAD
-    0x000016bc   0x000016bc   0x00000058   Code   RO         3582    i.InitTick          cw32f030_systick.o
-    0x00001714   0x00001714   0x00000054   Code   RO          429    i.KeyInit           key.o
-    0x00001768   0x00001768   0x00000002   Code   RO           28    i.LVD_IRQHandler    interrupts_cw32f030.o
-    0x0000176a   0x0000176a   0x00000002   PAD
-    0x0000176c   0x0000176c   0x0000006c   Code   RO          622    i.LedInit           led.o
-    0x000017d8   0x000017d8   0x00000034   Code   RO          623    i.LedOff            led.o
-    0x0000180c   0x0000180c   0x00000030   Code   RO          625    i.LedTgl            led.o
-    0x0000183c   0x0000183c   0x00000002   Code   RO           29    i.NMI_Handler       interrupts_cw32f030.o
-    0x0000183e   0x0000183e   0x00000002   PAD
-    0x00001840   0x00001840   0x00000024   Code   RO          516    i.NtcInit           ntc.o
-    0x00001864   0x00001864   0x00000002   Code   RO           30    i.PendSV_Handler    interrupts_cw32f030.o
-    0x00001866   0x00001866   0x00000002   PAD
-    0x00001868   0x00001868   0x00000024   Code   RO          550    i.PotInit           pot.o
-    0x0000188c   0x0000188c   0x00000002   Code   RO          754    i.PwmInit           pwm.o
-    0x0000188e   0x0000188e   0x00000002   PAD
-    0x00001890   0x00001890   0x0000005c   Code   RO         2942    i.RCC_AHBPeriphClk_Enable  cw32f030_rcc.o
-    0x000018ec   0x000018ec   0x0000005c   Code   RO         2944    i.RCC_APBPeriphClk_Enable1  cw32f030_rcc.o
-    0x00001948   0x00001948   0x0000005c   Code   RO         2945    i.RCC_APBPeriphClk_Enable2  cw32f030_rcc.o
-    0x000019a4   0x000019a4   0x0000006c   Code   RO         2965    i.RCC_HCLKPRS_Config  cw32f030_rcc.o
-    0x00001a10   0x00001a10   0x00000080   Code   RO         2971    i.RCC_HSI_Enable    cw32f030_rcc.o
-    0x00001a90   0x00001a90   0x00000002   Code   RO           31    i.RCC_IRQHandler    interrupts_cw32f030.o
-    0x00001a92   0x00001a92   0x00000002   PAD
-    0x00001a94   0x00001a94   0x0000005c   Code   RO         2983    i.RCC_PCLKPRS_Config  cw32f030_rcc.o
-    0x00001af0   0x00001af0   0x00000118   Code   RO         2986    i.RCC_PLL_Enable    cw32f030_rcc.o
-    0x00001c08   0x00001c08   0x00000080   Code   RO         2990    i.RCC_SysClk_Switch  cw32f030_rcc.o
-    0x00001c88   0x00001c88   0x0000007c   Code   RO         2991    i.RCC_Sysctrl_GetHClkFreq  cw32f030_rcc.o
-    0x00001d04   0x00001d04   0x0000000c   Code   RO         2993    i.RCC_SystemCoreClockUpdate  cw32f030_rcc.o
-    0x00001d10   0x00001d10   0x00000002   Code   RO           32    i.RTC_IRQHandler    interrupts_cw32f030.o
-    0x00001d12   0x00001d12   0x00000002   Code   RO           33    i.SPI1_IRQHandler   interrupts_cw32f030.o
-    0x00001d14   0x00001d14   0x00000002   Code   RO           34    i.SPI2_IRQHandler   interrupts_cw32f030.o
-    0x00001d16   0x00001d16   0x00000002   Code   RO           35    i.SVC_Handler       interrupts_cw32f030.o
-    0x00001d18   0x00001d18   0x00000010   Code   RO         3586    i.SysTick_Handler   cw32f030_systick.o
-    0x00001d28   0x00001d28   0x00000048   Code   RO          402    i.SysclkInit        sysclk.o
-    0x00001d70   0x00001d70   0x0000003c   Code   RO         4147    i.SystemInit        system_cw32f030.o
-    0x00001dac   0x00001dac   0x00000002   Code   RO           36    i.UART1_IRQHandler  interrupts_cw32f030.o
-    0x00001dae   0x00001dae   0x00000002   Code   RO           37    i.UART2_IRQHandler  interrupts_cw32f030.o
-    0x00001db0   0x00001db0   0x00000002   Code   RO           38    i.UART3_IRQHandler  interrupts_cw32f030.o
-    0x00001db2   0x00001db2   0x00000002   PAD
-    0x00001db4   0x00001db4   0x00000070   Code   RO         3658    i.USART_GetFlagStatus  cw32f030_uart.o
-    0x00001e24   0x00001e24   0x000001fc   Code   RO         3662    i.USART_Init        cw32f030_uart.o
-    0x00002020   0x00002020   0x00000054   Code   RO         3667    i.USART_SendData_8bit  cw32f030_uart.o
-    0x00002074   0x00002074   0x00000010   Code   RO          714    i.UartConfig        uart.o
-    0x00002084   0x00002084   0x00000064   Code   RO          715    i.UartInit          uart.o
-    0x000020e8   0x000020e8   0x00000002   Code   RO           39    i.VC1_IRQHandler    interrupts_cw32f030.o
-    0x000020ea   0x000020ea   0x00000002   Code   RO           40    i.VC2_IRQHandler    interrupts_cw32f030.o
-    0x000020ec   0x000020ec   0x00000002   Code   RO           41    i.WDT_IRQHandler    interrupts_cw32f030.o
-    0x000020ee   0x000020ee   0x00000002   PAD
-    0x000020f0   0x000020f0   0x00000020   Code   RO         4454    i.__0printf         mc_p.l(printfa.o)
-    0x00002110   0x00002110   0x0000002e   Code   RO         4538    i.__ARM_clz         mf_p.l(depilogue.o)
-    0x0000213e   0x0000213e   0x0000001a   Code   RO         2648    i.__ARM_common_switch8  cw32f030_i2c.o
-    0x00002158   0x00002158   0x00000044   Code   RO         3587    i.__NVIC_SetPriority  cw32f030_systick.o
-    0x0000219c   0x0000219c   0x0000000e   Code   RO         4548    i.__scatterload_copy  mc_p.l(handlers.o)
-    0x000021aa   0x000021aa   0x00000002   Code   RO         4549    i.__scatterload_null  mc_p.l(handlers.o)
-    0x000021ac   0x000021ac   0x0000000e   Code   RO         4550    i.__scatterload_zeroinit  mc_p.l(handlers.o)
-    0x000021ba   0x000021ba   0x00000002   PAD
-    0x000021bc   0x000021bc   0x00000174   Code   RO         4461    i._fp_digits        mc_p.l(printfa.o)
-    0x00002330   0x00002330   0x000006f0   Code   RO         4462    i._printf_core      mc_p.l(printfa.o)
-    0x00002a20   0x00002a20   0x00000020   Code   RO         4463    i._printf_post_padding  mc_p.l(printfa.o)
-    0x00002a40   0x00002a40   0x0000002c   Code   RO         4464    i._printf_pre_padding  mc_p.l(printfa.o)
-    0x00002a6c   0x00002a6c   0x00000002   Code   RO          215    i.assert_failed     main.o
-    0x00002a6e   0x00002a6e   0x00000002   PAD
-    0x00002a70   0x00002a70   0x0000003c   Code   RO          716    i.fputc             uart.o
-    0x00002aac   0x00002aac   0x00000060   Code   RO          216    i.main              main.o
-    0x00002b0c   0x00002b0c   0x00000018   Data   RO          217    .constdata          main.o
-    0x00002b24   0x00002b24   0x00000010   Data   RO          432    .constdata          key.o
-    0x00002b34   0x00002b34   0x00000010   Data   RO          473    .constdata          beep.o
-    0x00002b44   0x00002b44   0x000000d4   Data   RO          517    .constdata          ntc.o
-    0x00002c18   0x00002c18   0x00000010   Data   RO          551    .constdata          pot.o
-    0x00002c28   0x00002c28   0x00000010   Data   RO          626    .constdata          led.o
-    0x00002c38   0x00002c38   0x00000040   Data   RO          671    .constdata          hallenc.o
-    0x00002c78   0x00002c78   0x00000010   Data   RO          717    .constdata          uart.o
-    0x00002c88   0x00002c88   0x00000064   Data   RO         2995    .constdata          cw32f030_rcc.o
-    0x00002cec   0x00002cec   0x00000020   Data   RO         4546    Region$$Table       anon$$obj.o
+    0x00000114   0x00000114   0x0000002c   Code   RO         4338    .text               mc_p.l(uidiv.o)
+    0x00000140   0x00000140   0x00000024   Code   RO         4344    .text               mc_p.l(memcpya.o)
+    0x00000164   0x00000164   0x00000024   Code   RO         4346    .text               mc_p.l(memseta.o)
+    0x00000188   0x00000188   0x000000b2   Code   RO         4639    .text               mf_p.l(fadd.o)
+    0x0000023a   0x0000023a   0x0000007a   Code   RO         4641    .text               mf_p.l(fmul.o)
+    0x000002b4   0x000002b4   0x0000007c   Code   RO         4643    .text               mf_p.l(fdiv.o)
+    0x00000330   0x00000330   0x00000018   Code   RO         4645    .text               mf_p.l(fscalb.o)
+    0x00000348   0x00000348   0x00000168   Code   RO         4647    .text               mf_p.l(dadd.o)
+    0x000004b0   0x000004b0   0x000000d0   Code   RO         4649    .text               mf_p.l(dmul.o)
+    0x00000580   0x00000580   0x000000f0   Code   RO         4651    .text               mf_p.l(ddiv.o)
+    0x00000670   0x00000670   0x00000016   Code   RO         4653    .text               mf_p.l(fflti.o)
+    0x00000686   0x00000686   0x0000000e   Code   RO         4655    .text               mf_p.l(ffltui.o)
+    0x00000694   0x00000694   0x00000028   Code   RO         4659    .text               mf_p.l(ffixui.o)
+    0x000006bc   0x000006bc   0x00000048   Code   RO         4661    .text               mf_p.l(dfixi.o)
+    0x00000704   0x00000704   0x0000003c   Code   RO         4663    .text               mf_p.l(dfixui.o)
+    0x00000740   0x00000740   0x00000028   Code   RO         4665    .text               mf_p.l(f2d.o)
+    0x00000768   0x00000768   0x00000038   Code   RO         4667    .text               mf_p.l(d2f.o)
+    0x000007a0   0x000007a0   0x00000020   Code   RO         4713    .text               mc_p.l(llshl.o)
+    0x000007c0   0x000007c0   0x00000022   Code   RO         4715    .text               mc_p.l(llushr.o)
+    0x000007e2   0x000007e2   0x00000026   Code   RO         4717    .text               mc_p.l(llsshr.o)
+    0x00000808   0x00000808   0x00000000   Code   RO         4728    .text               mc_p.l(iusefp.o)
+    0x00000808   0x00000808   0x00000082   Code   RO         4729    .text               mf_p.l(fepilogue.o)
+    0x0000088a   0x0000088a   0x000000be   Code   RO         4731    .text               mf_p.l(depilogue.o)
+    0x00000948   0x00000948   0x00000028   Code   RO         4737    .text               mf_p.l(cdcmple.o)
+    0x00000970   0x00000970   0x00000024   Code   RO         4745    .text               mc_p.l(init.o)
+    0x00000994   0x00000994   0x0000002c   Code   RO         4747    .text               mf_p.l(dscalb.o)
+    0x000009c0   0x000009c0   0x00000034   Code   RO         1039    i.ADC_BufEnSingleCh  cw32f030_adc.o
+    0x000009f4   0x000009f4   0x0000001c   Code   RO         1050    i.ADC_Enable        cw32f030_adc.o
+    0x00000a10   0x00000a10   0x00000060   Code   RO         1056    i.ADC_GetITStatus   cw32f030_adc.o
+    0x00000a70   0x00000a70   0x00000002   Code   RO           10    i.ADC_IRQHandler    interrupts_cw32f030.o
+    0x00000a72   0x00000a72   0x00000002   PAD
+    0x00000a74   0x00000a74   0x00000198   Code   RO         1065    i.ADC_Init          cw32f030_adc.o
+    0x00000c0c   0x00000c0c   0x000000c0   Code   RO         1075    i.ADC_SingleChCommon  cw32f030_adc.o
+    0x00000ccc   0x00000ccc   0x00000018   Code   RO         1078    i.ADC_SingleChOneModeCfg  cw32f030_adc.o
+    0x00000ce4   0x00000ce4   0x0000013c   Code   RO         1085    i.ADC_WdtConfig     cw32f030_adc.o
+    0x00000e20   0x00000e20   0x00000018   Code   RO         1390    i.ATIM_Cmd          cw32f030_atim.o
+    0x00000e38   0x00000e38   0x00000050   Code   RO         1391    i.ATIM_CtrlPWMOutputs  cw32f030_atim.o
+    0x00000e88   0x00000e88   0x000000fc   Code   RO         1408    i.ATIM_Init         cw32f030_atim.o
+    0x00000f84   0x00000f84   0x000000f0   Code   RO         1410    i.ATIM_OC1AInit     cw32f030_atim.o
+    0x00001074   0x00001074   0x000000e8   Code   RO         1411    i.ATIM_OC1BInit     cw32f030_atim.o
+    0x0000115c   0x0000115c   0x000000a8   Code   RO         1412    i.ATIM_OC2AInit     cw32f030_atim.o
+    0x00001204   0x00001204   0x000000e8   Code   RO         1413    i.ATIM_OC2BInit     cw32f030_atim.o
+    0x000012ec   0x000012ec   0x000000f4   Code   RO         1414    i.ATIM_OC3AInit     cw32f030_atim.o
+    0x000013e0   0x000013e0   0x000000e8   Code   RO         1415    i.ATIM_OC3BInit     cw32f030_atim.o
+    0x000014c8   0x000014c8   0x0000008c   Code   RO         1417    i.ATIM_PWMOutputConfig  cw32f030_atim.o
+    0x00001554   0x00001554   0x0000000c   Code   RO         1418    i.ATIM_SetCompare1A  cw32f030_atim.o
+    0x00001560   0x00001560   0x0000000c   Code   RO         1420    i.ATIM_SetCompare2A  cw32f030_atim.o
+    0x0000156c   0x0000156c   0x0000000c   Code   RO         1422    i.ATIM_SetCompare3A  cw32f030_atim.o
+    0x00001578   0x00001578   0x00000002   Code   RO           11    i.AWT_IRQHandler    interrupts_cw32f030.o
+    0x0000157a   0x0000157a   0x00000002   PAD
+    0x0000157c   0x0000157c   0x00000048   Code   RO          584    i.AdcInit           adc.o
+    0x000015c4   0x000015c4   0x00000002   Code   RO           12    i.BTIM2_IRQHandler  interrupts_cw32f030.o
+    0x000015c6   0x000015c6   0x00000002   Code   RO           13    i.BTIM3_IRQHandler  interrupts_cw32f030.o
+    0x000015c8   0x000015c8   0x00000028   Code   RO          469    i.BeepInit          beep.o
+    0x000015f0   0x000015f0   0x00000012   Code   RO          470    i.BeepOff           beep.o
+    0x00001602   0x00001602   0x00000002   PAD
+    0x00001604   0x00001604   0x00000048   Code   RO          214    i.BoardInit         main.o
+    0x0000164c   0x0000164c   0x00000002   Code   RO           14    i.DMACH23_IRQHandler  interrupts_cw32f030.o
+    0x0000164e   0x0000164e   0x00000002   Code   RO           15    i.DMACH45_IRQHandler  interrupts_cw32f030.o
+    0x00001650   0x00001650   0x00000018   Code   RO          833    i.DelayInit         sleep.o
+    0x00001668   0x00001668   0x00000018   Code   RO          850    i.DelayNonBlock     sleep.o
+    0x00001680   0x00001680   0x00000002   Code   RO           16    i.FAULT_IRQHandler  interrupts_cw32f030.o
+    0x00001682   0x00001682   0x00000002   Code   RO           17    i.FLASHRAM_IRQHandler  interrupts_cw32f030.o
+    0x00001684   0x00001684   0x00000064   Code   RO         2147    i.FLASH_SetLatency  cw32f030_flash.o
+    0x000016e8   0x000016e8   0x00000002   Code   RO           18    i.GPIOA_IRQHandler  interrupts_cw32f030.o
+    0x000016ea   0x000016ea   0x00000002   Code   RO           19    i.GPIOB_IRQHandler  interrupts_cw32f030.o
+    0x000016ec   0x000016ec   0x00000002   Code   RO           20    i.GPIOC_IRQHandler  interrupts_cw32f030.o
+    0x000016ee   0x000016ee   0x00000002   Code   RO           21    i.GPIOF_IRQHandler  interrupts_cw32f030.o
+    0x000016f0   0x000016f0   0x000000e4   Code   RO         2290    i.GPIO_Init         cw32f030_gpio.o
+    0x000017d4   0x000017d4   0x0000000a   Code   RO         2293    i.GPIO_ReadPin      cw32f030_gpio.o
+    0x000017de   0x000017de   0x0000000c   Code   RO         2296    i.GPIO_WritePin     cw32f030_gpio.o
+    0x000017ea   0x000017ea   0x00000002   Code   RO           22    i.GTIM1_IRQHandler  interrupts_cw32f030.o
+    0x000017ec   0x000017ec   0x00000034   Code   RO          668    i.GTIM2_IRQHandler  hallenc.o
+    0x00001820   0x00001820   0x00000002   Code   RO           23    i.GTIM3_IRQHandler  interrupts_cw32f030.o
+    0x00001822   0x00001822   0x00000002   Code   RO           24    i.GTIM4_IRQHandler  interrupts_cw32f030.o
+    0x00001824   0x00001824   0x00000080   Code   RO         2378    i.GTIM_ClearITPendingBit  cw32f030_gtim.o
+    0x000018a4   0x000018a4   0x00000080   Code   RO         2379    i.GTIM_Cmd          cw32f030_gtim.o
+    0x00001924   0x00001924   0x000000f8   Code   RO         2389    i.GTIM_ICInit       cw32f030_gtim.o
+    0x00001a1c   0x00001a1c   0x0000009c   Code   RO         2390    i.GTIM_ITConfig     cw32f030_gtim.o
+    0x00001ab8   0x00001ab8   0x00000130   Code   RO         2399    i.GTIM_TimeBaseInit  cw32f030_gtim.o
+    0x00001be8   0x00001be8   0x0000000c   Code   RO         3697    i.GetTick           cw32f030_systick.o
+    0x00001bf4   0x00001bf4   0x00000008   Code   RO          845    i.HAL_GetTick       sleep.o
+    0x00001bfc   0x00001bfc   0x000000fc   Code   RO          669    i.HallEncInit       hallenc.o
+    0x00001cf8   0x00001cf8   0x00000058   Code   RO          670    i.HallEncUpdate     hallenc.o
+    0x00001d50   0x00001d50   0x00000002   Code   RO           25    i.HardFault_Handler  interrupts_cw32f030.o
+    0x00001d52   0x00001d52   0x00000002   Code   RO           26    i.I2C1_IRQHandler   interrupts_cw32f030.o
+    0x00001d54   0x00001d54   0x00000002   Code   RO           27    i.I2C2_IRQHandler   interrupts_cw32f030.o
+    0x00001d56   0x00001d56   0x00000002   PAD
+    0x00001d58   0x00001d58   0x00000058   Code   RO         3698    i.InitTick          cw32f030_systick.o
+    0x00001db0   0x00001db0   0x00000054   Code   RO          429    i.KeyInit           key.o
+    0x00001e04   0x00001e04   0x00000034   Code   RO          430    i.KeyIsPress        key.o
+    0x00001e38   0x00001e38   0x00000002   Code   RO           28    i.LVD_IRQHandler    interrupts_cw32f030.o
+    0x00001e3a   0x00001e3a   0x00000002   PAD
+    0x00001e3c   0x00001e3c   0x0000006c   Code   RO          622    i.LedInit           led.o
+    0x00001ea8   0x00001ea8   0x00000034   Code   RO          623    i.LedOff            led.o
+    0x00001edc   0x00001edc   0x00000038   Code   RO          624    i.LedOn             led.o
+    0x00001f14   0x00001f14   0x00000070   Code   RO          671    i.MotorRun          hallenc.o
+    0x00001f84   0x00001f84   0x00000002   Code   RO           29    i.NMI_Handler       interrupts_cw32f030.o
+    0x00001f86   0x00001f86   0x00000002   PAD
+    0x00001f88   0x00001f88   0x00000024   Code   RO          516    i.NtcInit           ntc.o
+    0x00001fac   0x00001fac   0x00000002   Code   RO           30    i.PendSV_Handler    interrupts_cw32f030.o
+    0x00001fae   0x00001fae   0x00000002   PAD
+    0x00001fb0   0x00001fb0   0x00000024   Code   RO          550    i.PotInit           pot.o
+    0x00001fd4   0x00001fd4   0x00000114   Code   RO          782    i.PwmInit           pwm.o
+    0x000020e8   0x000020e8   0x0000005c   Code   RO         3052    i.RCC_AHBPeriphClk_Enable  cw32f030_rcc.o
+    0x00002144   0x00002144   0x0000005c   Code   RO         3054    i.RCC_APBPeriphClk_Enable1  cw32f030_rcc.o
+    0x000021a0   0x000021a0   0x0000005c   Code   RO         3055    i.RCC_APBPeriphClk_Enable2  cw32f030_rcc.o
+    0x000021fc   0x000021fc   0x0000006c   Code   RO         3075    i.RCC_HCLKPRS_Config  cw32f030_rcc.o
+    0x00002268   0x00002268   0x00000080   Code   RO         3081    i.RCC_HSI_Enable    cw32f030_rcc.o
+    0x000022e8   0x000022e8   0x00000002   Code   RO           31    i.RCC_IRQHandler    interrupts_cw32f030.o
+    0x000022ea   0x000022ea   0x00000002   PAD
+    0x000022ec   0x000022ec   0x0000005c   Code   RO         3093    i.RCC_PCLKPRS_Config  cw32f030_rcc.o
+    0x00002348   0x00002348   0x00000118   Code   RO         3096    i.RCC_PLL_Enable    cw32f030_rcc.o
+    0x00002460   0x00002460   0x00000080   Code   RO         3100    i.RCC_SysClk_Switch  cw32f030_rcc.o
+    0x000024e0   0x000024e0   0x0000007c   Code   RO         3101    i.RCC_Sysctrl_GetHClkFreq  cw32f030_rcc.o
+    0x0000255c   0x0000255c   0x0000000c   Code   RO         3103    i.RCC_SystemCoreClockUpdate  cw32f030_rcc.o
+    0x00002568   0x00002568   0x00000002   Code   RO           32    i.RTC_IRQHandler    interrupts_cw32f030.o
+    0x0000256a   0x0000256a   0x00000002   Code   RO           33    i.SPI1_IRQHandler   interrupts_cw32f030.o
+    0x0000256c   0x0000256c   0x00000002   Code   RO           34    i.SPI2_IRQHandler   interrupts_cw32f030.o
+    0x0000256e   0x0000256e   0x00000002   Code   RO           35    i.SVC_Handler       interrupts_cw32f030.o
+    0x00002570   0x00002570   0x00000010   Code   RO         3702    i.SysTick_Handler   cw32f030_systick.o
+    0x00002580   0x00002580   0x00000048   Code   RO          402    i.SysclkInit        sysclk.o
+    0x000025c8   0x000025c8   0x0000003c   Code   RO         4266    i.SystemInit        system_cw32f030.o
+    0x00002604   0x00002604   0x00000002   Code   RO           36    i.UART1_IRQHandler  interrupts_cw32f030.o
+    0x00002606   0x00002606   0x00000002   Code   RO           37    i.UART2_IRQHandler  interrupts_cw32f030.o
+    0x00002608   0x00002608   0x00000002   Code   RO           38    i.UART3_IRQHandler  interrupts_cw32f030.o
+    0x0000260a   0x0000260a   0x00000002   PAD
+    0x0000260c   0x0000260c   0x000001fc   Code   RO         3778    i.USART_Init        cw32f030_uart.o
+    0x00002808   0x00002808   0x00000010   Code   RO          742    i.UartConfig        uart.o
+    0x00002818   0x00002818   0x00000064   Code   RO          743    i.UartInit          uart.o
+    0x0000287c   0x0000287c   0x00000002   Code   RO           39    i.VC1_IRQHandler    interrupts_cw32f030.o
+    0x0000287e   0x0000287e   0x00000002   Code   RO           40    i.VC2_IRQHandler    interrupts_cw32f030.o
+    0x00002880   0x00002880   0x00000002   Code   RO           41    i.WDT_IRQHandler    interrupts_cw32f030.o
+    0x00002882   0x00002882   0x0000002e   Code   RO         4733    i.__ARM_clz         mf_p.l(depilogue.o)
+    0x000028b0   0x000028b0   0x0000001a   Code   RO          717    i.__ARM_common_switch8  hallenc.o
+    0x000028ca   0x000028ca   0x00000002   PAD
+    0x000028cc   0x000028cc   0x0000002c   Code   RO         4741    i.__ARM_fpclassify  m_ps.l(fpclassify.o)
+    0x000028f8   0x000028f8   0x00000044   Code   RO         3703    i.__NVIC_SetPriority  cw32f030_systick.o
+    0x0000293c   0x0000293c   0x000000ac   Code   RO         4743    i.__kernel_poly     m_ps.l(poly.o)
+    0x000029e8   0x000029e8   0x0000000a   Code   RO         4680    i.__mathlib_dbl_infnan  m_ps.l(dunder.o)
+    0x000029f2   0x000029f2   0x00000008   Code   RO         4681    i.__mathlib_dbl_infnan2  m_ps.l(dunder.o)
+    0x000029fa   0x000029fa   0x00000002   PAD
+    0x000029fc   0x000029fc   0x00000014   Code   RO         4685    i.__mathlib_dbl_underflow  m_ps.l(dunder.o)
+    0x00002a10   0x00002a10   0x0000000e   Code   RO         4751    i.__scatterload_copy  mc_p.l(handlers.o)
+    0x00002a1e   0x00002a1e   0x00000002   Code   RO         4752    i.__scatterload_null  mc_p.l(handlers.o)
+    0x00002a20   0x00002a20   0x0000000e   Code   RO         4753    i.__scatterload_zeroinit  mc_p.l(handlers.o)
+    0x00002a2e   0x00002a2e   0x00000002   PAD
+    0x00002a30   0x00002a30   0x0000000c   Code   RO         4723    i.__set_errno       mc_p.l(errno.o)
+    0x00002a3c   0x00002a3c   0x00000038   Code   RO          908    i._normalizeAngle   foc.o
+    0x00002a74   0x00002a74   0x000000f0   Code   RO          909    i._sin              foc.o
+    0x00002b64   0x00002b64   0x00000014   Code   RO          910    i._sqrt_fast        foc.o
+    0x00002b78   0x00002b78   0x0000001c   Code   RO          911    i.angle_gen         foc.o
+    0x00002b94   0x00002b94   0x00000002   Code   RO          215    i.assert_failed     main.o
+    0x00002b96   0x00002b96   0x00000002   PAD
+    0x00002b98   0x00002b98   0x0000021c   Code   RO         4670    i.atan              m_ps.l(atan.o)
+    0x00002db4   0x00002db4   0x0000019c   Code   RO         4328    i.atan2             m_ps.l(atan2.o)
+    0x00002f50   0x00002f50   0x00000048   Code   RO          216    i.main              main.o
+    0x00002f98   0x00002f98   0x0000026c   Code   RO          672    i.setPhaseVoltage   hallenc.o
+    0x00003204   0x00003204   0x00000074   Code   RO          673    i.sss               hallenc.o
+    0x00003278   0x00003278   0x00000018   Data   RO          217    .constdata          main.o
+    0x00003290   0x00003290   0x00000010   Data   RO          432    .constdata          key.o
+    0x000032a0   0x000032a0   0x00000010   Data   RO          473    .constdata          beep.o
+    0x000032b0   0x000032b0   0x000000d4   Data   RO          517    .constdata          ntc.o
+    0x00003384   0x00003384   0x00000010   Data   RO          551    .constdata          pot.o
+    0x00003394   0x00003394   0x00000010   Data   RO          626    .constdata          led.o
+    0x000033a4   0x000033a4   0x00000058   Data   RO          674    .constdata          hallenc.o
+    0x000033fc   0x000033fc   0x00000010   Data   RO          745    .constdata          uart.o
+    0x0000340c   0x0000340c   0x00000044   Data   RO          783    .constdata          pwm.o
+    0x00003450   0x00003450   0x00000320   Data   RO          917    .constdata          foc.o
+    0x00003770   0x00003770   0x00000064   Data   RO         3105    .constdata          cw32f030_rcc.o
+    0x000037d4   0x000037d4   0x00000004   PAD
+    0x000037d8   0x000037d8   0x00000098   Data   RO         4671    .constdata          m_ps.l(atan.o)
+    0x00003870   0x00003870   0x00000008   Data   RO         4693    .constdata          m_ps.l(qnan.o)
+    0x00003878   0x00003878   0x00000020   Data   RO         4749    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00002d0c, Size: 0x00000228, Max: 0x00002000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00003898, Size: 0x00000238, Max: 0x00002000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x00002d0c   0x00000008   Data   RW          218    .data               main.o
-    0x20000008   0x00002d14   0x00000008   Data   RW          672    .data               hallenc.o
-    0x20000010   0x00002d1c   0x0000000c   Data   RW         3588    .data               cw32f030_systick.o
-    0x2000001c   0x00002d28   0x00000004   Data   RW         4151    .data               system_cw32f030.o
-    0x20000020   0x00002d2c   0x00000004   Data   RW         4524    .data               mc_p.l(stdout.o)
-    0x20000024   0x00002d30   0x00000004   PAD
-    0x20000028        -       0x00000200   Zero   RW            1    STACK               startup_cw32f030.o
+    0x20000000   0x00003898   0x00000008   Data   RW          218    .data               main.o
+    0x20000008   0x000038a0   0x0000001c   Data   RW          675    .data               hallenc.o
+    0x20000024   0x000038bc   0x0000000c   Data   RW         3704    .data               cw32f030_systick.o
+    0x20000030   0x000038c8   0x00000004   Data   RW         4270    .data               system_cw32f030.o
+    0x20000034   0x000038cc   0x00000004   Data   RW         4724    .data               mc_p.l(errno.o)
+    0x20000038        -       0x00000200   Zero   RW            1    STACK               startup_cw32f030.o
 
 
 ==============================================================================
@@ -731,39 +829,46 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       130         12          0          0          0       1533   adc.o
+        72          6          0          0          0        566   adc.o
         58          6         16          0          0       1401   beep.o
-      1304        274          0          0          0      21708   cw32f030_adc.o
+      1116        188          0          0          0     195565   cw32f030_adc.o
+      1880        394          0          0          0      15100   cw32f030_atim.o
        100         50          0          0          0        555   cw32f030_flash.o
-       254          4          0          0          0       2832   cw32f030_gpio.o
+       250          4          0          0          0       2327   cw32f030_gpio.o
        964        274          0          0          0      10858   cw32f030_gtim.o
-        26          0          0          0          0         72   cw32f030_i2c.o
       1148        436        100          0          0       7259   cw32f030_rcc.o
        184         32          0         12          0      11278   cw32f030_systick.o
-       704        162          0          0          0       2489   cw32f030_uart.o
-       396         42         64          8          0      10599   hallenc.o
+       508         64          0          0          0       5689   cw32f030_uart.o
+       344         62        800          0          0       4307   foc.o
+      1266        128         88         28          0      14477   hallenc.o
         64          0          0          0          0      15288   interrupts_cw32f030.o
-        84          8         16          0          0        498   key.o
-       208         30         16          0          0       1532   led.o
-       170         18         24          8          0     213907   main.o
+       136         12         16          0          0       1075   key.o
+       216         32         16          0          0       1523   led.o
+       146         10         24          8          0     221055   main.o
         36          6        212          0          0       1596   ntc.o
         36          8         16          0          0        466   pot.o
-         2          0          0          0          0        402   pwm.o
-        56          8          0          0          0     187778   sleep.o
+       276         14         68          0          0        726   pwm.o
+        56          8          0          0          0       2806   sleep.o
         60         22        192          0        512        656   startup_cw32f030.o
         72         12          0          0          0        477   sysclk.o
         60         14          0          4          0       1351   system_cw32f030.o
-       176         20         16          0          0       3300   uart.o
+       116         14         16          0          0       1500   uart.o
 
     ----------------------------------------------------------------------
-      6318       1438        704         32        512     497835   Object Totals
+      9186       1796       1600         52        512     517901   Object Totals
          0          0         32          0          0          0   (incl. Generated)
-        26          0          0          0          0          0   (incl. Padding)
+        22          0          4          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
 
+       540         68        152          0          0        112   atan.o
+       412         40          0          0          0        144   atan2.o
+        38          6          0          0          0        204   dunder.o
+        44          4          0          0          0         60   fpclassify.o
+       172          0          0          0          0         76   poly.o
+         0          0          8          0          0          0   qnan.o
          0          0          0          0          0          0   entry.o
          0          0          0          0          0          0   entry10a.o
          0          0          0          0          0          0   entry11a.o
@@ -773,6 +878,7 @@ Image component sizes
          0          0          0          0          0          0   entry7b.o
          0          0          0          0          0          0   entry8b.o
          8          4          0          0          0          0   entry9a.o
+        12          6          0          4          0         60   errno.o
         30          0          0          0          0          0   handlers.o
         36          8          0          0          0         68   init.o
          0          0          0          0          0          0   iusefp.o
@@ -780,39 +886,41 @@ Image component sizes
         38          0          0          0          0         68   llsshr.o
         34          0          0          0          0         68   llushr.o
         36          0          0          0          0         60   memcpya.o
-      2256         98          0          0          0        412   printfa.o
-         0          0          0          4          0          0   stdout.o
+        36          0          0          0          0        100   memseta.o
         44          0          0          0          0         72   uidiv.o
-        96          0          0          0          0         84   uldiv.o
-        40          2          0          0          0         68   cdrcmple.o
+        40          2          0          0          0         68   cdcmple.o
+        56          0          0          0          0         68   d2f.o
        360          6          0          0          0        140   dadd.o
        240          6          0          0          0         84   ddiv.o
        236          0          0          0          0        216   depilogue.o
+        72         10          0          0          0         72   dfixi.o
         60         10          0          0          0         68   dfixui.o
-        64         10          0          0          0         68   dfixul.o
        208          6          0          0          0         88   dmul.o
+        44          0          0          0          0         72   dscalb.o
         40          0          0          0          0         60   f2d.o
        178          0          0          0          0        108   fadd.o
        124          0          0          0          0         72   fdiv.o
        130          0          0          0          0        144   fepilogue.o
         40          0          0          0          0         60   ffixui.o
+        22          0          0          0          0         68   fflti.o
         14          0          0          0          0         68   ffltui.o
        122          0          0          0          0         72   fmul.o
         24          0          0          0          0         60   fscalb.o
 
     ----------------------------------------------------------------------
-      4510        154          0          4          4       2276   Library Totals
-         4          0          0          0          4          0   (incl. Padding)
+      3542        180        160          4          0       2748   Library Totals
+         4          0          0          0          0          0   (incl. Padding)
 
     ----------------------------------------------------------------------
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
 
-      2626        114          0          4          0        900   mc_p.l
-      1880         40          0          0          0       1376   mf_p.l
+      1206        118        160          0          0        596   m_ps.l
+       322         22          0          4          0        564   mc_p.l
+      2010         40          0          0          0       1588   mf_p.l
 
     ----------------------------------------------------------------------
-      4510        154          0          4          4       2276   Library Totals
+      3542        180        160          4          0       2748   Library Totals
 
     ----------------------------------------------------------------------
 
@@ -821,15 +929,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     10828       1592        704         36        516     495019   Grand Totals
-     10828       1592        704         36        516     495019   ELF Image Totals
-     10828       1592        704         36          0          0   ROM Totals
+     12728       1976       1760         56        512     514721   Grand Totals
+     12728       1976       1760         56        512     514721   ELF Image Totals
+     12728       1976       1760         56          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                11532 (  11.26kB)
-    Total RW  Size (RW Data + ZI Data)               552 (   0.54kB)
-    Total ROM Size (Code + RO Data + RW Data)      11568 (  11.30kB)
+    Total RO  Size (Code + RO Data)                14488 (  14.15kB)
+    Total RW  Size (RW Data + ZI Data)               568 (   0.55kB)
+    Total ROM Size (Code + RO Data + RW Data)      14544 (  14.20kB)
 
 ==============================================================================
 

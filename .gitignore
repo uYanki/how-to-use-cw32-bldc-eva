@@ -28,3 +28,7 @@ TencentOS-tiny-master.zip
 3.Examples/CW32F030_StandardPeripheralLib_V1.7
 Objects
 3.Learning/project/foc/mdk/Objects
+3.Examples/bldc_mdk/BLCD电机板例程-MDK
+3.Examples/bldc_mdk/
+*.crf
+*.o

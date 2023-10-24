@@ -6,7 +6,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -38,13 +38,13 @@ I (..\Libraries\inc\cw32f030_systick.h)(0x60A22998)
 I (..\Libraries\inc\cw32f030_uart.h)(0x60DA6105)
 I (..\Libraries\inc\cw32f030_wwdt.h)(0x6084E752)
 F (.\USER\startup_cw32f030.s)(0x6219EE8A)(--cpu Cortex-M0+ -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include--pd "__UVISION_VERSION SETA 535" --pd "_RTE_ SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_cw32f030.lst --xref -o .\objects\startup_cw32f030.o --depend .\objects\startup_cw32f030.d)
-F (.\USER\MAIN.c)(0x64AA9AE6)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (.\USER\MAIN.c)(0x6537D0A3)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (USER\main.h)(0x610BE790)
 I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -77,14 +77,14 @@ I (..\Libraries\inc\cw32f030_uart.h)(0x60DA6105)
 I (..\Libraries\inc\cw32f030_wwdt.h)(0x6084E752)
 I (USER\motorcontrol.h)(0x62A16108)
 I (USER\OLED_I2C.h)(0x61E6E4FE)
-F (.\USER\MOTORCONTROL.C)(0x62ABD3D8)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\motorcontrol.o --omf_browse .\objects\motorcontrol.crf --depend .\objects\motorcontrol.d)
+F (.\USER\MOTORCONTROL.C)(0x6537CF90)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\motorcontrol.o --omf_browse .\objects\motorcontrol.crf --depend .\objects\motorcontrol.d)
 I (USER\motorcontrol.h)(0x62A16108)
 I (USER\MAIN.h)(0x610BE790)
 I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -122,7 +122,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -161,7 +161,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -195,7 +195,7 @@ I (..\Libraries\inc\cw32f030_wwdt.h)(0x6084E752)
 F (..\Libraries\src\cw32f030_adc.c)(0x6111215D)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\cw32f030_adc.o --omf_browse .\objects\cw32f030_adc.crf --depend .\objects\cw32f030_adc.d)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -210,7 +210,7 @@ F (..\Libraries\src\cw32f030_atim.c)(0x6114B95F)(--c99 -c --cpu Cortex-M0+ -D__M
 I (..\Libraries\inc\cw32f030_atim.h)(0x6103AC59)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -224,7 +224,7 @@ F (..\Libraries\src\cw32f030_awt.c)(0x60F55D5C)(--c99 -c --cpu Cortex-M0+ -D__MI
 I (..\Libraries\inc\cw32f030_awt.h)(0x60F55D5C)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -238,7 +238,7 @@ F (..\Libraries\src\cw32f030_btim.c)(0x60D1393E)(--c99 -c --cpu Cortex-M0+ -D__M
 I (..\Libraries\inc\cw32f030_btim.h)(0x60EB901E)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -254,7 +254,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -268,7 +268,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -282,7 +282,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -296,7 +296,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -310,7 +310,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -324,7 +324,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -338,7 +338,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -350,7 +350,7 @@ F (..\Libraries\src\cw32f030_i2c.c)(0x60D1393E)(--c99 -c --cpu Cortex-M0+ -D__MI
 I (..\Libraries\inc\cw32f030_i2c.h)(0x60EB901E)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -365,7 +365,7 @@ F (..\Libraries\src\cw32f030_iwdt.c)(0x6109F6D2)(--c99 -c --cpu Cortex-M0+ -D__M
 I (..\Libraries\inc\cw32f030_iwdt.h)(0x6109F6D3)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -378,7 +378,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 F (..\Libraries\src\cw32f030_lvd.c)(0x6103AC74)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\cw32f030_lvd.o --omf_browse .\objects\cw32f030_lvd.crf --depend .\objects\cw32f030_lvd.d)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -392,7 +392,7 @@ I (..\Libraries\inc\cw32f030_lvd.h)(0x60D1598C)
 F (..\Libraries\src\cw32f030_pwr.c)(0x60EB901E)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\cw32f030_pwr.o --omf_browse .\objects\cw32f030_pwr.crf --depend .\objects\cw32f030_pwr.d)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -409,7 +409,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -423,7 +423,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -437,7 +437,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -450,7 +450,7 @@ F (..\Libraries\src\cw32f030_spi.c)(0x60F91B3B)(--c99 -c --cpu Cortex-M0+ -D__MI
 I (..\Libraries\inc\cw32f030_spi.h)(0x60DA6105)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -466,7 +466,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
@@ -478,7 +478,7 @@ F (..\Libraries\src\cw32f030_uart.c)(0x60E25725)(--c99 -c --cpu Cortex-M0+ -D__M
 I (..\Libraries\inc\cw32f030_uart.h)(0x60DA6105)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -491,7 +491,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 F (..\Libraries\src\cw32f030_vc.c)(0x6103AC74)(--c99 -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\Libraries\inc -I ..\..\..\..\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -I .\USER-I.\RTE\_Target_1-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\cw32f030_vc.o --omf_browse .\objects\cw32f030_vc.crf --depend .\objects\cw32f030_vc.d)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -507,7 +507,7 @@ F (..\Libraries\src\cw32f030_wwdt.c)(0x60D1393E)(--c99 -c --cpu Cortex-M0+ -D__M
 I (..\Libraries\inc\cw32f030_wwdt.h)(0x6084E752)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
 I (C:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
@@ -522,7 +522,7 @@ I (..\Libraries\inc\base_types.h)(0x60ACA725)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x64AD4B3A)
 I (C:\Keil_v5\ARM\ARMCC\include\assert.h)(0x60252378)
 I (..\Libraries\inc\cw32f030.h)(0x60F90B71)
 I (.\USER\core_cm0plus.h)(0x5E8ED122)

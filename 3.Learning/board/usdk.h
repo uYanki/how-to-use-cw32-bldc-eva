@@ -349,16 +349,6 @@ typedef union {
 ///< link four 16bits data to a 64bits data
 #define LINK64_4(W3, W2, W1, W0) (((u64)(W3) << 48) | ((u64)(W2) << 32) | ((u64)(W1) << 16) | ((u64)(W0)))
 
-//---------------------------------------------------------
-
-#define RETURN_CASE(condition, greater, equal, less) \
-    do {                                             \
-        u8 caseval = (condition);                    \
-        if (caseval > 0) return (greater);           \
-        if (caseval < 0) return (less);              \
-        return (equal);                              \
-    } while (0)
-
 INLINE s32 sign(s32 n)
 {
     return (n >> 31) | ((u32)(-n) >> 31);
@@ -371,104 +361,6 @@ INLINE s32 sign(s32 n)
 INLINE f32 _floor(f32 x) { return (f32)((s32)x - (x < 0.0f && x != (s32)x)); }         ///< 向下取整
 INLINE f32 _ceil(f32 x) { return (f32)((s32)x + (x > 0.0f && x != (s32)x)); }          ///< 向上取整
 INLINE f32 _round(f32 x) { return (x >= 0.0f) ? _floor(x + 0.5f) : _ceil(x - 0.5f); }  ///< 四舍五入
-
-//---------------------------------------------------------------------------
-// Components
-//
-
-//---------------------------------------------------------
-///< @defgroup memory
-
-/**
- * @param dest: destination
- * @param src:  source
- */
-
-void* _memset(void* src, u8 chr, u32 len);
-void* _memcpy(void* dest, RO void* src, u32 len);
-void* _memmove(void* dest, RO void* src, u32 len);
-void  _memswap(void* src1, void* src2, u32 len);
-
-s32 _memcmp(RO void* src1, RO void* src2, u32 len);
-
-void* _memxor(void* src, u8 chr, u32 len);      ///< 异或
-void* _memlchr(RO void* src, u8 chr, u32 len);  ///< 顺找
-void* _memrchr(RO void* src, u8 chr, u32 len);  ///< 倒找
-
-void _mem_lshift(void* ptr, u16 len, u16 shift);
-void _mem_rshift(void* ptr, u16 len, u16 shift);
-
-//---------------------------------------------------------
-///< @defgroup sort
-
-typedef s32 (*sort_cmp_t)(RO void*, RO void*);
-
-///< swap elements when function ('cmp') return value is greater than 0
-void _bsort(void* array, u32 count, u32 size, sort_cmp_t cmp);  // bubble
-void _qsort(void* array, u32 count, u32 size, sort_cmp_t cmp);  // quick
-
-//---------------------------------------------------------
-///< @defgroup crc (http://www.ip33.com/crc.html)
-
-u8  crc8(RO u8* dat, u16 len);
-u16 crc16(RO u8* dat, u16 len);
-
-//---------------------------------------------------------
-///< @defgroup string
-
-#if CONFIG_MODULE_STRING
-
-typedef const char* cstr;
-
-INLINE char _islower(char c) { return ('a' <= c && c <= 'z'); }
-INLINE char _isupper(char c) { return ('A' <= c && c <= 'Z'); }
-
-INLINE int _isalpha(char c) { return _islower(c) || _isupper(c); }
-
-///< is binary number
-INLINE bool _isbdigit(char c) { return (c == '0' || c == '1'); }
-///< is decimal number
-INLINE bool _isdigit(char c) { return ('0' <= c && c <= '9'); }
-///< is hexadecimal number
-INLINE bool _isxdigit(char c) { return (_isdigit(c) || (c >= 'a' && c <= 'f') || (c >= 'A' && c <= 'F')); }
-///< is blank character
-INLINE bool _isspace(char c) { return (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\f' || c == '\v'); }
-
-s32 _str2dec(__IN RO u8* str);                  ///< ascii to decimal integer
-u32 _str2hex(__IN RO u8* str);                  ///< ascii to hexadecimal integer
-f32 _str2flt(__IN RO u8* str);                  ///< ascii to real
-u8* _int2str(__OUT u8* str, s32 num, u8 base);  ///< integers from 2 to 36 bases convert to ascii
-
-u32 _strlen(RO u8* str);                                ///< calculate the length of a string
-s32 _strcmp(RO u8* str1, RO u8* str2);                  ///< compare the size of two strings
-u8* _strcpy(u8* dest, RO u8* src);                      ///< copy the source string to the destination string
-u8* _strncpy(u8* dest, RO u8* src, u32 len);            ///< copy the first n characters of the source string to the destination string
-u8* _strcat(u8* dest, RO u8* src);                      ///< append the source string to the end of the destination string
-u8* _strstr(RO u8* str, RO u8* substr);                 ///< find the position of a substring in a string
-u8* _substr(u8* dest, RO u8* src, u32 start, u32 len);  ///< take n characters from a string starting at a certain position
-
-u8* _strlwr(RO u8* str);  ///< lower
-u8* _strupr(RO u8* str);  ///< upper
-
-#endif
-
-//---------------------------------------------------------
-///< @defgroup math
-
-f32 _sqrt(f32 n);
-f32 _polynomial(f32 x, f32 b[], u8 n);
-
-// clang-format off
-
-#if 1
-INLINE f32 _square(f32 n) { return n * n; }
-INLINE f32 _cube(f32 n) { return n * n * n; }
-#else
-#define _square(x) ({ (x) * (x); })
-#define _cube(x)   ({ (x) * (x) * (x); })
-#endif
-
-// clang-format on
 
 //---------------------------------------------------------
 ///< @defgroup byte swap

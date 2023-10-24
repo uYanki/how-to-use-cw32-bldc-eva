@@ -7,6 +7,6 @@ extern vu16 u16HallAngle;
 extern vu32 u32HallCount;
 
 void HallEncInit(void);
-u16  HallEncGetAngle(void);
+bool HallEncUpdate(void);
 
 #endif

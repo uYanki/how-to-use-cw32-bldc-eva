@@ -18,21 +18,21 @@ void Commutation(unsigned int step,unsigned int OutPwmValue,unsigned int PWM_ON_
     {
 			CW_ATIM->CH1CCRA=0;CW_ATIM->CH2CCRA=0;CW_ATIM->CH3CCRA=0;	
 			ATIM_CtrlPWMOutputs(DISABLE);
-		  PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_OFF;
+		//  PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_OFF;
 		  return;
 		}
-		PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_OFF;
+		//PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_OFF;
 		
 		//输出上桥
 		if(step==0||step==1){	 CW_ATIM->CH1CCRA=OutPwmValue;CW_ATIM->CH2CCRA=0;CW_ATIM->CH3CCRA=0;	} //0:AB; 1:AC
 		if(step==2||step==3){	 CW_ATIM->CH1CCRA=0;CW_ATIM->CH2CCRA=OutPwmValue;CW_ATIM->CH3CCRA=0;	} //2:BC; 3:BA
 		if(step==4||step==5){	 CW_ATIM->CH1CCRA=0;CW_ATIM->CH2CCRA=0;CW_ATIM->CH3CCRA=OutPwmValue;	} //4:CA; 5:CB
 	
-		//输出下桥
-		if(step==0||step==5){PWM_AL_OFF;	PWM_CL_OFF;PWM_BL_ON;} //AB CB ; B下桥导通
- 		else if(step==1||step==2){	PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_ON;}//AC BC; C下桥导通
-		else if(step==3||step==4){	PWM_BL_OFF;	PWM_CL_OFF;	PWM_AL_ON;}//BA CA; A下桥导通
-		
+//		//输出下桥
+//		if(step==0||step==5){PWM_AL_OFF;	PWM_CL_OFF;PWM_BL_ON;} //AB CB ; B下桥导通
+// 		else if(step==1||step==2){	PWM_AL_OFF;	PWM_BL_OFF;	PWM_CL_ON;}//AC BC; C下桥导通
+//		else if(step==3||step==4){	PWM_BL_OFF;	PWM_CL_OFF;	PWM_AL_ON;}//BA CA; A下桥导通
+//		
 		ATIM_CtrlPWMOutputs(ENABLE);	 //输出有效
 }
 

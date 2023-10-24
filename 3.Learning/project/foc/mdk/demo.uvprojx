@@ -480,6 +480,21 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>foc</GroupName>
+          <Files>
+            <File>
+              <FileName>foc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\foc\foc.c</FilePath>
+            </File>
+            <File>
+              <FileName>pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\foc\pid.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>fwlib</GroupName>
           <Files>
             <File>

@@ -10,18 +10,25 @@ int main()
 
         if (DelayNonBlockMS(tBlink, 500))
         {
-            LedTgl(LED1);
+            // LedTgl(LED1);
             tBlink = HAL_GetTick();
         }
 
         static tick_t tAdcLog = 0;
 
-        if (DelayNonBlockMS(tAdcLog, 10))
+        if (DelayNonBlockUS(tAdcLog, 100))
         {
-            printf("%f\n", AdConv(AdcRead()) * HVBUS_COEFF);
+            // printf("%f\n", AdConv(AdcRead()) * HVBUS_COEFF);
             // printf("%f\n", NtcConv(AdcRead()));
             tAdcLog = HAL_GetTick();
+            extern void MotorRun(void);
+            if (KeyIsPress(KEY1))
+            {
+                MotorRun();
+            }
         }
+
+        sss();
     }
 }
 

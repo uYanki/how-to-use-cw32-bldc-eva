@@ -14,6 +14,8 @@
 ".\objects\pwm.o"
 ".\objects\sleep.o"
 ".\objects\syscall.o"
+".\objects\foc.o"
+".\objects\pid.o"
 ".\objects\cw32f030_adc.o"
 ".\objects\cw32f030_atim.o"
 ".\objects\cw32f030_awt.o"

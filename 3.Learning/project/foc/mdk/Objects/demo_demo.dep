@@ -4,12 +4,12 @@ F (..\code\src\startup_cw32f030.s)(0x60DA7980)(--cpu Cortex-M0+ -g --apcs=interw
 F (..\code\inc\board_conf.h)(0x65353FEF)()
 F (..\code\src\interrupts_cw32f030.c)(0x64B2F5FB)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\interrupts_cw32f030.o --omf_browse .\objects\interrupts_cw32f030.crf --depend .\objects\interrupts_cw32f030.d)
 I (..\code\inc\interrupts_cw32f030.h)(0x64802BB2)
-F (..\code\src\main.c)(0x653561B0)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\code\src\main.c)(0x6537E203)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\..\..\board\board.h)(0x653561DD)
 I (..\code\inc\board_conf.h)(0x65353FEF)
 I (..\..\..\board\pinmap.h)(0x65356117)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -54,12 +54,12 @@ I (..\..\..\board\bsp/gpio/beep.h)(0x65352E3D)
 I (..\..\..\board\bsp/adc/ntc.h)(0x6534EE30)
 I (..\..\..\board\bsp/adc/pot.h)(0x65354F5B)
 I (..\..\..\board\bsp/adc/adc.h)(0x65355F7A)
-I (..\..\..\board\bsp/tim/hallEnc.h)(0x653552FB)
+I (..\..\..\board\bsp/tim/hallEnc.h)(0x65368FC3)
 I (..\..\..\board\bsp/tim/pwm.h)(0x653561B7)
 F (..\..\..\board\bsp\clk\sysclk.c)(0x653561F6)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\sysclk.o --omf_browse .\objects\sysclk.crf --depend .\objects\sysclk.d)
 I (..\..\..\board\bsp\clk\sysclk.h)(0x65351D61)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -99,7 +99,7 @@ I (..\code\inc\board_conf.h)(0x65353FEF)
 F (..\..\..\board\bsp\gpio\key.c)(0x65354F17)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (..\..\..\board\bsp\gpio\key.h)(0x6534F16D)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -139,7 +139,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\bsp\gpio\beep.c)(0x65352ED9)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\beep.o --omf_browse .\objects\beep.crf --depend .\objects\beep.d)
 I (..\..\..\board\bsp\gpio\beep.h)(0x65352E3D)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -179,7 +179,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\bsp\adc\ntc.c)(0x65355F11)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\ntc.o --omf_browse .\objects\ntc.crf --depend .\objects\ntc.d)
 I (..\..\..\board\bsp\adc\ntc.h)(0x6534EE30)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -219,7 +219,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\bsp\adc\pot.c)(0x65356227)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\pot.o --omf_browse .\objects\pot.crf --depend .\objects\pot.d)
 I (..\..\..\board\bsp\adc\pot.h)(0x65354F5B)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -259,7 +259,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\bsp\adc\adc.c)(0x653560DE)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\adc.o --omf_browse .\objects\adc.crf --depend .\objects\adc.d)
 I (..\..\..\board\bsp\adc\adc.h)(0x65355F7A)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -299,7 +299,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\bsp\gpio\led.c)(0x65352D32)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
 I (..\..\..\board\bsp\gpio\led.h)(0x6534F209)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -336,10 +336,10 @@ I (..\..\..\fwlib\inc\cw32f030_systick.h)(0x64802BB2)
 I (..\..\..\fwlib\inc\cw32f030_uart.h)(0x64802BB2)
 I (..\..\..\fwlib\inc\cw32f030_wwdt.h)(0x64802BB2)
 I (..\..\..\board\pinmap.h)(0x65356117)
-F (..\..\..\board\bsp\tim\hallEnc.c)(0x653552DE)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\hallenc.o --omf_browse .\objects\hallenc.crf --depend .\objects\hallenc.d)
-I (..\..\..\board\bsp\tim\hallEnc.h)(0x653552FB)
+F (..\..\..\board\bsp\tim\hallEnc.c)(0x6537E298)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\hallenc.o --omf_browse .\objects\hallenc.crf --depend .\objects\hallenc.d)
+I (..\..\..\board\bsp\tim\hallEnc.h)(0x65368FC3)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -376,10 +376,24 @@ I (..\..\..\fwlib\inc\cw32f030_systick.h)(0x64802BB2)
 I (..\..\..\fwlib\inc\cw32f030_uart.h)(0x64802BB2)
 I (..\..\..\fwlib\inc\cw32f030_wwdt.h)(0x64802BB2)
 I (..\..\..\board\pinmap.h)(0x65356117)
+I (..\..\..\board\foc/foc.h)(0x6536ADFD)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+I (..\..\..\board\board.h)(0x653561DD)
+I (..\code\inc\board_conf.h)(0x65353FEF)
+I (..\..\..\board\sys/sleep.h)(0x653541B4)
+I (..\..\..\board\bsp/clk/sysclk.h)(0x65351D61)
+I (..\..\..\board\bsp/uart/uart.h)(0x65351D61)
+I (..\..\..\board\bsp/gpio/led.h)(0x6534F209)
+I (..\..\..\board\bsp/gpio/key.h)(0x6534F16D)
+I (..\..\..\board\bsp/gpio/beep.h)(0x65352E3D)
+I (..\..\..\board\bsp/adc/ntc.h)(0x6534EE30)
+I (..\..\..\board\bsp/adc/pot.h)(0x65354F5B)
+I (..\..\..\board\bsp/adc/adc.h)(0x65355F7A)
+I (..\..\..\board\bsp/tim/pwm.h)(0x653561B7)
 F (..\..\..\board\bsp\uart\uart.c)(0x65354110)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\uart.o --omf_browse .\objects\uart.crf --depend .\objects\uart.d)
 I (..\..\..\board\bsp\uart\uart.h)(0x65351D61)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -417,10 +431,10 @@ I (..\..\..\fwlib\inc\cw32f030_uart.h)(0x64802BB2)
 I (..\..\..\fwlib\inc\cw32f030_wwdt.h)(0x64802BB2)
 I (..\code\inc\board_conf.h)(0x65353FEF)
 I (..\..\..\board\pinmap.h)(0x65356117)
-F (..\..\..\board\bsp\tim\pwm.c)(0x65356194)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
+F (..\..\..\board\bsp\tim\pwm.c)(0x6537D6A1)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\pwm.o --omf_browse .\objects\pwm.crf --depend .\objects\pwm.d)
 I (..\..\..\board\bsp\tim\pwm.h)(0x653561B7)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -460,7 +474,7 @@ I (..\..\..\board\pinmap.h)(0x65356117)
 F (..\..\..\board\sys\sleep.c)(0x6535400B)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\sleep.o --omf_browse .\objects\sleep.crf --depend .\objects\sleep.d)
 I (..\..\..\board\sys\sleep.h)(0x653541B4)
 I (..\..\..\fwlib\cw32_fwlib.h)(0x65351DDB)
-I (..\..\..\board\usdk.h)(0x65351DB6)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
 I (..\..\..\fwlib\inc\base_types.h)(0x64A6E15C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -500,6 +514,15 @@ I (..\code\inc\board_conf.h)(0x65353FEF)
 F (..\..\..\board\sys\syscall.c)(0x65352949)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\syscall.o --omf_browse .\objects\syscall.crf --depend .\objects\syscall.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (..\..\..\board\foc\foc.c)(0x6536ADDE)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\foc.o --omf_browse .\objects\foc.crf --depend .\objects\foc.d)
+I (..\..\..\board\foc\foc.h)(0x6536ADFD)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
+I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
+F (..\..\..\board\foc\pid.c)(0x6536A6FF)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
+I (..\..\..\board\foc\pid.h)(0x65369C80)
+I (..\..\..\board\usdk.h)(0x6536A6E0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 F (..\..\..\fwlib\src\cw32f030_adc.c)(0x64802BB2)(--c99 --gnu -c --cpu Cortex-M0+ -D__MICROLIB -g -O2 --apcs=interwork --split_sections -I ..\code\inc -I ..\..\..\fwlib -I ..\..\..\fwlib\inc -I ..\..\..\board -I ..\..\..\libraries-I.\RTE\_demo-IC:\Users\Administrator\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\Administrator\AppData\Local\Arm\Packs\WHXY\CW32F030_DFP\1.0.4\Device\Include-D__UVISION_VERSION="535" -D_RTE_ -D_RTE_-o .\objects\cw32f030_adc.o --omf_browse .\objects\cw32f030_adc.crf --depend .\objects\cw32f030_adc.d)
 I (..\..\..\fwlib\inc\cw32f030.h)(0x64802BB2)
 I (..\code\inc\core_cm0plus.h)(0x5E8ED122)

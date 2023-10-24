@@ -343,6 +343,10 @@ void ATIIM_init(void)
   PA09_AFx_ATIMCH2A();
   PA10_AFx_ATIMCH3A();	
 		
+	    PB13_AFx_ATIMCH1B();
+        PB14_AFx_ATIMCH2B();
+        PB15_AFx_ATIMCH3B();
+
   GPIO_InitStruct.IT = GPIO_IT_NONE;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pins =  GPIO_PIN_13|GPIO_PIN_14|GPIO_PIN_15;
@@ -380,10 +384,19 @@ void ATIIM_init(void)
   ATIM_OC1AInit(&ATIM_OCInitStruct);
 	ATIM_OC2AInit(&ATIM_OCInitStruct);
 	ATIM_OC3AInit(&ATIM_OCInitStruct);
+	
+  ATIM_OCInitStruct.OCPolarity = ATIM_OCPOLARITY_INVERT;
+    ATIM_OC1BInit(&ATIM_OCInitStruct);
+        ATIM_OC2BInit(&ATIM_OCInitStruct);
+        ATIM_OC3BInit(&ATIM_OCInitStruct);
+
 
   ATIM_SetCompare1A(0);
   ATIM_SetCompare2A(0);
   ATIM_SetCompare3A(0);
+	
+
+	
   ATIM_PWMOutputConfig(OCREFA_TYPE_SINGLE, OUTPUT_TYPE_COMP, 0);
   ATIM_CtrlPWMOutputs(ENABLE);
   ATIM_Cmd(ENABLE);
