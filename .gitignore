@@ -32,3 +32,5 @@ Objects
 3.Examples/bldc_mdk/
 *.crf
 *.o
+
+3.Learning\project\foc\mdk\Objects
