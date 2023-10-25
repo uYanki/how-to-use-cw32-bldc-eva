@@ -6,6 +6,7 @@
 void UartInit(void);
 void UartConfig(USART_InitTypeDef* USART_InitStruct);
 
-void UartDmaTx(u8* addr, u16 size);
+void UartDmaTx(__IN u8* bufaddr, u16 bufsize);
+void UartDmaRx(__OUT u8* bufaddr, u16 bufsize);
 
 #endif

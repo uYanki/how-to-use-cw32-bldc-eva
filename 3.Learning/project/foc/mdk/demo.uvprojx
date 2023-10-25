@@ -336,9 +336,9 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define></Define>
+              <Define>CONFIG_USE_MODBUS</Define>
               <Undefine></Undefine>
-              <IncludePath>..\code\inc;..\..\..\fwlib;..\..\..\fwlib\inc;..\..\..\board;..\..\..\libraries</IncludePath>
+              <IncludePath>..\code\inc;..\..\..\fwlib;..\..\..\fwlib\inc;..\..\..\board;..\..\..\libraries;..\..\..\3rdparty\freemodbus\modbus\include;..\..\..\3rdparty\freemodbus\modbus\rtu;..\port\mbslave</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -616,6 +616,91 @@
               <FileName>system_cw32f030.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\..\..\fwlib\src\system_cw32f030.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>modbus/core</GroupName>
+          <Files>
+            <File>
+              <FileName>mb.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\mb.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfunccoils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfunccoils.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfuncdiag.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfuncdiag.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfuncdisc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfuncdisc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfuncholding.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfuncholding.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfuncinput.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfuncinput.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbfuncother.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbfuncother.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbutils.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\functions\mbutils.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>modbus/rtu</GroupName>
+          <Files>
+            <File>
+              <FileName>mbcrc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\rtu\mbcrc.c</FilePath>
+            </File>
+            <File>
+              <FileName>mbrtu.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\3rdparty\freemodbus\modbus\rtu\mbrtu.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>modbus/port</GroupName>
+          <Files>
+            <File>
+              <FileName>mbslave.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\port\mbslave\mbslave.c</FilePath>
+            </File>
+            <File>
+              <FileName>portevent.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\port\mbslave\portevent.c</FilePath>
+            </File>
+            <File>
+              <FileName>portserial.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\port\mbslave\portserial.c</FilePath>
+            </File>
+            <File>
+              <FileName>porttimer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\port\mbslave\porttimer.c</FilePath>
             </File>
           </Files>
         </Group>

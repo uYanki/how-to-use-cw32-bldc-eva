@@ -3,10 +3,7 @@
 #include "board_conf.h"
 #include "pinmap.h"
 
-#define UART_RX_DMA_BUFADDR sUartTxbuf
-#define UART_RX_DMA_BUFSIZE 128u
-
-u8 sUartRxbuf[UART_RX_DMA_BUFSIZE] = {0};
+#include "port.h"
 
 void UartInit(void)
 {
@@ -60,16 +57,14 @@ void UartInit(void)
                 .DMA_TransferWidth = DMA_TRANSFER_WIDTH_8BIT,
                 .TrigMode          = DMA_HardTrig,
                 .HardTrigSource    = UART_RX_DMA_TRIG,
-                .DMA_TransferCnt   = UART_RX_DMA_BUFSIZE,
+                .DMA_TransferCnt   = 0,
                 .DMA_SrcInc        = DMA_SrcAddress_Fix,
                 .DMA_SrcAddress    = (u32)&UART_PORT->RDR,
                 .DMA_DstInc        = DMA_DstAddress_Increase,
-                .DMA_DstAddress    = (u32)UART_RX_DMA_BUFADDR,
+                .DMA_DstAddress    = 0,
             };
 
-            // DMA_Init(UART_RX_DMA_CH, &DMA_InitStructure);
-            // DMA_Cmd(UART_RX_DMA_CH, ENABLE);
-            // USART_DMACmd(UART_PORT, USART_DMAReq_Rx, ENABLE);
+            DMA_Init(UART_RX_DMA_CH, &DMA_InitStructure);
         }
     }
 }
@@ -91,13 +86,34 @@ void UartConfig(USART_InitTypeDef* USART_InitStruct)
     USART_Init(UART_PORT, USART_InitStruct);
 }
 
-void UartDmaTx(u8* addr, u16 size)
+void UartDmaTx(__IN u8* bufaddr, u16 bufsize)
 {
-    UART_TX_DMA_CH->CNT     = bv16 | size;
-    UART_TX_DMA_CH->SRCADDR = (u32)addr;
+    if (bufaddr == nullptr || bufsize == 0)
+    {
+        return;
+    }
+
+    UART_TX_DMA_CH->CNT     = bv16 | bufsize;
+    UART_TX_DMA_CH->SRCADDR = (u32)bufaddr;
 
     USART_DMACmd(UART_PORT, USART_DMAReq_Tx, ENABLE);
     DMA_Cmd(UART_TX_DMA_CH, ENABLE);
+}
+
+void UartDmaRx(__OUT u8* bufaddr, u16 bufsize)
+{
+    if (bufaddr == nullptr || bufsize == 0)
+    {
+        DMA_Cmd(UART_RX_DMA_CH, DISABLE);
+        USART_DMACmd(UART_PORT, USART_DMAReq_Rx, DISABLE);
+        return;
+    }
+
+    UART_RX_DMA_CH->CNT     = bv16 | bufsize;  // UART_RX_DMA_BUFSIZE;
+    UART_RX_DMA_CH->DSTADDR = (u32)bufaddr;    // UART_RX_DMA_BUFADDR;
+
+    DMA_Cmd(UART_RX_DMA_CH, ENABLE);
+    USART_DMACmd(UART_PORT, USART_DMAReq_Rx, ENABLE);
 }
 
 #if CONFIG_REDIRECT_PRINTF

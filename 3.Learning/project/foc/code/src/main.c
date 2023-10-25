@@ -1,18 +1,26 @@
 #include "board.h"
+#include "mb.h"
 
 int main()
 {
     BoardInit();
 
+#ifdef CONFIG_USE_MODBUS
+    eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_EVEN);
+    eMBEnable();
+#endif
+
     while (1)
     {
+#ifdef CONFIG_USE_MODBUS
+        eMBPoll();
+#endif
         static tick_t tBlink = 0;
 
-        if (DelayNonBlockMS(tBlink, 500))
+        if (DelayNonBlockMS(tBlink, 10))
         {
             LedTgl(LED1);
             tBlink = HAL_GetTick();
-            UartDmaTx("hello\r\n", 7);
         }
 
         static tick_t tAdcLog = 0;

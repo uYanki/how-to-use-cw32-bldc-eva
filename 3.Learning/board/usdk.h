@@ -110,13 +110,6 @@ typedef void (*lpfnCbk0_t)(void);
 //
 
 typedef enum {
-    FALSE = 0U,
-    TRUE  = !FALSE,
-} boolean_e;
-
-typedef boolean_e bool_e;
-
-typedef enum {
     OFF = 0U,
     ON  = !OFF,
 } switch_e;

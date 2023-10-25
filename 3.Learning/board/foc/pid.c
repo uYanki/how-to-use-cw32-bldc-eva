@@ -42,7 +42,6 @@ void PID_PostHandler(PID_t* p, f32 out_p)
 
 #endif
 
-    p->out;
 }
 
 void PID_Handler_Base(PID_t* p)  // 基本式 or 位置式

@@ -91,8 +91,17 @@ void ENC_TIM_IRQHandler(void)
 
 bool HallEncUpdate(void)
 {
-    // 霍尔真值为5时, 表示转子d轴与定子alpha轴重合, 即电角度为0
-    static RO u8 steps[] = {5, 3, 4, 1, 0, 2};
+	// 霍尔真值 => 转子实际角度所在范围(N级指向)
+    static RO u8 steps[] = {
+			[0b100] = 0, // 330 ~ 30
+			[0b110] = 1, // 30 ~ 90
+			[0b010] = 2, // 90 ~ 150
+			[0b011] = 3, // 150 ~ 210
+			[0b001] = 4, // 210 ~ 270
+			[0b101] = 5, // 270 ~ 330
+			[0b000] = 0xFF,
+			[0b111] = 0xFF,
+		};
 
     u8 state = 0;
 
@@ -107,11 +116,12 @@ bool HallEncUpdate(void)
 
     u8HallState = state;
 
+		
 #if 1  // 0~360
-    u16ElecAngle = 60 * steps[state - 1];
+    u16ElecAngle = 60 * steps[state];
 #else  // 0~360 => 0~65535
     // 角度标幺化
-    u16ElecAngle = 65535 * steps[state - 1] / 6;
+    u16ElecAngle = 65535 * steps[state] / 6;
 #endif
 
     // printf("%5d,%5d,%5d\n", u16ElecAngle, u8HallState, u32HallCount);
@@ -212,6 +222,7 @@ void  setPhaseVoltage(float Uq, float Ud, float angle_el)
     ATIM_SetCompare1A(duty[n][0] * PWM_Period);
     ATIM_SetCompare2A(duty[n][1] * PWM_Period);
     ATIM_SetCompare3A(duty[n][2] * PWM_Period);
+
 }
 
 #define voltage_limit 6.8  //  6.8  // V，最大值需小于12/1.732=6.9。
@@ -231,14 +242,14 @@ void MotorRun(void)
         f32MechAngle -= 6.28;
     }
 
-    f32 f32ElecAngle = angle_gen(f32MechAngle, MotorPolePairs);
+    f32 f32ElecAngle = angle_gen(f32MechAngle, 2);
 
 #else
 
-    // 霍尔闭环 (需要超前90°)
+    // 霍尔闭环
     // 电角度不对会导致出力不对
 
-    f32 f32ElecAngle = 6.28 * (u16ElecAngle + 90) / 360;
+    f32 f32ElecAngle = 6.28 * u16ElecAngle / 360;
 
 #endif
 

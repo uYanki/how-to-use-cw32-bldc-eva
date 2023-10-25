@@ -19,11 +19,13 @@ void DelayInit(void)
 
 void DelayBlock(tick_t nWaitTime)
 {
+    assert(nWaitTime);
     SysTickDelay(nWaitTime);
 }
 
 bool DelayNonBlock(tick_t nStartTick, tick_t nWaitTime)
 {
+    assert(nWaitTime);
     return HAL_GetTick() >= (nStartTick + nWaitTime);
 }
 

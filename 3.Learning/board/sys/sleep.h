@@ -9,7 +9,7 @@
 #define TICK_INC_1MS    1000ul  // 1ms
 #define TICK_INC_100US  100ul   // 0.1ms
 
-#define CONFIG_TICK_INC TICK_INC_1MS
+#define CONFIG_TICK_INC TICK_INC_100US
 
 //---------------------------------------------------------------
 //
@@ -20,7 +20,7 @@ typedef enum {
     UNIT_S  = 1000000ul,
 } DelayUnit_e;
 
-typedef u32 tick_t;
+typedef u64 tick_t;
 
 inline void DelayInit(void);
 inline void DelayBlock(tick_t nWaitTime);
