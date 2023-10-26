@@ -15,17 +15,20 @@ static tick_t tMbTimeout = CONFIG_TICK_INC;
 
 BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
 {
-    // usTim1Timerout50us:  ±ª˘ 50us
+    // usTim1Timerout50us: Êó∂Âü∫ 50us
 
 #if CONFIG_TICK_INC == TICK_INC_1MS
-#error "unsupported tick !!!"
-    // tMbTimeout = (tick_t)usTim1Timerout50us * 50;  //  ±ª˘ 1000us
+    tMbTimeout = (tick_t)usTim1Timerout50us * 50;  // Êó∂Âü∫ 1000us
 #elif CONFIG_TICK_INC == TICK_INC_100US
-    tMbTimeout = (tick_t)usTim1Timerout50us * 50;  //  ±ª˘ 100us
+    tMbTimeout = (tick_t)usTim1Timerout50us * 50;  // Êó∂Âü∫ 100us
 #else
 #error "unsupported tick !!!"
 #endif
 
+    if (tMbTimeout < CONFIG_TICK_INC)
+    {
+        tMbTimeout = CONFIG_TICK_INC;
+    }
 
     return TRUE;
 }
@@ -50,9 +53,9 @@ void ecbMbTick(void)
     // start bit + databits + stop bit = 10 bit, 3.5 byte * 10 = 35 bit
 
     // 100 us -> 1 tick
-    // 1750 us -> 17.5 tick °÷ 18 tick
-    // 35 bit * 1s / 9600 bps -> 3645.833 us -> 36.458333 tick °÷ 37 tick
-    // 35 bit * 1s / 115200 bps -> 303.8194 us -> 3.038194 tick °÷ 3 tick
+    // 1750 us -> 17.5 tick ‚âà 18 tick
+    // 35 bit * 1s / 9600 bps -> 3645.833 us -> 36.458333 tick ‚âà 37 tick
+    // 35 bit * 1s / 115200 bps -> 303.8194 us -> 3.038194 tick ‚âà 3 tick
 
     static tick_t tFrameRecv = 0;
 
@@ -60,9 +63,9 @@ void ecbMbTick(void)
     {
         if (u16LastCount == u16CurCount && tFrameRecv != 0)
         {
-            if (DelayNonBlockUS(tFrameRecv, tMbTimeout))  // tMbTimeout
+            if (DelayNonBlockUS(tFrameRecv, tMbTimeout) || u16CurCount == UART_RX_DMA_BUFSIZE)  // tMbTimeout
             {
-                // disable RX DMA
+                // disable RX DMA (ÂêØÁî®Âêé‰∏äÊä•ÁöÑÂÖ®ÊòØÈîôËØØÂ∏ß???)
                 // UartDmaRx(nullptr, 0);
 
                 // recvice frame
@@ -71,6 +74,9 @@ void ecbMbTick(void)
 
                 // enable RX DMA
                 UartDmaRx(UART_RX_DMA_BUFADDR, UART_RX_DMA_BUFSIZE);
+
+                // reset counter
+                u16LastCount = 0;
             }
         }
         else

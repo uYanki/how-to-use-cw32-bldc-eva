@@ -67,6 +67,15 @@ void UartInit(void)
             DMA_Init(UART_RX_DMA_CH, &DMA_InitStructure);
         }
     }
+    // nvic
+    {
+        __disable_irq();
+        NVIC_EnableIRQ(UART_TX_DMA_IRQn);
+        __enable_irq();
+
+        // 对应的中断函数在 interrupts_cw32f030.c 中
+        DMA_ITConfig(UART_TX_DMA_CH, DMA_IT_TC, ENABLE);
+    }
 }
 
 void UartConfig(USART_InitTypeDef* USART_InitStruct)

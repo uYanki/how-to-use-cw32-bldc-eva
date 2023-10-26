@@ -13,104 +13,107 @@
 //-----------------------------------------------------------------------------
 //
 
-#define LED_NBR            3u
-#define KEY_NBR            3u
+#define LED_NBR                3u
+#define KEY_NBR                3u
 
 //-----------------------------------------------------------------------------
 //
 
 ///< led (digital)
 
-#define LED1_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define LED1_GPIO_CLK      RCC_AHB_PERIPH_GPIOC
-#define LED1_GPIO_PORT     CW_GPIOC
-#define LED1_GPIO_PIN      GPIO_PIN_13
+#define LED1_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define LED1_GPIO_CLK          RCC_AHB_PERIPH_GPIOC
+#define LED1_GPIO_PORT         CW_GPIOC
+#define LED1_GPIO_PIN          GPIO_PIN_13
 
-#define LED2_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define LED2_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
-#define LED2_GPIO_PORT     CW_GPIOA
-#define LED2_GPIO_PIN      GPIO_PIN_11
+#define LED2_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define LED2_GPIO_CLK          RCC_AHB_PERIPH_GPIOA
+#define LED2_GPIO_PORT         CW_GPIOA
+#define LED2_GPIO_PIN          GPIO_PIN_11
 
-#define LED3_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define LED3_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
-#define LED3_GPIO_PORT     CW_GPIOB
-#define LED3_GPIO_PIN      GPIO_PIN_11
+#define LED3_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define LED3_GPIO_CLK          RCC_AHB_PERIPH_GPIOB
+#define LED3_GPIO_PORT         CW_GPIOB
+#define LED3_GPIO_PIN          GPIO_PIN_11
 
 ///< key (digital)
 
-#define KEY1_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define KEY1_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
-#define KEY1_GPIO_PORT     CW_GPIOB
-#define KEY1_GPIO_PIN      GPIO_PIN_4
+#define KEY1_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define KEY1_GPIO_CLK          RCC_AHB_PERIPH_GPIOB
+#define KEY1_GPIO_PORT         CW_GPIOB
+#define KEY1_GPIO_PIN          GPIO_PIN_4
 
-#define KEY2_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define KEY2_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
-#define KEY2_GPIO_PORT     CW_GPIOB
-#define KEY2_GPIO_PIN      GPIO_PIN_5
+#define KEY2_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define KEY2_GPIO_CLK          RCC_AHB_PERIPH_GPIOB
+#define KEY2_GPIO_PORT         CW_GPIOB
+#define KEY2_GPIO_PIN          GPIO_PIN_5
 
-#define KEY3_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define KEY3_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
-#define KEY3_GPIO_PORT     CW_GPIOB
-#define KEY3_GPIO_PIN      GPIO_PIN_10
+#define KEY3_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define KEY3_GPIO_CLK          RCC_AHB_PERIPH_GPIOB
+#define KEY3_GPIO_PORT         CW_GPIOB
+#define KEY3_GPIO_PIN          GPIO_PIN_10
 
 ///< buzzer (digital)
 
-#define BEEP_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define BEEP_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
-#define BEEP_GPIO_PORT     CW_GPIOA
-#define BEEP_GPIO_PIN      GPIO_PIN_12
+#define BEEP_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define BEEP_GPIO_CLK          RCC_AHB_PERIPH_GPIOA
+#define BEEP_GPIO_PORT         CW_GPIOA
+#define BEEP_GPIO_PIN          GPIO_PIN_12
 
 ///< potentiometer (analog)
 
-#define POT_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
-#define POT_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
-#define POT_GPIO_PORT      CW_GPIOB
-#define POT_GPIO_PIN       GPIO_PIN_0
-#define POT_ADC_CH         ADC_ExInputCH8
+#define POT_GPIO_CLKEN         RCC_AHBPeriphClk_Enable
+#define POT_GPIO_CLK           RCC_AHB_PERIPH_GPIOB
+#define POT_GPIO_PORT          CW_GPIOB
+#define POT_GPIO_PIN           GPIO_PIN_0
+#define POT_ADC_CH             ADC_ExInputCH8
 
 ///< ntc thermistor (analog)
 
-#define NTC_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
-#define NTC_GPIO_CLK       RCC_AHB_PERIPH_GPIOA
-#define NTC_GPIO_PORT      CW_GPIOA
-#define NTC_GPIO_PIN       GPIO_PIN_4
-#define NTC_ADC_CH         ADC_ExInputCH4
+#define NTC_GPIO_CLKEN         RCC_AHBPeriphClk_Enable
+#define NTC_GPIO_CLK           RCC_AHB_PERIPH_GPIOA
+#define NTC_GPIO_PORT          CW_GPIOA
+#define NTC_GPIO_PIN           GPIO_PIN_4
+#define NTC_ADC_CH             ADC_ExInputCH4
 
 ///< uart (dbg,ble)
 
-#define UART_CLKEN         RCC_APBPeriphClk_Enable2
-#define UART_CLK           RCC_APB2_PERIPH_UART1
-#define UART_PORT          CW_UART1
+#define UART_CLKEN             RCC_APBPeriphClk_Enable2
+#define UART_CLK               RCC_APB2_PERIPH_UART1
+#define UART_PORT              CW_UART1
 
-#define UART_TX_GPIO_CLKEN RCC_AHBPeriphClk_Enable
-#define UART_TX_GPIO_CLK   RCC_AHB_PERIPH_GPIOB
-#define UART_TX_GPIO_PORT  CW_GPIOB
-#define UART_TX_GPIO_PIN   GPIO_PIN_8
-#define UART_TX_GPIO_AF    PB08_AFx_UART1TXD
+#define UART_TX_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
+#define UART_TX_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
+#define UART_TX_GPIO_PORT      CW_GPIOB
+#define UART_TX_GPIO_PIN       GPIO_PIN_8
+#define UART_TX_GPIO_AF        PB08_AFx_UART1TXD
 
-#define UART_RX_GPIO_CLKEN RCC_AHBPeriphClk_Enable
-#define UART_RX_GPIO_CLK   RCC_AHB_PERIPH_GPIOB
-#define UART_RX_GPIO_PORT  CW_GPIOB
-#define UART_RX_GPIO_PIN   GPIO_PIN_9
-#define UART_RX_GPIO_AF    PB09_AFx_UART1RXD
+#define UART_RX_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
+#define UART_RX_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
+#define UART_RX_GPIO_PORT      CW_GPIOB
+#define UART_RX_GPIO_PIN       GPIO_PIN_9
+#define UART_RX_GPIO_AF        PB09_AFx_UART1RXD
 
-#define UART_TX_DMA_CH     CW_DMACHANNEL2
-#define UART_TX_DMA_TRIG   DMA_HardTrig_UART1_TXBufferE
+#define UART_TX_DMA_CH         CW_DMACHANNEL2
+#define UART_TX_DMA_TRIG       DMA_HardTrig_UART1_TXBufferE
+#define UART_TX_DMA_IRQn       DMACH23_IRQn
+#define UART_TX_DMA_IRQHandler DMACH23_IRQHandler
+#define UART_TX_DMA_IT         DMA_IT_TC2
 
-#define UART_RX_DMA_CH     CW_DMACHANNEL1
-#define UART_RX_DMA_TRIG   DMA_HardTrig_UART1_RXBufferNE
+#define UART_RX_DMA_CH         CW_DMACHANNEL1
+#define UART_RX_DMA_TRIG       DMA_HardTrig_UART1_RXBufferNE
 
 ///< i2c (oled)
 
-#define I2C_SCL_GPIO_CLKEN RCC_AHBPeriphClk_Enable
-#define I2C_SCL_GPIO_CLK   RCC_AHB_PERIPH_GPIOB
-#define I2C_SCL_GPIO_PORT  CW_GPIOB
-#define I2C_SCL_GPIO_PIN   GPIO_PIN_6
+#define I2C_SCL_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
+#define I2C_SCL_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
+#define I2C_SCL_GPIO_PORT      CW_GPIOB
+#define I2C_SCL_GPIO_PIN       GPIO_PIN_6
 
-#define I2C_SDA_GPIO_CLKEN RCC_AHBPeriphClk_Enable
-#define I2C_SDA_GPIO_CLK   RCC_AHB_PERIPH_GPIOB
-#define I2C_SDA_GPIO_PORT  CW_GPIOB
-#define I2C_SDA_GPIO_PIN   GPIO_PIN_7
+#define I2C_SDA_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
+#define I2C_SDA_GPIO_CLK       RCC_AHB_PERIPH_GPIOB
+#define I2C_SDA_GPIO_PORT      CW_GPIOB
+#define I2C_SDA_GPIO_PIN       GPIO_PIN_7
 
 #define I2C_CLK
 #define I2C_PORT

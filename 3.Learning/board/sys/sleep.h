@@ -9,7 +9,7 @@
 #define TICK_INC_1MS    1000ul  // 1ms
 #define TICK_INC_100US  100ul   // 0.1ms
 
-#define CONFIG_TICK_INC TICK_INC_100US
+#define CONFIG_TICK_INC TICK_INC_1MS
 
 //---------------------------------------------------------------
 //

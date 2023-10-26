@@ -147,7 +147,7 @@ eMBErrorCode
 eMBRTUReceive(UCHAR* pucRcvAddress, UCHAR** pucFrame, USHORT* pusLength)
 {
     // BOOL         xFrameReceived = FALSE;
-    eMBErrorCode eStatus        = MB_ENOERR;
+    eMBErrorCode eStatus = MB_ENOERR;
 
     ENTER_CRITICAL_SECTION();
     assert(usRcvBufferPos < MB_SER_PDU_SIZE_MAX);
@@ -166,7 +166,7 @@ eMBRTUReceive(UCHAR* pucRcvAddress, UCHAR** pucFrame, USHORT* pusLength)
         *pusLength = (USHORT)(usRcvBufferPos - MB_SER_PDU_PDU_OFF - MB_SER_PDU_SIZE_CRC);
 
         /* Return the start of the Modbus PDU to the caller. */
-        *pucFrame      = (UCHAR*)&ucRTUBuf[MB_SER_PDU_PDU_OFF];
+        *pucFrame = (UCHAR*)&ucRTUBuf[MB_SER_PDU_PDU_OFF];
         // xFrameReceived = TRUE;
     }
     else
@@ -210,8 +210,7 @@ eMBRTUSend(UCHAR ucSlaveAddress, const UCHAR* pucFrame, USHORT usLength)
         eSndState = STATE_TX_XMIT;
         vMBPortSerialEnable(FALSE, TRUE);
 
-			extern void UartDmaTx(u8* addr, u16 size);
-
+        extern void UartDmaTx(u8 * addr, u16 size);
         UartDmaTx((void*)ucRTUBuf, usSndBufferCount);
     }
     else
@@ -245,16 +244,15 @@ BOOL xMBRTUTimerT35Expired(void)
 
 //-----------------------------------------------------------------------------
 
-
-
-// call by USART_TC
+// call by UART_TX_DMA_IRQHandler
 void ecbMbUartTx(void)
 {
+    // 不调用也没关系
     // transmit finish, prepare recvice
     eRcvState = STATE_RX_IDLE;
 }
 
-// call by USART_IDLE
+// call by ecbMbTick
 void ecbMbUartRx(RO u8* buffer, u16 length)
 {
     usRcvBufferPos = length;
@@ -264,4 +262,3 @@ void ecbMbUartRx(RO u8* buffer, u16 length)
     eRcvState = STATE_RX_IDLE;
     xMBPortEventPost(EV_FRAME_RECEIVED);
 }
-

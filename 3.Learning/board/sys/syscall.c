@@ -1,5 +1,3 @@
-// clang-format off
-
 #ifndef NDEBUG
 
 #include <stdlib.h>
@@ -46,5 +44,3 @@ void abort(void)
 }
 
 #endif
-
-// clang-format on

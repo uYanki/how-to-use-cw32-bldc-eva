@@ -18,6 +18,7 @@
 #include "interrupts_cw32f030.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "board.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -69,7 +70,8 @@ void HardFault_Handler(void)
     /* USER CODE BEGIN HardFault_IRQn */
 
     /* USER CODE END HardFault_IRQn */
-    while (1) {
+    while (1)
+    {
         /* USER CODE BEGIN W1_HardFault_IRQn */
 
         /* USER CODE END W1_HardFault_IRQn */
@@ -208,10 +210,18 @@ void DMACH1_IRQHandler(void)
 /**
  * @brief This funcation handles DMACH23
  */
+
 void DMACH23_IRQHandler(void)
 {
     /* USER CODE BEGIN */
-
+#ifdef CONFIG_USE_MODBUS
+    if (DMA_GetITStatus(UART_TX_DMA_IT))
+    {
+        extern void ecbMbUartTx(void);
+        ecbMbUartTx();
+        DMA_ClearITPendingBit(UART_TX_DMA_IT);
+    }
+#endif
     /* USER CODE END */
 }
 

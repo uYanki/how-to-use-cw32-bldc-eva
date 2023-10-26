@@ -25,7 +25,15 @@ void DelayBlock(tick_t nWaitTime)
 
 bool DelayNonBlock(tick_t nStartTick, tick_t nWaitTime)
 {
-    assert(nWaitTime);
+    if (nWaitTime == 0)
+    {
+#if 0
+        assert(0);
+#else
+        nWaitTime = 1;
+#endif
+    }
+
     return HAL_GetTick() >= (nStartTick + nWaitTime);
 }
 
