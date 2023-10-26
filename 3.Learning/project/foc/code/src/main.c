@@ -5,6 +5,10 @@ int main()
 {
     BoardInit();
 
+    // oled_draw_str(0, 0, "hello\n \tworld !!\b?", crBLACK, crWHITE);
+    oled_draw_str(0, 0, "hello\n \tworld !!\b?", crWHITE, crBLACK);
+    oled_update();
+
 #ifdef CONFIG_USE_MODBUS
     eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_EVEN);
     eMBEnable();
@@ -68,6 +72,10 @@ void BoardInit(void)
 
     HallEncInit();
     PwmInit();
+
+    oled_init();
+    oled_clear();
+    oled_update();
 }
 
 /******************************************************************************

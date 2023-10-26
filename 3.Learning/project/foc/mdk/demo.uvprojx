@@ -462,6 +462,16 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\board\bsp\tim\pwm.c</FilePath>
             </File>
+            <File>
+              <FileName>oled_i2c.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\i2c\oled\oled_i2c.c</FilePath>
+            </File>
+            <File>
+              <FileName>font.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\bsp\i2c\oled\font.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -1,8 +1,4 @@
-https://www.whxy.com/support/download/1
 
-
-
-新建工程：https://www.bilibili.com/video/BV17a411W7zQ?spm_id_from=333.999.0.0&vd_source=2b8103bfef27a8cd7fb417d49add77f4
 
 BLDC无刷电机典型案例演示：https://www.bilibili.com/video/BV1ga411j7VN?spm_id_from=333.999.0.0
 

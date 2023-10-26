@@ -22,6 +22,8 @@
 #include "bsp/tim/hallEnc.h"
 #include "bsp/tim/pwm.h"
 
+#include "bsp/i2c/oled/oled_i2c.h"
+
 void BoardInit(void);
 
 #endif
