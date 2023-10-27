@@ -5,13 +5,15 @@ int main()
 {
     BoardInit();
 
-    // oled_draw_str(0, 0, "hello\n \tworld !!\b?", crBLACK, crWHITE);
-    oled_draw_str(0, 0, "hello\n \tworld !!\b?", crWHITE, crBLACK);
-    oled_update();
-
 #ifdef CONFIG_USE_MODBUS
     eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_EVEN);
     eMBEnable();
+#endif
+	
+#ifndef CONFIG_USE_MODBUS
+    // oled_draw_str(0, 0, "hello\n \tworld !!\b?", crBLACK, crWHITE);
+    oled_draw_str(0, 0, "hello\n \tworld !!\b?", crWHITE, crBLACK);
+    oled_update();
 #endif
 
     while (1)
@@ -72,10 +74,16 @@ void BoardInit(void)
 
     HallEncInit();
     PwmInit();
-
+		
+#ifndef CONFIG_USE_MODBUS
+		// 启用后 modbus 发送不正常, 暂屏蔽
     oled_init();
     oled_clear();
     oled_update();
+#endif
+		
+    // crc: for modbus
+    RCC_AHBPeriphClk_Enable(RCC_AHB_PERIPH_CRC, ENABLE);
 }
 
 /******************************************************************************

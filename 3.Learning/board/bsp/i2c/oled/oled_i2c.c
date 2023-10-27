@@ -5,7 +5,7 @@
 
 sFONT* oled_font = &Font8x16;
 
-uint8_t oled_gram[OLED_SCREEN_H][OLED_SCREEN_W];
+uint8_t oled_gram[OLED_SCREEN_H][OLED_SCREEN_W] = {0};
 
 void I2C_init(void)
 {

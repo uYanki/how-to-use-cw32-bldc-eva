@@ -11,20 +11,14 @@
 
 /* ----------------------- Start implementation ---------------------------- */
 
-static tick_t tMbTimeout = CONFIG_TICK_INC;
+static tick_t tMbTimeout = CONFIG_TICK_INC; // us
 
 BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
 {
     // usTim1Timerout50us: 时基 50us
 
-#if CONFIG_TICK_INC == TICK_INC_1MS
-    tMbTimeout = (tick_t)usTim1Timerout50us * 50;  // 时基 1000us
-#elif CONFIG_TICK_INC == TICK_INC_100US
-    tMbTimeout = (tick_t)usTim1Timerout50us * 50;  // 时基 100us
-#else
-#error "unsupported tick !!!"
-#endif
-
+    tMbTimeout = (tick_t)usTim1Timerout50us * 50; 
+	
     if (tMbTimeout < CONFIG_TICK_INC)
     {
         tMbTimeout = CONFIG_TICK_INC;
@@ -59,11 +53,11 @@ void ecbMbTick(void)
 
     static tick_t tFrameRecv = 0;
 
-    if (u16CurCount > 0)
+    if (u16CurCount > 0)  // readable
     {
         if (u16LastCount == u16CurCount && tFrameRecv != 0)
         {
-            if (DelayNonBlockUS(tFrameRecv, tMbTimeout) || u16CurCount == UART_RX_DMA_BUFSIZE)  // tMbTimeout
+            if (DelayNonBlockUS(tFrameRecv, tMbTimeout) || u16CurCount == UART_RX_DMA_BUFSIZE)
             {
                 // disable RX DMA (启用后上报的全是错误帧???)
                 // UartDmaRx(nullptr, 0);

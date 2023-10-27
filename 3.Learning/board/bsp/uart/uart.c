@@ -95,6 +95,7 @@ void UartConfig(USART_InitTypeDef* USART_InitStruct)
     USART_Init(UART_PORT, USART_InitStruct);
 }
 
+// 启用串口发送DMA
 void UartDmaTx(__IN u8* bufaddr, u16 bufsize)
 {
     if (bufaddr == nullptr || bufsize == 0)
@@ -109,12 +110,14 @@ void UartDmaTx(__IN u8* bufaddr, u16 bufsize)
     DMA_Cmd(UART_TX_DMA_CH, ENABLE);
 }
 
+// 启用串口接收DMA (帧读取方法详看`ecbMbTick()`)
 void UartDmaRx(__OUT u8* bufaddr, u16 bufsize)
 {
     if (bufaddr == nullptr || bufsize == 0)
     {
         DMA_Cmd(UART_RX_DMA_CH, DISABLE);
         USART_DMACmd(UART_PORT, USART_DMAReq_Rx, DISABLE);
+
         return;
     }
 

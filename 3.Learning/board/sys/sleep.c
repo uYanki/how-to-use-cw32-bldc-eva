@@ -12,6 +12,8 @@ void DelayInit(void)
     InitTick(CONFIG_SYSCLK_FREQ / 1ul);
 #elif CONFIG_TICK_INC == TICK_INC_100US
     InitTick(CONFIG_SYSCLK_FREQ / 10ul);
+#elif CONFIG_TICK_INC == TICK_INC_50US
+    InitTick(CONFIG_SYSCLK_FREQ / 20ul);
 #else
 #error "unsupported tick increment"
 #endif
@@ -69,7 +71,7 @@ bool TimeRecStart(u8 id)
     return false;
 }
 
-u32 TimeRecEnd(u8 id)
+tick_t TimeRecEnd(u8 id)
 {
     if (id < ARRAY_SIZE(saMeasureTime))
     {

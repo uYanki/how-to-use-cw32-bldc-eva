@@ -8,8 +8,9 @@
 
 #define TICK_INC_1MS    1000ul  // 1ms
 #define TICK_INC_100US  100ul   // 0.1ms
+#define TICK_INC_50US   50ul    // 0.05ms
 
-#define CONFIG_TICK_INC TICK_INC_1MS
+#define CONFIG_TICK_INC TICK_INC_50US
 
 //---------------------------------------------------------------
 //
@@ -20,7 +21,8 @@ typedef enum {
     UNIT_S  = 1000000ul,
 } DelayUnit_e;
 
-typedef u64 tick_t;
+typedef u32 tick_t;
+// typedef u64 tick_t;
 
 inline void DelayInit(void);
 inline void DelayBlock(tick_t nWaitTime);
@@ -53,6 +55,6 @@ inline tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick);
 #define TID_9                 9
 
 bool TimeRecStart(u8 id);
-u32  TimeRecEnd(u8 id);
+tick_t TimeRecEnd(u8 id);
 
 #endif
