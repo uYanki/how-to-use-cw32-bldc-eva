@@ -1,24 +1,25 @@
 #include "board.h"
-#include "mb.h"
 
 int main()
 {
     BoardInit();
 
-#ifdef CONFIG_USE_MODBUS
-    eMBInit(MB_RTU, 0x01, 1, 115200, MB_PAR_EVEN);
-    eMBEnable();
-#endif
-
-    // oled_draw_str(0, 0, "hello\n \tworld !!\b?", crBLACK, crWHITE);
-    oled_draw_str(0, 0, "hello\n \tworld !!\b?", crWHITE, crBLACK);
-    oled_update();
-
     while (1)
     {
-#ifdef CONFIG_USE_MODBUS
-        eMBPoll();
-#endif
+        static tick_t tAdcLog = 0;
+
+        if (DelayNonBlockMS(tAdcLog, 10))
+        {
+            extern u16 AdcResBuf[4];
+            for (u8 i = 0; i < ARRAY_SIZE(AdcResBuf); ++i)
+            {
+                printf("%d,", AdcResBuf[i]);
+            }
+            printf("0\n");
+
+            tAdcLog = HAL_GetTick();
+        }
+
         static tick_t tBlink = 0;
 
         if (DelayNonBlockMS(tBlink, 1000))
@@ -28,18 +29,18 @@ int main()
             // printf("hello\n");
         }
 
-        static tick_t tAdcLog = 0;
+        static tick_t tMotorCtrl = 0;
 
-        if (DelayNonBlockUS(tAdcLog, 100))
+        if (DelayNonBlockUS(tMotorCtrl, 100))
         {
             // printf("%f\n", AdConv(AdcRead()) * HVBUS_COEFF);
             // printf("%f\n", NtcConv(AdcRead()));
-            tAdcLog = HAL_GetTick();
+            tMotorCtrl = HAL_GetTick();
             extern void MotorRun(void);
             if (KeyIsPress(KEY1))
             {
-                MotorRun();
                 ATIM_CtrlPWMOutputs(ENABLE);
+                MotorRun();
             }
             else
             {
@@ -78,13 +79,6 @@ void BoardInit(void)
 
     HallEncInit();
     PwmInit();
-
-    oled_init();
-    oled_clear();
-    oled_update();
-
-    // crc: for modbus
-    RCC_AHBPeriphClk_Enable(RCC_AHB_PERIPH_CRC, ENABLE);
 }
 
 /******************************************************************************

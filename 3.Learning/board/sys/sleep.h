@@ -6,23 +6,21 @@
 //---------------------------------------------------------------
 //
 
-#define TICK_INC_1MS    1000ul  // 1ms
-#define TICK_INC_100US  100ul   // 0.1ms
-#define TICK_INC_50US   50ul    // 0.05ms
-
-#define CONFIG_TICK_INC TICK_INC_50US
-
-//---------------------------------------------------------------
-//
-
 typedef enum {
     UNIT_US = 1ul,
     UNIT_MS = 1000ul,
     UNIT_S  = 1000000ul,
 } DelayUnit_e;
 
+#if 1
 typedef u32 tick_t;
-// typedef u64 tick_t;
+#define TICK_MAX (UINT32_MAX)
+#else
+typedef u64 tick_t;
+#define TICK_MAX (UINT64_MAX)
+#endif
+
+#define TICK_UNIT_US 1e2
 
 inline void DelayInit(void);
 inline void DelayBlock(tick_t nWaitTime);
@@ -31,14 +29,14 @@ inline bool DelayNonBlock(tick_t nStartTick, tick_t nWaitTime);
 inline tick_t HAL_GetTick(void);
 inline tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick);
 
-#define DelayBlockUS(t)       DelayBlock((t) * (UNIT_US) / CONFIG_TICK_INC)
-#define DelayNonBlockUS(s, t) DelayNonBlock(s, (t) * (UNIT_US) / CONFIG_TICK_INC)
+#define DelayBlockUS(t)       DelayBlock((t) * (UNIT_US) / (TICK_UNIT_US))
+#define DelayNonBlockUS(s, t) DelayNonBlock(s, (t) * (UNIT_US) / (TICK_UNIT_US))
 
-#define DelayBlockMS(t)       DelayBlock((t) * (UNIT_MS) / CONFIG_TICK_INC)
-#define DelayNonBlockMS(s, t) DelayNonBlock(s, (t) * (UNIT_MS) / CONFIG_TICK_INC)
+#define DelayBlockMS(t)       DelayBlock((t) * (UNIT_MS) / (TICK_UNIT_US))
+#define DelayNonBlockMS(s, t) DelayNonBlock(s, (t) * (UNIT_MS) / (TICK_UNIT_US))
 
-#define DelayBlockS(t)        DelayBlock((t) * (UNIT_S) / CONFIG_TICK_INC)
-#define DelayNonBlockS(s, t)  DelayNonBlock(s, (t) * (UNIT_S) / CONFIG_TICK_INC)
+#define DelayBlockS(t)        DelayBlock((t) * (UNIT_S) / (TICK_UNIT_US))
+#define DelayNonBlockS(s, t)  DelayNonBlock(s, (t) * (UNIT_S) / (TICK_UNIT_US))
 
 //---------------------------------------------------------------
 // time measure
@@ -54,7 +52,7 @@ inline tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick);
 #define TID_8                 8
 #define TID_9                 9
 
-bool TimeRecStart(u8 id);
+bool   TimeRecStart(u8 id);
 tick_t TimeRecEnd(u8 id);
 
 #endif

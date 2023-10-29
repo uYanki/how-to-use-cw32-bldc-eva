@@ -79,7 +79,7 @@ void PwmInit(void)
         // 互补输出，插入死区
         ATIM_PWMOutputConfig(OCREFA_TYPE_DOUBLE, OUTPUT_TYPE_COMP, 2);
 
-        ATIM_CtrlPWMOutputs(ENABLE);
+        // ATIM_CtrlPWMOutputs(DISABLE);
         ATIM_Cmd(ENABLE);
     }
 }

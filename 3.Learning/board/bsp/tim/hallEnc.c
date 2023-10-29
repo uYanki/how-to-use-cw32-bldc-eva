@@ -262,20 +262,20 @@ void MotorRun(void)
 
     // foc
 
-    park_t _park = {
-        .sin   = sinf(f32ElecAngle),
-        .cos   = cosf(f32ElecAngle),
-        .theta = f32ElecAngle,
-        .d     = 0,
-        .q     = 5,
-    };
+//    park_t _park = {
+//        .sin   = sinf(f32ElecAngle),
+//        .cos   = cosf(f32ElecAngle),
+//        .theta = f32ElecAngle,
+//        .d     = 0,
+//        .q     = 5,
+//    };
 
-    ipark(&_park);
+//    ipark(&_park);
 
-    svgen_t _svpwm = {
-        .Ualpha = _park.alpha,
-        .Ubeta  = _park.beta,
-    };
+//    svgen_t _svpwm = {
+//        .Ualpha = _park.alpha,
+//        .Ubeta  = _park.beta,
+//    };
 
-    svgen(&_svpwm);
+//    svgen(&_svpwm);
 }

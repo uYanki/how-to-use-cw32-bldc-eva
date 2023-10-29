@@ -3,8 +3,6 @@
 #include "board_conf.h"
 #include "pinmap.h"
 
-#include "port.h"
-
 void UartInit(void)
 {
     // GPIO

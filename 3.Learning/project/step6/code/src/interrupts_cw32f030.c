@@ -228,12 +228,12 @@ void DMACH23_IRQHandler(void)
 /**
  * @brief This funcation handles DMA34
  */
-void DMACH45_IRQHandler(void)
-{
-    /* USER CODE BEGIN */
+// void DMACH45_IRQHandler(void)
+// {
+//     /* USER CODE BEGIN */
 
-    /* USER CODE END */
-}
+//     /* USER CODE END */
+// }
 
 /**
  * @brief This funcation handles ADC
@@ -447,9 +447,9 @@ void SysTick_Handler(void)
 {
     /* USER CODE BEGIN SysTick_IRQn */
 
-	  extern void HAL_IncTick(void);
+    extern void HAL_IncTick(void);
     HAL_IncTick();
-	
+
 #ifdef CONFIG_USE_MODBUS  // modbus
     extern void ecbMbTick(void);
     ecbMbTick();

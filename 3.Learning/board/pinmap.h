@@ -115,111 +115,112 @@
 #define I2C_SDA_GPIO_PORT      CW_GPIOB
 #define I2C_SDA_GPIO_PIN       GPIO_PIN_7
 
-#define I2C_CLK
-#define I2C_PORT
+#define I2C_CLKEN              RCC_APBPeriphClk_Enable1
+#define I2C_CLK                RCC_APB1_PERIPH_I2C1
+#define I2C_PORT               CW_I2C1
 
 ///< pwm (motor)
 
-#define MOTOR_WH_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_WH_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
-#define MOTOR_WH_GPIO_PORT   CW_GPIOA
-#define MOTOR_WH_GPIO_PIN    GPIO_PIN_10
+#define MOTOR_WH_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_WH_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
+#define MOTOR_WH_GPIO_PORT     CW_GPIOA
+#define MOTOR_WH_GPIO_PIN      GPIO_PIN_10
 
-#define MOTOR_VH_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_VH_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
-#define MOTOR_VH_GPIO_PORT   CW_GPIOA
-#define MOTOR_VH_GPIO_PIN    GPIO_PIN_9
+#define MOTOR_VH_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_VH_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
+#define MOTOR_VH_GPIO_PORT     CW_GPIOA
+#define MOTOR_VH_GPIO_PIN      GPIO_PIN_9
 
-#define MOTOR_UH_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_UH_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
-#define MOTOR_UH_GPIO_PORT   CW_GPIOA
-#define MOTOR_UH_GPIO_PIN    GPIO_PIN_8
+#define MOTOR_UH_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_UH_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
+#define MOTOR_UH_GPIO_PORT     CW_GPIOA
+#define MOTOR_UH_GPIO_PIN      GPIO_PIN_8
 
-#define MOTOR_WL_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_WL_GPIO_CLK    RCC_AHB_PERIPH_GPIOB
-#define MOTOR_WL_GPIO_PORT   CW_GPIOB
-#define MOTOR_WL_GPIO_PIN    GPIO_PIN_15
+#define MOTOR_WL_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_WL_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
+#define MOTOR_WL_GPIO_PORT     CW_GPIOB
+#define MOTOR_WL_GPIO_PIN      GPIO_PIN_15
 
-#define MOTOR_VL_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_VL_GPIO_CLK    RCC_AHB_PERIPH_GPIOB
-#define MOTOR_VL_GPIO_PORT   CW_GPIOB
-#define MOTOR_VL_GPIO_PIN    GPIO_PIN_14
+#define MOTOR_VL_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_VL_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
+#define MOTOR_VL_GPIO_PORT     CW_GPIOB
+#define MOTOR_VL_GPIO_PIN      GPIO_PIN_14
 
-#define MOTOR_UL_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_UL_GPIO_CLK    RCC_AHB_PERIPH_GPIOB
-#define MOTOR_UL_GPIO_PORT   CW_GPIOB
-#define MOTOR_UL_GPIO_PIN    GPIO_PIN_13
+#define MOTOR_UL_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_UL_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
+#define MOTOR_UL_GPIO_PORT     CW_GPIOB
+#define MOTOR_UL_GPIO_PIN      GPIO_PIN_13
 
-#define MOTOR_BKIN_GPIO_CEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_BKIN_GPIO_CLK  RCC_AHB_PERIPH_GPIOB
-#define MOTOR_BKIN_GPIO_PORT CW_GPIOB
-#define MOTOR_BKIN_GPIO_PIN  GPIO_PIN_12
+#define MOTOR_BKIN_GPIO_CEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_BKIN_GPIO_CLK    RCC_AHB_PERIPH_GPIOB
+#define MOTOR_BKIN_GPIO_PORT   CW_GPIOB
+#define MOTOR_BKIN_GPIO_PIN    GPIO_PIN_12
 
 // current feedback (analog)
 
-#define MOTOR_UE_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_UE_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
-#define MOTOR_UE_GPIO_PORT   CW_GPIOA
-#define MOTOR_UE_GPIO_PIN    GPIO_PIN_0
-#define MOTOR_UE_GPIO_AF     PA00_ANALOG_ENABLE
-#define MOTOR_UE_CH          ADC_ExInputCH0
+#define MOTOR_UE_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_UE_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
+#define MOTOR_UE_GPIO_PORT     CW_GPIOA
+#define MOTOR_UE_GPIO_PIN      GPIO_PIN_0
+#define MOTOR_UE_GPIO_AF       PA00_ANALOG_ENABLE
+#define MOTOR_UE_CH            ADC_ExInputCH0
 
-#define MOTOR_VE_GPIO_CLKEN  RCC_AHBPeriphClk_Enable
-#define MOTOR_VE_GPIO_CLK    RCC_AHB_PERIPH_GPIOA
-#define MOTOR_VE_GPIO_PORT   CW_GPIOA
-#define MOTOR_VE_GPIO_PIN    GPIO_PIN_1
-#define MOTOR_VE_GPIO_AF     PA01_ANALOG_ENABLE
-#define MOTOR_VE_CH          ADC_ExInputCH1
+#define MOTOR_VE_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
+#define MOTOR_VE_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
+#define MOTOR_VE_GPIO_PORT     CW_GPIOA
+#define MOTOR_VE_GPIO_PIN      GPIO_PIN_1
+#define MOTOR_VE_GPIO_AF       PA01_ANALOG_ENABLE
+#define MOTOR_VE_CH            ADC_ExInputCH1
 
 ///< i&v (analog)
 
 // 母线电压
-#define HVBUS_GPIO_CLKEN     RCC_AHBPeriphClk_Enable
-#define HVBUS_GPIO_CLK       RCC_AHB_PERIPH_GPIOA
-#define HVBUS_GPIO_PORT      CW_GPIOA
-#define HVBUS_GPIO_PIN       GPIO_PIN_3
-#define HVBUS_ADC_CH         ADC_ExInputCH3
+#define HVBUS_GPIO_CLKEN       RCC_AHBPeriphClk_Enable
+#define HVBUS_GPIO_CLK         RCC_AHB_PERIPH_GPIOA
+#define HVBUS_GPIO_PORT        CW_GPIOA
+#define HVBUS_GPIO_PIN         GPIO_PIN_3
+#define HVBUS_ADC_CH           ADC_ExInputCH3
 
-#define IBIS_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
-#define IBIS_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
-#define IBIS_GPIO_PORT       CW_GPIOA
-#define IBIS_GPIO_PIN        GPIO_PIN_6
-#define IBIS_ADC_CH          ADC_ExInputCH6
+#define IBIS_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define IBIS_GPIO_CLK          RCC_AHB_PERIPH_GPIOA
+#define IBIS_GPIO_PORT         CW_GPIOA
+#define IBIS_GPIO_PIN          GPIO_PIN_6
+#define IBIS_ADC_CH            ADC_ExInputCH6
 
-#define ICIV_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
-#define ICIV_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
-#define ICIV_GPIO_PORT       CW_GPIOA
-#define ICIV_GPIO_PIN        GPIO_PIN_7
-#define ICIV_ADC_CH          ADC_ExInputCH7
+#define ICIV_GPIO_CLKEN        RCC_AHBPeriphClk_Enable
+#define ICIV_GPIO_CLK          RCC_AHB_PERIPH_GPIOA
+#define ICIV_GPIO_PORT         CW_GPIOA
+#define ICIV_GPIO_PIN          GPIO_PIN_7
+#define ICIV_ADC_CH            ADC_ExInputCH7
 
 // encoder (tim)
 
-#define ENC_HA_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define ENC_HA_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
-#define ENC_HA_GPIO_PORT     CW_GPIOA
-#define ENC_HA_GPIO_PIN      GPIO_PIN_15
-#define ENC_HA_GPIO_AF       PA15_AFx_GTIM2CH1
+#define ENC_HA_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
+#define ENC_HA_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
+#define ENC_HA_GPIO_PORT       CW_GPIOA
+#define ENC_HA_GPIO_PIN        GPIO_PIN_15
+#define ENC_HA_GPIO_AF         PA15_AFx_GTIM2CH1
 
-#define ENC_HB_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define ENC_HB_GPIO_CLK      RCC_AHB_PERIPH_GPIOB
-#define ENC_HB_GPIO_PORT     CW_GPIOB
-#define ENC_HB_GPIO_PIN      GPIO_PIN_3
-#define ENC_HB_GPIO_AF       PB03_AFx_GTIM2CH2
+#define ENC_HB_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
+#define ENC_HB_GPIO_CLK        RCC_AHB_PERIPH_GPIOB
+#define ENC_HB_GPIO_PORT       CW_GPIOB
+#define ENC_HB_GPIO_PIN        GPIO_PIN_3
+#define ENC_HB_GPIO_AF         PB03_AFx_GTIM2CH2
 
-#define ENC_HC_GPIO_CLKEN    RCC_AHBPeriphClk_Enable
-#define ENC_HC_GPIO_CLK      RCC_AHB_PERIPH_GPIOA
-#define ENC_HC_GPIO_PORT     CW_GPIOA
-#define ENC_HC_GPIO_PIN      GPIO_PIN_2
-#define ENC_HC_GPIO_AF       PA02_AFx_GTIM2CH3
+#define ENC_HC_GPIO_CLKEN      RCC_AHBPeriphClk_Enable
+#define ENC_HC_GPIO_CLK        RCC_AHB_PERIPH_GPIOA
+#define ENC_HC_GPIO_PORT       CW_GPIOA
+#define ENC_HC_GPIO_PIN        GPIO_PIN_2
+#define ENC_HC_GPIO_AF         PA02_AFx_GTIM2CH3
 
-#define ENC_TIM_CLKEN        RCC_APBPeriphClk_Enable1
-#define ENC_TIM_CLK          RCC_APB1_PERIPH_GTIM2
-#define ENC_TIM_PORT         CW_GTIM2
+#define ENC_TIM_CLKEN          RCC_APBPeriphClk_Enable1
+#define ENC_TIM_CLK            RCC_APB1_PERIPH_GTIM2
+#define ENC_TIM_PORT           CW_GTIM2
 
-#define ENC_TIM_IRQn         GTIM2_IRQn
-#define ENC_TIM_IRQHandler   GTIM2_IRQHandler
+#define ENC_TIM_IRQn           GTIM2_IRQn
+#define ENC_TIM_IRQHandler     GTIM2_IRQHandler
 
-#define HVBUS_COEFF          (40.2156f)             // V, 分压系数 (5.1k + 200k) / 5.1k = 40.2156f
-#define CURRENT_COEFF        (1 / 4.3 / 0.1 * 1e3)  // mA, 放大倍数 A = 33K/10K+1 = 4.3, 采样电阻 0.1R = 100mR
+#define HVBUS_COEFF            (40.2156f)             // V, 分压系数 (5.1k + 200k) / 5.1k = 40.2156f
+#define CURRENT_COEFF          (1 / 4.3 / 0.1 * 1e3)  // mA, 放大倍数 A = 33K/10K+1 = 4.3, 采样电阻 0.1R = 100mR
 
 #endif

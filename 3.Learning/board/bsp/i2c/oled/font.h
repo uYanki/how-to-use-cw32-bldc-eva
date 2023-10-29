@@ -3,83 +3,57 @@
 
 #include "board.h"
 
-#define FONT_Bebug(str, ...) printf(str, ##__VA_ARGS__)
+//-----------------------------------------------------------------------------
+// configurations
 
-#define LINE(x)              ((x) * (((sFONT*)LCD_GetFont())->Height))
-#define LINEY(x)             ((x) * (((sFONT*)LCD_GetFont())->Width))
+// location
+#define FONT_SRC_NONE                 (0u)  // 不启用
+#define FONT_SRC_FLASH                (1u)  // 片上 Flash
+#define FONT_SRC_EXTFLASH             (0u)  // 片外 Flash (未测试)
+#define FONT_SRC_SDCARD               (0u)  // 内存卡 (未测试)
 
-// 烧写Flash数据宏，如要向Flash烧写数据，将值置1
-#define Write_Flash          0
+// ascii only
+#define CONFIG_FONTSRC_CONSLONS_8X16  FONT_SRC_FLASH
+#define CONFIG_FONTSRC_CONSLONS_16X24 FONT_SRC_NONE
+#define CONFIG_FONTSRC_CONSLONS_24X32 FONT_SRC_NONE
 
-// 0表示使用SD卡字模，非0表示外部FLASH字模(使用Flash字库时，可选择使用板载Flash字库)
-// 由于SD卡字模有文件系统，速度慢很多。
-#define GBKCODE_FLASH        1
+// ascii and chinese
+#define CONFIG_FONTSRC_GB2312         FONT_SRC_NONE  // (未测试)
 
-// 0 使用板载Flash字库(不支持中文)，1 使用外部Flash字库(支持中文)
-#define FLASH_FONT           0
+//-----------------------------------------------------------------------------
+//
 
-/** @defgroup FONTS_Exported_Types
- * @{
- */
-typedef struct _tFont {
-    uint64_t       address;  // 储存在Flash上的地址
-    uint16_t       width;    // 字体宽度
-    uint16_t       height;   // 字体高度
-    const uint8_t* table;    // 绑定字库
+#define FONT_PRINTF(str, ...)         printf(str, ##__VA_ARGS__)
+
+#define LINE(x)                       ((x) * (((sFONT*)LCD_GetFont())->Height))
+#define LINEY(x)                      ((x) * (((sFONT*)LCD_GetFont())->Width))
+
+typedef struct {
+    uint8_t  source;   // 字体来源
+    void*    address;  // 储存地址
+    uint16_t width;    // 字体宽度
+    uint16_t height;   // 字体高度
 } sFONT;
 
-extern sFONT Font8x16;      // 字体1
-extern sFONT Font16x24;     // 字体2
-extern sFONT Font24x32;     // 字体3
-extern sFONT GB2312_H1616;  // 字体4
+//-----------------------------------------------------------------------------
+// fonts
 
-/***************************** 在显示屏上显示的字符大小 ***************************/
-#define WIDTH_CH_CHAR  16  // 中文字符宽度
-#define HEIGHT_CH_CHAR 16  // 中文字符高度
-
-#if GBKCODE_FLASH
-/*使用FLASH字模*/
-/*中文字库存储在FLASH的起始地址*/
-/*FLASH*/
-#define GBKCODE_START_ADDRESS 387 * 4096
-
-/*获取字库的函数*/
-
-uint8_t GetGBKCode_from_EXFlash(uint8_t* pBuffer, uint16_t c);
-uint8_t GetConslonsCode_from_EXFlash(uint8_t* pBuffer, char c, sFONT* Fonts);
-
-#else
-/*使用SD字模*/
-/*SD卡字模路径*/
-#define GBKCODE_FILE_NAME            "0:/System/Fonts/GB2312_H1616.FON"
-// #define GBKCODE_FILE_NAME			"0:/System/Fonts/consolas8x16.FON"
-// #define GBKCODE_FILE_NAME			"0:/System/Fonts/consolas16x24.FON"
-// #define GBKCODE_FILE_NAME			"0:/System/Fonts/consolas24x32.FON"
-// #define GBKCODE_FILE_NAME			"0:/System/Fonts/consolas32x32.FON"
-
-/*获取字库的函数*/
-// 定义获取中文字符字模数组的函数名，ucBuffer为存放字模数组名，usChar为中文字符（国标码）
-int GetGBKCode_from_sd(uint8_t* pBuffer, uint16_t c);
-
-#define GetGBKCode(ucBuffer, usChar) GetGBKCode_from_sd(ucBuffer, usChar)
-
+#if (CONFIG_FONTSRC_CONSLONS_8X16 != FONT_SRC_NONE)
+extern sFONT Font8x16;
+#endif
+#if (CONFIG_FONTSRC_CONSLONS_16X24 != FONT_SRC_NONE)
+extern sFONT Font16x24;
+#endif
+#if (CONFIG_FONTSRC_CONSLONS_24X32 != FONT_SRC_NONE)
+extern sFONT Font24x32;
+#endif
+#if (CONFIG_FONTSRC_GB2312 != FONT_SRC_NONE)
+extern sFONT GB2312_H1616;
 #endif
 
-/**
- * 定义宏，选择使用字库(Flash或者SD卡)
- */
+#if (CONFIG_FONTSRC_CONSLONS_8X16 == FONT_SRC_FLASH)
 
-// 定义获取中文字符字模数组的函数名，ucBuffer为存放字模数组名，usChar为中文字符（国标码）
-#define GetGBKCode(ucBuffer, usChar)             GetGBKCode_from_EXFlash(ucBuffer, usChar)
-// 获取Conslons字符编码ucBuffer为存放字模数组名，usChar为字符码（国标码），Fonts为字体结构体
-#define GetConslonsCode(ucBuffer, usChar, Fonts) GetConslonsCode_from_EXFlash(ucBuffer, usChar, Fonts)
-
-// 当要烧写到Flash中或者要使用该字库时使用
-#if Write_Flash | !FLASH_FONT  // 要烧写到Flash的数据
-/*
- * 常用ASCII表，偏移量32，大小:16（高度）* 8 （宽度）
- *共1520字节
- */
+// 常用ASCII表，偏移量32，大小:16（高度）* 8 （宽度），共1520字节
 static const uint8_t ASCII8x16_Table[] = {  //@conslons字体，阴码点阵格式，逐行顺向取摸
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x08, 0x00, 0x08, 0x18, 0x00, 0x00, 0x00,
@@ -176,10 +150,11 @@ static const uint8_t ASCII8x16_Table[] = {  //@conslons字体，阴码点阵格�
     0x00, 0x00, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08, 0x08,
     0x00, 0x00, 0x00, 0x30, 0x18, 0x08, 0x08, 0x08, 0x0c, 0x0e, 0x08, 0x08, 0x08, 0x08, 0x18, 0x30,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x71, 0x4b, 0x06, 0x00, 0x00, 0x00, 0x00, 0x00};
+#endif
 
-/*
- * 常用ASCII表，偏移量32，大小:24（高度）* 16 （宽度）, 共4560字节
- */
+#if (CONFIG_FONTSRC_CONSLONS_16X24 == FONT_SRC_FLASH)
+
+// 常用ASCII表，偏移量32，大小:24（高度）* 16 （宽度）, 共4560字节
 static const uint8_t ASCII16x24_Table[] = {  //@conslons字体，阴码点阵格式，逐行顺向取摸
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -466,10 +441,11 @@ static const uint8_t ASCII16x24_Table[] = {  //@conslons字体，阴码点阵格
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x1c, 0x00, 0x3f, 0x06, 0x71, 0xce, 0x60, 0xfc, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+#endif
 
-/*
- * 常用ASCII表，偏移量32，大小:32（高度）* 24 （宽度），共9120字节
- */
+#if (CONFIG_FONTSRC_CONSLONS_24X32 == FONT_SRC_FLASH)
+
+// 常用ASCII表，偏移量32，大小:32（高度）* 24 （宽度），共9120字节
 static const uint8_t ASCII24x32_Table[] = {  //@conslons字体，阴码点阵格式，逐行顺向取摸
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
@@ -1042,5 +1018,17 @@ static const uint8_t ASCII24x32_Table[] = {  //@conslons字体，阴码点阵格
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00,
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 #endif
+
+//-----------------------------------------------------------------------------
+// functions
+
+/**
+ * @brief 获取字符编码
+ * @param [out] ucBuffer 字模缓冲数组
+ * @param [in]  usChar   字符码(国标码)
+ * @param [in]  Fonts    字体结构体
+ */
+uint8_t GetConslonsCode(uint8_t* pBuffer, char chr, sFONT* Fonts);
+uint8_t GetGBKCode(uint8_t* pBuffer, char chr, sFONT* Fonts);
 
 #endif /*__FONT_H__*/

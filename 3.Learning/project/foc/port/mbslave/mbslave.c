@@ -7,7 +7,7 @@ typedef struct {
     u16* u16Buffer;
 } reg_grp_t;
 
-USHORT usRegHodingBuf[100] = {0};
+USHORT usRegHodingBuf[10] = {0};
 
 static RO reg_grp_t m_holding[] = {
     {0, 100, usRegHodingBuf},
@@ -59,6 +59,7 @@ eMBRegInputCB(UCHAR* pucRegBuffer, USHORT usAddress, USHORT usNRegs)
 
     return eStatus;
 }
+
 
 /**
  * Modbus slave holding register callback function.
@@ -184,6 +185,7 @@ eMBRegCoilsCB(UCHAR* pucRegBuffer, USHORT usAddress, USHORT usNCoils, eMBRegiste
     return eStatus;
 }
 
+
 /**
  * Modbus slave discrete callback function.
  *
@@ -229,3 +231,4 @@ eMBRegDiscreteCB(UCHAR* pucRegBuffer, USHORT usAddress, USHORT usNDiscrete)
 
     return eStatus;
 }
+

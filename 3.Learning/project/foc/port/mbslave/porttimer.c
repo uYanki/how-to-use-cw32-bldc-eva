@@ -11,7 +11,7 @@
 
 /* ----------------------- Start implementation ---------------------------- */
 
-static tick_t tMbTimeout = CONFIG_TICK_INC; // us
+static tick_t tMbTimeout = TICK_UNIT_US; 
 
 BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
 {
@@ -19,11 +19,6 @@ BOOL xMBPortTimersInit(USHORT usTim1Timerout50us)
 
     tMbTimeout = (tick_t)usTim1Timerout50us * 50; 
 	
-    if (tMbTimeout < CONFIG_TICK_INC)
-    {
-        tMbTimeout = CONFIG_TICK_INC;
-    }
-
     return TRUE;
 }
 

@@ -7,7 +7,7 @@
 #define OLED_DEV      0x78  // address = 0x78 / 0x7A
 
 #define OLED_SCREEN_W 128
-#define OLED_SCREEN_H 8
+#define OLED_SCREEN_H 4
 
 typedef enum {
     crNone  = 0,  // transparent

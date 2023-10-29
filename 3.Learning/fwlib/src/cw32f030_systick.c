@@ -160,10 +160,5 @@ void SysTick_Handler(void)
 
     uwTick += uwTickFreq;
 
-#ifdef CONFIG_USE_MODBUS  // modbus
-    extern void ecbMbTick(void);
-    ecbMbTick();
-#endif
-
     /* USER CODE END SysTick_IRQn */
 }
