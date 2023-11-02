@@ -156,6 +156,12 @@
 #define MOTOR_BKIN_GPIO_PORT   CW_GPIOB
 #define MOTOR_BKIN_GPIO_PIN    GPIO_PIN_12
 
+// 不同芯片的有效电平可能不同
+#define MOTOR_HIGH_SIDE_ON     GPIO_Pin_SET
+#define MOTOR_HIGH_SIDE_OFF    GPIO_Pin_RESET
+#define MOTOR_LOW_SIDE_ON      GPIO_Pin_RESET
+#define MOTOR_LOW_SIDE_OFF     GPIO_Pin_SET
+
 // current feedback (analog)
 
 #define MOTOR_UE_GPIO_CLKEN    RCC_AHBPeriphClk_Enable

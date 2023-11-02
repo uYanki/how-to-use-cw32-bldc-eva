@@ -21,15 +21,6 @@
 // 触发转换
 #define ADC_CONV_DMA_CH        CW_DMACHANNEL3
 
-#if 0
-            f32 Vmdc = ADC_12R_3V3(adcDatBuf.Vbus) * 40.2156f;  // (5.1k+200k) / (5.1k)
-            f32 Ue = ADC_12R_3V3(adcDatBuf.Ue), Ve = ADC_12R_3V3(adcDatBuf.Ve), We = ADC_12R_3V3(adcDatBuf.We);
-            f32 temp    = NTC_GetTemp(adcDatBuf.ntc);
-            // f32 current = ADC_12R_3V3(adcDatBuf.Ib - adcDatBuf.Ic) / (f32)10e3 * 1e3;
-            f32 current_b = ADC_12R_3V3((adcDatBuf.Ib )) / 4.3 /* A = (33K/10K+1) */ / 0.1 /* 100mR */ * 1e3;  // mA
-						f32 current_c = ADC_12R_3V3((adcDatBuf.Ic )) / 4.3 /* A = (33K/10K+1) */ / 0.1 /* 100mR */ * 1e3;  // mA
-            println("%f,%f,%f,%f,%d,%f,%f,%f", Ue, Ve, We, Vmdc, adcDatBuf.Vpot, current_b, current_c, temp);
-#else
 
 // bv7: 转换完成后触发DMA
 static RO u8 AdcChSel[] = {

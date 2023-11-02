@@ -477,6 +477,11 @@
               <FileType>1</FileType>
               <FilePath>..\..\..\board\sys\syscall.c</FilePath>
             </File>
+            <File>
+              <FileName>step6.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\..\board\foc\step6.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

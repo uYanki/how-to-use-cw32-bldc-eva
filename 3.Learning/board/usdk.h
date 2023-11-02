@@ -115,8 +115,9 @@ typedef enum {
 } switch_e;
 
 typedef enum {
-    DIR_CCW = 0,         ///< Clockwise, 顺时针
-    DIR_CW  = !DIR_CCW,  ///< Counterclockwise, 逆时针
+    DIR_CCW  = 0,  ///< Clockwise, 顺时针
+    DIR_CW   = 1,  ///< Counterclockwise, 逆时针
+    DIR_NONE = 2,
 } direction_e;
 
 typedef enum {
