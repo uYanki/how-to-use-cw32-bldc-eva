@@ -26,8 +26,8 @@ inline void DelayInit(void);
 inline void DelayBlock(tick_t nWaitTime);
 inline bool DelayNonBlock(tick_t nStartTick, tick_t nWaitTime);
 
-inline tick_t HAL_GetTick(void);
-inline tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick);
+inline tick_t DelayGetTick(void);
+inline tick_t DelayCalcDelta(tick_t nStartTick, tick_t nEndTick);
 
 #define DelayBlockUS(t)       DelayBlock((t) * (UNIT_US) / (TICK_UNIT_US))
 #define DelayNonBlockUS(s, t) DelayNonBlock(s, (t) * (UNIT_US) / (TICK_UNIT_US))

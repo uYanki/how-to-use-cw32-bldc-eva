@@ -15,23 +15,23 @@ void DelayInit(void)
 
 void DelayBlock(tick_t nWaitTime)
 {
-    tick_t nStartTick = HAL_GetTick();
+    tick_t nStartTick = DelayGetTick();
 
-    while ((HAL_GetTick() - nStartTick) < nWaitTime)
+    while (DelayCalcDelta(nStartTick, DelayGetTick()) < nWaitTime)
         ;
 }
 
 bool DelayNonBlock(tick_t nStartTick, tick_t nWaitTime)
 {
-    return HAL_GetTick() >= (nStartTick + nWaitTime);
+    return DelayCalcDelta(nStartTick, DelayGetTick()) >= nWaitTime;
 }
 
-tick_t HAL_GetTick(void)
+tick_t DelayGetTick(void)
 {
     return m_ticks;
 }
 
-tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick)
+tick_t DelayCalcDelta(tick_t nStartTick, tick_t nEndTick)
 {
     if (nEndTick >= nStartTick)
     {
@@ -44,13 +44,13 @@ tick_t HAL_DeltaTick(tick_t nStartTick, tick_t nEndTick)
 }
 
 /**
- * @note call HAL_IncTick() in SysTick_Handler()
+ * @note call DelayIncTick() in SysTick_Handler()
  *
- *      extern void HAL_IncTick(void);
- *      HAL_IncTick();
+ *      extern void DelayIncTick(void);
+ *      DelayIncTick();
  *
  */
-__weak void HAL_IncTick(void)
+__weak void DelayIncTick(void)
 {
     ++m_ticks;
 }
@@ -79,7 +79,7 @@ bool TimeRecStart(u8 id)
 {
     if (id < ARRAY_SIZE(saMeasureTime))
     {
-        saMeasureTime[id] = HAL_GetTick();
+        saMeasureTime[id] = DelayGetTick();
         return true;
     }
     return false;
@@ -90,7 +90,7 @@ tick_t TimeRecEnd(u8 id)
     if (id < ARRAY_SIZE(saMeasureTime))
     {
         // unit = TICK_PSC * 0.01us
-        return 1e2 * 1e6 * (HAL_GetTick() - saMeasureTime[id]) / SystemCoreClock;
+        return 1e2 * 1e6 * (DelayGetTick() - saMeasureTime[id]) / SystemCoreClock;
     }
     return TICK_MAX;
 }

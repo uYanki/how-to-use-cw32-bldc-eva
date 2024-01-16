@@ -65,6 +65,7 @@ void BoardInit(void)
         .USART_Mode                = USART_Mode_Tx | USART_Mode_Rx,
         .USART_HardwareFlowControl = USART_HardwareFlowControl_None,
     };
+
     UartInit();
     UartConfig(&USART_InitStruct);
 
